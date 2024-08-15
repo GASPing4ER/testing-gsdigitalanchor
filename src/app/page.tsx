@@ -1,5 +1,14 @@
 import Link from "next/link";
 import { cormorant } from "../lib/fonts";
+import Image from "next/image";
+
+import supple from "@/public/images/grid/supple.jpg";
+import supple_2 from "@/public/images/grid/supple-2.jpeg";
+import vitus from "@/public/images/grid/vitus.jpg";
+import vitus_2 from "@/public/images/grid/vitus-2.jpg";
+import glowinstudio from "@/public/images/grid/glowinstudio.jpg";
+import glowinstudio_2 from "@/public/images/grid/glowinstudio-2.jpg";
+import Testimonials from "../components/testimonials";
 
 export default function Home() {
   return (
@@ -21,7 +30,10 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="w-full h-screen bg-slate-900 p-24 flex flex-col gap-8 justify-center">
+      <div
+        className="w-full h-screen bg-slate-900 p-24 flex flex-col gap-8 justify-center"
+        id="expertise-section"
+      >
         <h3 className="text-xs tracking-widest text-slate-300">SERVICES</h3>
         <h2
           className={`${cormorant.className} font-semibold text-slate-50 text-5xl`}
@@ -99,6 +111,54 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div
+        className="w-full h-screen p-24 grid grid-cols-6 grid-rows-5 gap-4"
+        id="white-section"
+      >
+        <div className="col-span-1 row-span-3">
+          <Image
+            src={supple_2}
+            alt="Image 1"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="col-span-3 row-span-2">
+          <Image
+            src={vitus}
+            alt="Image 2"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="col-span-2 row-span-2">
+          <Image
+            src={glowinstudio_2}
+            alt="Image 3"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="col-span-2 row-span-1">
+          <Image
+            src={supple}
+            alt="Image 4"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="col-span-3 row-span-3">
+          <Image
+            src={glowinstudio}
+            alt="Image 5"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="col-span-3 row-span-2">
+          <Image
+            src={vitus_2}
+            alt="Image 6"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <Testimonials />
     </main>
   );
 }
