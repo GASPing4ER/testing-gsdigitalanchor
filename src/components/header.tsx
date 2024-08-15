@@ -6,8 +6,6 @@ import twitterIcon from "@/public/icons/socials/twitter.svg";
 import instagramIcon from "@/public/icons/socials/instagram.svg";
 import linkedinIcon from "@/public/icons/socials/linkedin.svg";
 
-import {} from "@heroicons/react/24/outline";
-
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 bg-transparent w-full flex items-center justify-between border-b border-white text-white px-20 py-6 z-10">
