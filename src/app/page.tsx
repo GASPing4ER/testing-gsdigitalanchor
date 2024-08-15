@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-full h-screen bg-slate-900 p-24 flex flex-col gap-8 justify-center"
+        className="w-full h-screen bg-slate-900 p-24 flex flex-col gap-8 justify-center anchor-cursor"
         id="expertise-section"
       >
         <h3 className="text-xs tracking-widest text-slate-300">SERVICES</h3>
@@ -115,6 +115,7 @@ export default function Home() {
         className="w-full h-screen p-24 grid grid-cols-6 grid-rows-5 gap-4"
         id="white-section"
       >
+        {/* TODO: OPTIMIZE IMAGES -> SMALLER SIZES, MINIFYING TO KB FROM MB */}
         <div className="col-span-1 row-span-3">
           <Image
             src={supple_2}
