@@ -1,7 +1,10 @@
+import { Bars3Icon } from "@heroicons/react/24/outline";
+
 const Navigation = () => {
   return (
     <nav>
-      <ul className="flex gap-6 text-xs tracking-widest font-normal text-white">
+      <Bars3Icon className="lg:hidden w-6 h-6 text-white" />
+      <ul className="hidden lg:flex gap-6 text-xs tracking-widest font-normal text-white">
         <li>SERVICES</li>
         <li>PORTFOLIO</li>
         <li>ABOUT</li>

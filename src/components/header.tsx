@@ -40,15 +40,15 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 ${
         headerBg === "transparent" ? "bg-transparent" : "bg-slate-900"
-      } w-full flex items-center justify-between border-b border-white text-white px-20 py-6 z-10`}
+      } w-full flex items-center justify-center sm:justify-between border-b border-white text-white px-6 sm:px-20 py-6 z-20`}
     >
       <div className="flex items-center gap-6">
         <Logo />
         <div className="w-[1px] h-[25px] bg-white" />
         <Navigation />
       </div>
-      <div className="flex items-center gap-16">
-        <div className="flex gap-2">
+      <div className="hidden sm:flex items-center gap-16">
+        <div className="hidden lg:flex gap-2">
           <div className="border border-white rounded-full p-2">
             <Image src={instagramIcon} alt="Twitter" className="w-4 h-4" />
           </div>

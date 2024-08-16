@@ -27,7 +27,10 @@ export default function PricingPackage() {
         </span>{" "}
         guide
       </h2>
-      <form onSubmit={handleSubmit} className="z-10">
+      <form
+        onSubmit={handleSubmit}
+        className="z-10 flex flex-col md:flex-row items-center"
+      >
         <input
           name="name"
           type="text"
@@ -35,7 +38,7 @@ export default function PricingPackage() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="bg-transparent border border-slate-900 p-2 m-1 placeholder:text-slate-900 text-sm"
+          className="bg-transparent border border-slate-900 p-2 m-1 placeholder:text-slate-900 text-sm w-[175px]"
         />
         <input
           name="email"
@@ -44,9 +47,9 @@ export default function PricingPackage() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="bg-transparent border border-slate-900 p-2 m-1 placeholder:text-slate-900 text-sm"
+          className="bg-transparent border border-slate-900 p-2 m-1 placeholder:text-slate-900 text-sm w-[175px]"
         />
-        <button className="bg-slate-900 border border-slate-900 py-2 px-4 text-slate-50 cursor-pointer text-sm">
+        <button className="bg-slate-900 border border-slate-900 py-2 px-4 text-slate-50 cursor-pointer text-sm w-[175px] md:w-auto">
           SUBSCRIBE
         </button>
       </form>

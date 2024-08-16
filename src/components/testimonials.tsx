@@ -34,11 +34,13 @@ export default function Testimonials() {
     return (
       <div key={index} className="flex flex-col items-center text-center gap-7">
         <h2
-          className={`${cormorant.className} uppercase text-5xl max-w-[700px]`}
+          className={`${cormorant.className} uppercase text-xl sm:text-3xl md:text-4xl lg:text-5xl max-w-[700px]`}
         >
           {testimonial.headline}
         </h2>
-        <p className="max-w-[700px] text-lg italic">{testimonial.quote}</p>
+        <p className="max-w-[700px] text-sm md:text-base lg:text-lg italic">
+          {testimonial.quote}
+        </p>
         <h3 className={`${cormorant.className} text-lg font-medium`}>
           {testimonial.author}
         </h3>
@@ -67,7 +69,7 @@ export default function Testimonials() {
   }
 
   return (
-    <div className="flex justify-center items-center text-slate-50 gap-7 p-24 bg-slate-900">
+    <div className="flex justify-center items-center text-slate-50 gap-7 p-6 sm:p-24 bg-slate-900">
       <button
         className="py-2 px-4 rounded-2xl text-sm"
         onClick={() => handlePrev()}
