@@ -116,6 +116,34 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div>
+        {/* PORTFOLIO SECTION FOR MOBILE */}
+        <div className="w-full px-6 py-12 sm:hidden flex flex-col gap-4">
+          <h3 className="text-xs tracking-widest text-slate-900">PORTFOLIO</h3>
+          <h2
+            className={`${cormorant.className} font-semibold text-slate-900 text-3xl`}
+          >
+            Our Work
+          </h2>
+          <p className="text-slate-800 max-w-[600px] text-sm">
+            We’ve had the privilege of working with some of the most prestigious
+            luxury brands in the world. Here are a few of our favorites.
+          </p>
+          <div className="w-full h-[300px] border border-slate-900/10">
+            <Image
+              src={supple}
+              alt="Image 1"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <Link
+            href="/portfolio"
+            className="text-xs border-b border-slate-900 w-fit"
+          >
+            VIEW MORE
+          </Link>
+        </div>
+      </div>
       <div
         className="w-full h-screen p-24 hidden sm:grid grid-cols-6 grid-rows-5 gap-4"
         id="white-section"
