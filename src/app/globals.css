@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .anchor-cursor {
   cursor: url("/cursor.png"), auto;
 }

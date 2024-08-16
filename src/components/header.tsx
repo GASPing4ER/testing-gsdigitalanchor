@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import twitterIcon from "@/public/icons/socials/twitter.svg";
 import instagramIcon from "@/public/icons/socials/instagram.svg";
 import linkedinIcon from "@/public/icons/socials/linkedin.svg";
+import Link from "next/link";
 
 const Header = () => {
   const [headerBg, setHeaderBg] = useState("transparent");
@@ -40,28 +41,31 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 ${
         headerBg === "transparent" ? "bg-transparent" : "bg-slate-900"
-      } w-full flex items-center justify-center sm:justify-between border-b border-white text-white px-6 sm:px-20 py-6 z-20`}
+      } w-full flex items-center justify-center sm:justify-between border-b border-slate-50 text-slate-50 px-6 sm:px-20 py-6 z-20`}
     >
       <div className="flex items-center gap-6">
         <Logo />
-        <div className="w-[1px] h-[25px] bg-white" />
+        <div className="w-[1px] h-[25px] bg-slate-50" />
         <Navigation />
       </div>
       <div className="hidden sm:flex items-center gap-16">
         <div className="hidden lg:flex gap-2">
-          <div className="border border-white rounded-full p-2">
+          <div className="border border-[#AB7952] rounded-full p-2">
             <Image src={instagramIcon} alt="Twitter" className="w-4 h-4" />
           </div>
-          <div className="border border-white rounded-full p-2">
+          <div className="border border-slate-50 rounded-full p-2">
             <Image src={linkedinIcon} alt="Twitter" className="w-4 h-4" />
           </div>
-          <div className="border border-white rounded-full p-2">
+          <div className="border border-[#AB7952] rounded-full p-2">
             <Image src={twitterIcon} alt="Twitter" className="w-4 h-4" />
           </div>
         </div>
-        <button className="text-xs px-6 py-2 border border-white rounded-2xl">
+        <Link
+          href="/contact"
+          className="text-xs px-6 py-2 border border-slate-50 rounded-2xl hover:bg-slate-50 hover:text-slate-900"
+        >
           CONTACT
-        </button>
+        </Link>
       </div>
     </header>
   );

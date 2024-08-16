@@ -35,7 +35,7 @@ export default function Home() {
         className="w-full min-h-screen bg-slate-900 p-6 sm:p-24 flex flex-col gap-8 justify-center anchor-cursor"
         id="first-section"
       >
-        <h3 className="text-xs tracking-widest text-slate-300">SERVICES</h3>
+        <h3 className="text-xs tracking-widest text-[#AB7952]">SERVICES</h3>
         <h2
           className={`${cormorant.className} font-semibold text-slate-50 text-3xl sm:text-5xl`}
         >
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row w-full text-slate-50">
           <div className="flex flex-col sm:flex-row">
             <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-slate-300">PHASE 01</span>
+              <span className="text-[#AB7952]">01</span>
               <div className="flex flex-col gap-4">
                 <h2 className={`${cormorant.className} font-semibold text-4xl`}>
                   Strategy
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-slate-300">PHASE 02</span>
+              <span className="text-[#AB7952]">02</span>
               <div className="flex flex-col gap-4">
                 <h2 className={`${cormorant.className} font-semibold text-4xl`}>
                   Branding
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row">
             <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-slate-300">PHASE 03</span>
+              <span className="text-[#AB7952]">03</span>
               <div className="flex flex-col gap-4">
                 <h2 className={`${cormorant.className} font-semibold text-4xl`}>
                   Website
@@ -98,7 +98,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-slate-300">PHASE 04</span>
+              <span className="text-[#AB7952]">04</span>
               <div className="flex flex-col gap-4">
                 <h2 className={`${cormorant.className} font-semibold text-4xl`}>
                   Marketing

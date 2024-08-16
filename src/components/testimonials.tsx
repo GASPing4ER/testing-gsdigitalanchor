@@ -41,7 +41,9 @@ export default function Testimonials() {
         <p className="max-w-[700px] text-xs sm:text-sm md:text-base lg:text-lg italic">
           {testimonial.quote}
         </p>
-        <h3 className={`${cormorant.className} text-lg font-medium`}>
+        <h3
+          className={`${cormorant.className} text-lg font-medium text-[#AB7952]`}
+        >
           {testimonial.author}
         </h3>
       </div>

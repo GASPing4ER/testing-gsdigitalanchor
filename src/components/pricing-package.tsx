@@ -22,7 +22,7 @@ export default function PricingPackage() {
         className={`${cormorant.className} text-4xl italic font-light text-center z-10`}
       >
         get our{" "}
-        <span className="not-italic uppercase font-semibold">
+        <span className="not-italic uppercase font-semibold text-[#AB7952]">
           packages & pricing
         </span>{" "}
         guide
