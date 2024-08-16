@@ -9,6 +9,7 @@ import vitus_2 from "@/public/images/grid/vitus-2.jpg";
 import glowinstudio from "@/public/images/grid/glowinstudio.jpg";
 import glowinstudio_2 from "@/public/images/grid/glowinstudio-2.jpg";
 import Testimonials from "../components/testimonials";
+import PricingPackage from "../components/pricing-package";
 
 export default function Home() {
   return (
@@ -160,6 +161,7 @@ export default function Home() {
         </div>
       </div>
       <Testimonials />
+      <PricingPackage />
     </main>
   );
 }
