@@ -14,7 +14,7 @@ const Header = () => {
   const [headerBg, setHeaderBg] = useState("transparent");
 
   const handleScroll = () => {
-    const section = document.getElementById("expertise-section");
+    const section = document.getElementById("first-section");
     if (section) {
       const sectionTop = section!.offsetTop;
       const sectionBottom = sectionTop + section!.offsetHeight;
