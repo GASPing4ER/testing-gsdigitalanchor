@@ -1,3 +1,4 @@
+import OurValues from "@/src/components/our-values";
 import { cormorant } from "@/src/lib/fonts";
 
 const AboutPage = () => {
@@ -21,82 +22,25 @@ const AboutPage = () => {
         </div>
       </div>
       <div
-        className="w-full min-h-screen flex flex-col gap-6 p-24 bg-slate-900"
+        className="w-full min-h-screen flex flex-col gap-8 p-6 sm:p-24 bg-slate-900"
         id="first-section"
       >
         <h3 className="text-[#AB7952] text-xs tracking-widest">OUR VALUES</h3>
-        <p className="text-slate-50 max-w-[700px]">
+        <p className="text-slate-50 text-sm sm:text-base max-w-[700px]">
           This is the <span className="italic">fabric of our culture</span> and
           the framework for all decisions made within these walls. Heads up,
           they tend to be contagious.
         </p>
-        <div className="flex flex-col items-center gap-8">
-          <hr className="border-t border-[#AB7952] w-[100px]" />
-          <div className="text-center flex flex-col gap-2">
-            <h2
-              className={`${cormorant.className} text-6xl font-semibold text-slate-50`}
-            >
-              Excellence.
-            </h2>
-            <p className="italic text-slate-300">
-              Deliver nothing less than the best
-            </p>
-          </div>
-          <hr className="border-t border-[#AB7952] w-[100px]" />
-          <div className="text-center flex flex-col gap-2">
-            <h2
-              className={`${cormorant.className} text-6xl font-semibold text-slate-50`}
-            >
-              Innovation.
-            </h2>
-            <p className="italic text-slate-300">
-              Embrace creativity and set trends
-            </p>
-          </div>
-          <hr className="border-t border-[#AB7952] w-[100px]" />
-          <div className="text-center flex flex-col gap-2">
-            <h2
-              className={`${cormorant.className} text-6xl font-semibold text-slate-50`}
-            >
-              Integrity.
-            </h2>
-            <p className="italic text-slate-300">
-              Build trust through honesty and transparency
-            </p>
-          </div>
-          <hr className="border-t border-[#AB7952] w-[100px]" />
-          <div className="text-center flex flex-col gap-2">
-            <h2
-              className={`${cormorant.className} text-6xl font-semibold text-slate-50`}
-            >
-              Elegance.
-            </h2>
-            <p className="italic text-slate-300">
-              Reflect sophistication in every detail
-            </p>
-          </div>
-          <hr className="border-t border-[#AB7952] w-[100px]" />
-          <div className="text-center flex flex-col gap-2">
-            <h2
-              className={`${cormorant.className} text-6xl font-semibold text-slate-50`}
-            >
-              Commitment.
-            </h2>
-            <p className="italic text-slate-300">
-              Dedicate ourselves fully to client success
-            </p>
-          </div>
-          <hr className="border-t border-[#AB7952] w-[100px]" />
-        </div>
+        <OurValues />
       </div>
-      <div className="w-full flex flex-col gap-6 p-24 bg-slate-50">
+      <div className="w-full flex flex-col gap-6 p-6 sm:p-24 bg-slate-50">
         <h3 className="text-[#AB7952] text-xs tracking-widest">OUR MISSION</h3>
         <h2
-          className={`${cormorant.className} text-5xl font-semibold text-slate-900`}
+          className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-900`}
         >
           To Elevate Your Brand
         </h2>
-        <p className="text-slate-900 max-w-[700px]">
+        <p className="text-slate-900 text-sm sm:text-base max-w-[700px]">
           We are committed to crafting bespoke digital strategies, branding, and
           marketing to enhance your brand’s legacy and prestige.
         </p>
@@ -105,11 +49,11 @@ const AboutPage = () => {
         </button>
         <h3 className="text-[#AB7952] text-xs tracking-widest">OUR VISION</h3>
         <h2
-          className={`${cormorant.className} text-5xl font-semibold text-slate-900`}
+          className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-900`}
         >
           To Be Your Trusted Partner
         </h2>
-        <p className="text-slate-900 max-w-[700px]">
+        <p className="text-sm sm:text-base text-slate-900 max-w-[700px]">
           We aspire to be the digital agency of choice for luxury brands seeking
           a partner that understands their unique vision and values.
         </p>
