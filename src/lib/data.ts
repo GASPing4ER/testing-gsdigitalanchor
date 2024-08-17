@@ -22,7 +22,6 @@ export const values = [
 ];
 
 export const servicesData = [
-  {},
   {
     title: "Discovery & Strategy",
     description:
