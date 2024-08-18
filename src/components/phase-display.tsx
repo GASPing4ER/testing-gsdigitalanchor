@@ -9,7 +9,7 @@ type PhaseDisplayProps = {
 
 const PhaseDisplay = ({ selectedOption }: PhaseDisplayProps) => {
   return (
-    <div className="w-[700px] h-[450px] border border-slate-900 p-4 flex flex-col gap-4">
+    <div className="max-w-[700px] min-h-[450px] border border-slate-900 p-4 flex flex-col gap-4">
       <h3 className="text-[#AB7952]">PHASE O{selectedOption + 1}</h3>
       <h2 className={`${cormorant.className} text-4xl uppercase`}>
         {servicesData[selectedOption].title}

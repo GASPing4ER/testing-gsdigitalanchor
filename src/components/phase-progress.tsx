@@ -11,7 +11,7 @@ const PhaseProgress = ({
   handleChange,
 }: PhaseProgressProps) => {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-row lg:flex-col gap-4 sm:gap-1 items-center lg:items-start">
       <div className="flex gap-4 items-center">
         <span
           onClick={() => handleChange(0)}
@@ -24,7 +24,9 @@ const PhaseProgress = ({
           {selectedOption > 0 ? <CheckIcon className="w-4 h-4" /> : "01"}
         </span>
         <h3
-          className={`${cormorant.className} font-semibold text-sm ${
+          className={`${
+            cormorant.className
+          } hidden lg:block font-semibold text-sm ${
             selectedOption >= 0 ? "text-slate-900" : "text-slate-500/50"
           }`}
         >
@@ -32,9 +34,9 @@ const PhaseProgress = ({
         </h3>
       </div>
       <div
-        className={`w-[2px] rounded-lg h-[50px] ${
+        className={`hidden sm:block w-[50px] lg:w-[2px] rounded-lg h-[2px] lg:h-[50px] ${
           selectedOption > 0 ? "bg-[#AB7952]" : "bg-slate-500/20"
-        } ml-[20px]`}
+        } lg:ml-[20px]`}
       />
       <div className="flex gap-4 items-center">
         <span
@@ -48,7 +50,9 @@ const PhaseProgress = ({
           {selectedOption > 1 ? <CheckIcon className="w-4 h-4" /> : "02"}
         </span>
         <h3
-          className={`${cormorant.className} font-semibold text-sm ${
+          className={`${
+            cormorant.className
+          } hidden lg:block font-semibold text-sm ${
             selectedOption >= 1 ? "text-slate-900" : "text-slate-500/50"
           }`}
         >
@@ -56,7 +60,7 @@ const PhaseProgress = ({
         </h3>
       </div>
       <div
-        className={`w-[2px] rounded-lg h-[50px] ${
+        className={`hidden sm:block w-[50px] lg:w-[2px] rounded-lg h-[2px] lg:h-[50px] ${
           selectedOption > 1 ? "bg-[#AB7952]" : "bg-slate-500/20"
         } ml-[20px]`}
       />
@@ -72,7 +76,9 @@ const PhaseProgress = ({
           {selectedOption > 2 ? <CheckIcon className="w-4 h-4" /> : "03"}
         </span>
         <h3
-          className={`${cormorant.className} font-semibold text-sm ${
+          className={`${
+            cormorant.className
+          } hidden lg:block font-semibold text-sm ${
             selectedOption >= 2 ? "text-slate-900" : "text-slate-500/50"
           }`}
         >
@@ -80,7 +86,7 @@ const PhaseProgress = ({
         </h3>
       </div>
       <div
-        className={`w-[2px] rounded-lg h-[50px] ${
+        className={`hidden sm:block w-[50px] lg:w-[2px] rounded-lg h-[2px] lg:h-[50px] ${
           selectedOption > 2 ? "bg-[#AB7952]" : "bg-slate-500/20"
         } ml-[20px]`}
       />
@@ -96,7 +102,9 @@ const PhaseProgress = ({
           {selectedOption > 3 ? <CheckIcon className="w-4 h-4" /> : "04"}
         </span>
         <h3
-          className={`${cormorant.className} font-semibold text-sm ${
+          className={`${
+            cormorant.className
+          } hidden lg:block font-semibold text-sm ${
             selectedOption >= 3 ? "text-slate-900" : "text-slate-500/50"
           }`}
         >
@@ -104,7 +112,7 @@ const PhaseProgress = ({
         </h3>
       </div>
       <div
-        className={`w-[2px] rounded-lg h-[50px] ${
+        className={`hidden sm:block w-[50px] lg:w-[2px] rounded-lg h-[2px] lg:h-[50px] ${
           selectedOption > 3 ? "bg-[#AB7952]" : "bg-slate-500/20"
         } ml-[20px]`}
       />
@@ -120,7 +128,9 @@ const PhaseProgress = ({
           {selectedOption > 4 ? <CheckIcon className="w-4 h-4" /> : "05"}
         </span>
         <h3
-          className={`${cormorant.className} font-semibold text-sm ${
+          className={`${
+            cormorant.className
+          } hidden lg:block font-semibold text-sm ${
             selectedOption >= 4 ? "text-slate-900" : "text-slate-500/50"
           }`}
         >

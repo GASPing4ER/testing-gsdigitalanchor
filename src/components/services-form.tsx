@@ -13,7 +13,7 @@ const ServicesForm = ({ selectedOption, handleChange }: ServicesFormProps) => {
       <h2 className={`${cormorant.className} text-[#AB7952] text-3xl`}>
         Where are you in your brand’s journey?
       </h2>
-      <div className="flex gap-4">
+      <div className="flex flex-col lg:flex-row gap-4">
         <div
           className={`${
             selectedOption === 0 ? "border-[#AB7952]" : "border-slate-50"

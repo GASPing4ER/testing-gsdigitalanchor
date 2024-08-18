@@ -17,14 +17,14 @@ const ServicesPage = () => {
   return (
     <main className="min-h-screen w-full">
       <div
-        className="w-full h-screen p-6 sm:p-24 flex flex-col justify-center gap-8 bg-slate-900"
+        className="w-full min-h-screen px-6 py-24 sm:p-24 flex flex-col justify-center gap-8 bg-slate-900"
         id="first-section"
       >
         <h3 className="text-[#AB7952] uppercase text-xs tracking-widest">
           Discover the Next Step in Elevating Your Luxury Brand
         </h3>
         <h1
-          className={`${cormorant.className} text-6xl font-semibold text-slate-50`}
+          className={`${cormorant.className} text-4xl sm:text-6xl font-semibold text-slate-50`}
         >
           Find Your Perfect Starting Point
         </h1>
@@ -40,7 +40,7 @@ const ServicesPage = () => {
         />
       </div>
       <div
-        className="w-full h-screen flex items-center justify-center gap-6 p-24 bg-slate-50"
+        className="w-full h-screen flex flex-col lg:flex-row items-center justify-center gap-6 p-6 lg:p-24 bg-slate-50"
         id="phase-section"
       >
         <PhaseProgress
