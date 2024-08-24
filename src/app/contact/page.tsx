@@ -1,3 +1,9 @@
+"use client";
+import { generateClient } from "aws-amplify/data";
+import type { Schema } from "@/amplify/data/resource";
+
+const client = generateClient<Schema>(); // use this Data client for CRUDL requests
+
 import PricingPackage from "@/src/components/pricing-package";
 import { cormorant } from "@/src/lib/fonts";
 
