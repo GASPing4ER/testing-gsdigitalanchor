@@ -16,9 +16,7 @@ const Header = () => {
     const section = document.getElementById("first-section");
     if (section) {
       const sectionTop = section!.offsetTop;
-      const sectionBottom = sectionTop + section!.offsetHeight;
       const scrollY = window.scrollY;
-      console.log(scrollY, sectionTop, sectionBottom);
       if (scrollY >= sectionTop) {
         setHeaderBg("blue"); // Change this to the color you want
       } else {
