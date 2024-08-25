@@ -11,9 +11,31 @@ export default function PricingPackage() {
     e.preventDefault();
 
     if (!name || !email) {
-      alert("Fill out the form!");
+      console.log("Fill out the form!");
       return;
     }
+    try {
+      const response = await fetch("/api/pricing-guide", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          first_name: name,
+        }),
+      });
+      const data = await response.json();
+      if (response.status >= 400) {
+        console.error("Error subscribing to the newsletter:", data);
+        return;
+      }
+      console.log("Successfully subscribed:", data);
+    } catch (error) {
+      console.error("Error subscribing to the newsletter:", error);
+    }
+    setEmail("");
+    setName("");
   };
 
   return (

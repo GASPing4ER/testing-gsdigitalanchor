@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { cormorant } from "../lib/fonts";
@@ -8,9 +8,38 @@ import { cormorant } from "../lib/fonts";
 const Footer = () => {
   const [email, setEmail] = useState("");
 
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!email) {
+      console.log("Fill out the form!");
+      return;
+    }
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+        }),
+      });
+      const data = await response.json();
+      if (response.status >= 400) {
+        console.error("Error subscribing to the newsletter:", data);
+        return;
+      }
+      console.log("Successfully subscribed:", data);
+    } catch (error) {
+      console.error("Error subscribing to the newsletter:", error);
+    }
+    setEmail("");
+  };
+
   return (
     <footer className="w-full bg-slate-900 text-slate-50 flex flex-col justify-center items-center gap-12 p-10 sm:px-0 sm:py-12">
-      <form className="flex flex-col gap-12">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-12">
         <h2 className="text-center font-semibold">
           SIGN UP FOR OUR NEWSLETTER:
         </h2>
@@ -27,7 +56,10 @@ const Footer = () => {
               className="bg-transparent sm:p-2 placeholder:text-slate-50 text-sm min-w-64"
             />
           </div>
-          <button className="cursor-pointer text-sm border-b border-slate-50 sm:border-none">
+          <button
+            type="submit"
+            className="cursor-pointer text-sm border-b border-slate-50 sm:border-none"
+          >
             SUBSCRIBE
           </button>
         </div>

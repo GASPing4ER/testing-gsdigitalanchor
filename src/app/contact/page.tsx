@@ -1,10 +1,8 @@
 "use client";
+
 import PricingPackage from "@/src/components/pricing-package";
 import { cormorant } from "@/src/lib/fonts";
 import { useState, ChangeEvent } from "react";
-import { push, ref, set } from "firebase/database";
-import { database } from "@/db";
-import { addContactToInquiry } from "@/src/lib/mailchimp";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +13,10 @@ const ContactPage = () => {
     budget: "",
     message: "",
   });
+  const [status, setStatus] = useState<number | null>(null);
+  const [message, setMessage] = useState<string>("");
+  const [buttonDisabled, setButtonDisabled] = useState<boolean>(false);
+  const [submitting, setSubmitting] = useState<boolean>(false);
 
   // Handler to update state on input change
   const handleInputChange = (
@@ -29,35 +31,57 @@ const ContactPage = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSubmitting(true);
+    // await addInquiryToFirebase(formData);
 
     try {
-      const usersRef = ref(database, "inquiry");
-      const newDataRef = push(usersRef);
-
-      set(newDataRef, {
-        name: formData.name,
-        email: formData.email,
-        brand: formData.brand,
-        services: formData.services,
-        budget: formData.budget,
-        message: formData.message,
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+        }),
       });
+      const data = await response.json();
+      if (data.status >= 400) {
+        setStatus(data.status);
+        setMessage(
+          "Error joining the newsletter. You can directly contact me at gasper@gsdigitalanchor.com."
+        );
+        setTimeout(() => {
+          setMessage("");
+          setButtonDisabled(false);
+        }, 2000);
+        return;
+      }
 
-      await addContactToInquiry(formData);
-      setFormData({
-        name: "",
-        email: "",
-        brand: "",
-        services: "",
-        budget: "",
-        message: "",
-      });
-      console.log("Inquiry sent successfully!");
+      setStatus(201);
+      setMessage("Thank you for subscribing my newsletter 👻.");
+      setTimeout(() => {
+        setMessage("");
+        setButtonDisabled(false);
+      }, 4000);
     } catch (error) {
-      console.error("Firebase Error!", error);
+      setStatus(500);
+      setMessage(
+        "Error joining the newsletter. You can directly contact me at gasper@gsdigitalanchor.com."
+      );
+      setTimeout(() => {
+        setMessage("");
+        setButtonDisabled(false);
+      }, 2000);
     }
+    setFormData({
+      name: "",
+      email: "",
+      brand: "",
+      services: "",
+      budget: "",
+      message: "",
+    });
   };
-
   return (
     <main>
       <div className="bg-slate-900 p-6 pt-24 sm:p-24 w-full" id="first-section">
@@ -80,6 +104,7 @@ const ContactPage = () => {
                 className="bg-transparent border-b border-slate-50 pb-4 w-full"
                 value={formData.name}
                 onChange={handleInputChange}
+                required
               />
               <input
                 type="email"
@@ -89,6 +114,7 @@ const ContactPage = () => {
                 className="bg-transparent border-b border-slate-50 pb-4 w-full"
                 value={formData.email}
                 onChange={handleInputChange}
+                required
               />
             </div>
             <input
@@ -99,6 +125,7 @@ const ContactPage = () => {
               className="bg-transparent border-b border-slate-50 pb-4 w-full"
               value={formData.brand}
               onChange={handleInputChange}
+              required
             />
             <input
               type="text"
@@ -108,6 +135,7 @@ const ContactPage = () => {
               className="bg-transparent border-b border-slate-50 pb-4 w-full"
               value={formData.services}
               onChange={handleInputChange}
+              required
             />
             <input
               type="text"
@@ -117,6 +145,7 @@ const ContactPage = () => {
               className="bg-transparent border-b border-slate-50 pb-4 w-full"
               value={formData.budget}
               onChange={handleInputChange}
+              required
             />
             <textarea
               id="message"
@@ -128,10 +157,20 @@ const ContactPage = () => {
             />
             <button
               type="submit"
-              className={`${cormorant.className} bg-[#AB7952] text-slate-50 px-8 py-2`}
+              className={`${cormorant.className} bg-[#AB7952] text-slate-50 px-8 py-2 disabled:opacity-80`}
+              disabled={buttonDisabled}
             >
-              SUBMIT FORM
+              {submitting ? "SUBMITTING" : "SUBMIT FORM"}
             </button>
+            {message && (
+              <p
+                className={`${
+                  status !== 201 ? "text-red-500" : "text-green-500"
+                } pt-4 font-black`}
+              >
+                {message}
+              </p>
+            )}
           </form>
         </div>
       </div>
