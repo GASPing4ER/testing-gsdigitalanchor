@@ -1,17 +1,7 @@
 "use client";
-import { generateClient } from "aws-amplify/data";
-import type { Schema } from "@/amplify/data/resource";
 import PricingPackage from "@/src/components/pricing-package";
 import { cormorant } from "@/src/lib/fonts";
 import { useState, ChangeEvent } from "react";
-import { Amplify } from "aws-amplify";
-import outputs from "@/amplify_outputs.json";
-
-Amplify.configure(outputs);
-console.log("Amplify configured with SSR support");
-
-const client = generateClient<Schema>(); // Use this Data client for CRUDL requests
-console.log("Data client generated");
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -36,15 +26,6 @@ const ContactPage = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    try {
-      console.log("Submitting form", formData);
-      const res = await client.models.FormSubmission.create({
-        ...formData,
-      });
-      console.log(res);
-    } catch (error) {
-      console.error("Error submitting form", error);
-    }
   };
 
   return (
