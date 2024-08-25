@@ -2,6 +2,8 @@
 import PricingPackage from "@/src/components/pricing-package";
 import { cormorant } from "@/src/lib/fonts";
 import { useState, ChangeEvent } from "react";
+import { push, ref, set } from "firebase/database";
+import { database } from "@/db";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -26,6 +28,31 @@ const ContactPage = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    try {
+      const usersRef = ref(database, "inquiry");
+      const newDataRef = push(usersRef);
+
+      set(newDataRef, {
+        name: formData.name,
+        email: formData.email,
+        brand: formData.brand,
+        services: formData.services,
+        budget: formData.budget,
+        message: formData.message,
+      });
+      setFormData({
+        name: "",
+        email: "",
+        brand: "",
+        services: "",
+        budget: "",
+        message: "",
+      });
+      console.log("Inquiry sent successfully!");
+    } catch (error) {
+      console.error("Firebase Error!", error);
+    }
   };
 
   return (
