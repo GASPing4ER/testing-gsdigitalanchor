@@ -4,6 +4,7 @@ import { cormorant } from "@/src/lib/fonts";
 import { useState, ChangeEvent } from "react";
 import { push, ref, set } from "firebase/database";
 import { database } from "@/db";
+import { addContactToInquiry } from "@/src/lib/mailchimp";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -41,6 +42,8 @@ const ContactPage = () => {
         budget: formData.budget,
         message: formData.message,
       });
+
+      await addContactToInquiry(formData);
       setFormData({
         name: "",
         email: "",
