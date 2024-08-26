@@ -3,8 +3,7 @@ import { montserrat } from "@/src/lib/fonts";
 import "./globals.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Head from "next/head";
-import Cookies from "../components/cookies";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "G.S. Digital Anchor - Marketing Agency",
@@ -22,9 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <Cookies />
-      </Head>
+      <head>
+        <Script
+          id="cookieyes"
+          type="text/javascript"
+          src="https://cdn-cookieyes.com/client_data/d78cd0495a725399a0eb266e/script.js"
+        />
+      </head>
       <body className={montserrat.className}>
         <Header />
         {children}
