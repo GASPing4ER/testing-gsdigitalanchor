@@ -1,43 +1,13 @@
-"use client";
-
-import Image from "next/image";
 import Logo from "./logo";
 import Navigation from "./nav";
-
-import { useEffect, useState } from "react";
 
 import Link from "next/link";
 import Socials from "./socials";
 
 const Header = () => {
-  const [headerBg, setHeaderBg] = useState("transparent");
-
-  const handleScroll = () => {
-    const section = document.getElementById("first-section");
-    if (section) {
-      const sectionTop = section!.offsetTop;
-      const scrollY = window.scrollY;
-      if (scrollY >= sectionTop) {
-        setHeaderBg("blue"); // Change this to the color you want
-      } else {
-        setHeaderBg("transparent");
-      }
-    } else {
-      setHeaderBg("transparent");
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <header
-      className={`fixed top-0 left-0 ${
-        headerBg === "transparent" ? "bg-transparent" : "bg-slate-900"
-      } w-full flex items-center justify-center sm:justify-between border-b border-slate-50 text-slate-50 px-6 sm:px-20 py-6 z-20`}
+      className={`fixed top-0 left-0 bg-slate-900 w-full flex items-center justify-center sm:justify-between border-b border-slate-50 text-slate-50 px-6 sm:px-20 py-6 z-20`}
     >
       <div className="flex items-center gap-6">
         <Logo />

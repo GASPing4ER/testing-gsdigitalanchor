@@ -1,5 +1,6 @@
 import OurValues from "@/src/components/our-values";
 import { cormorant } from "@/src/lib/fonts";
+import Link from "next/link";
 
 const AboutPage = () => {
   return (
@@ -16,9 +17,12 @@ const AboutPage = () => {
             An authentic website oriented agency for vibrant brands with a
             unique vision.
           </p>
-          <button className="text-xs text-slate-50 px-6 py-3 border border-slate-50 rounded-2xl w-fit">
+          <Link
+            href="/contact"
+            className="text-xs text-slate-50 px-6 py-3 border border-slate-50 rounded-2xl w-fit"
+          >
             GET IN TOUCH
-          </button>
+          </Link>
         </div>
       </div>
       <div
@@ -44,9 +48,12 @@ const AboutPage = () => {
           We are committed to crafting bespoke digital strategies, branding, and
           marketing to enhance your brand’s legacy and prestige.
         </p>
-        <button className="text-xs text-slate-900 px-6 py-3 border border-slate-900 rounded-2xl w-fit">
+        <Link
+          href="/services"
+          className="text-xs text-slate-900 px-6 py-3 border border-slate-900 rounded-2xl w-fit"
+        >
           LEARN MORE
-        </button>
+        </Link>
         <h3 className="text-[#AB7952] text-xs tracking-widest">OUR VISION</h3>
         <h2
           className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-900`}
@@ -57,9 +64,12 @@ const AboutPage = () => {
           We aspire to be the digital agency of choice for luxury brands seeking
           a partner that understands their unique vision and values.
         </p>
-        <button className="text-xs text-slate-900 px-6 py-3 border border-slate-900 rounded-2xl w-fit">
+        <Link
+          href="/contact"
+          className="text-xs text-slate-900 px-6 py-3 border border-slate-900 rounded-2xl w-fit"
+        >
           CONTACT US
-        </button>
+        </Link>
       </div>
     </main>
   );

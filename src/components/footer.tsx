@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { cormorant } from "../lib/fonts";
+import Link from "next/link";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -68,9 +69,15 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <h2 className={`${cormorant.className} font-bold text-lg`}>INFO</h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
-            <li>Cookie Policy</li>
+            <Link href="privacy-policy">
+              <li>Privacy Policy</li>
+            </Link>
+            <Link href="terms-of-service">
+              <li>Terms of Service</li>
+            </Link>
+            <Link href="cookie-policy">
+              <li>Cookie Policy</li>
+            </Link>
           </ul>
         </div>
         <div className="flex flex-col gap-3">
@@ -78,17 +85,29 @@ const Footer = () => {
             COMPANY
           </h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>About Us</li>
-            <li>Our Expertise</li>
-            <li>Case Studies</li>
+            <Link href="/about">
+              <li>About Us</li>
+            </Link>
+            <Link href="/services">
+              <li>Our Expertise</li>
+            </Link>
+            <Link href="/case-studies">
+              <li>Case Studies</li>
+            </Link>
           </ul>
         </div>
         <div className="flex flex-col gap-3">
           <h2 className={`${cormorant.className} font-bold text-lg`}>SOCIAL</h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>Instagram</li>
-            <li>LinkedIn</li>
-            <li>X / Twitter</li>
+            <Link href="https://www.instagram.com/gsdigitalanchor/">
+              <li>Instagram</li>
+            </Link>
+            <Link href="https://www.linkedin.com/company/gs-digital-anchor/">
+              <li>LinkedIn</li>
+            </Link>
+            <Link href="https://x.com">
+              <li>X / Twitter</li>
+            </Link>
           </ul>
         </div>
         <div className="flex flex-col gap-3">
@@ -96,8 +115,12 @@ const Footer = () => {
             CONTACT
           </h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>info@gsdigitalanchor.com</li>
-            <li>+386 68 173 209</li>
+            <Link href="mailto:info@gsdigitalanchor.com">
+              <li>info@gsdigitalanchor.com</li>
+            </Link>
+            <Link href="callto:+38668173209">
+              <li>+386 68 173 209</li>
+            </Link>
             <li>Ljubljana, Slovenia</li>
           </ul>
         </div>
