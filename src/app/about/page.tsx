@@ -1,6 +1,24 @@
-import OurValues from "@/src/components/our-values";
-import { cormorant } from "@/src/lib/fonts";
+import { Metadata } from "next";
 import Link from "next/link";
+
+import { cormorant } from "@/src/lib/fonts";
+
+import OurValues from "@/src/components/our-values";
+
+export const metadata: Metadata = {
+  title: "About Us | G.S. Digital Anchor - Your Partner in Digital Marketing",
+  description:
+    "Learn more about G.S. Digital Anchor, our mission, values, and the values behind our success. Discover why we're the trusted choice for businesses seeking online growth.",
+  keywords: [
+    "About our luxury marketing agency",
+    "Exclusive digital marketing experts",
+    "High-end marketing agency mission",
+    "Meet our elite marketing team",
+    "Why choose G.S. Digital Anchor for luxury brands",
+    "Prestigious digital marketing agency story",
+    "Trusted marketing agency for affluent clients",
+  ],
+};
 
 const AboutPage = () => {
   return (

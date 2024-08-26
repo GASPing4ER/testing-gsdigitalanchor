@@ -1,8 +1,26 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Metadata } from "next";
+
+import { cormorant } from "@/src/lib/fonts";
 
 import luxuryLiving from "@/public/luxury-living.jpg";
-import Link from "next/link";
-import { cormorant } from "@/src/lib/fonts";
+
+export const metadata: Metadata = {
+  title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
+  description:
+    "Stay updated with the latest trends and tips in digital marketing. Read expert insights, case studies, and success stories from G.S. Digital Anchor.",
+  keywords: [
+    "Luxury digital marketing insights",
+    "Latest luxury marketing trends",
+    "SEO tips for luxury brands",
+    "Social media strategies for affluent clients",
+    "Case studies in high-end digital marketing",
+    "Content marketing for exclusive brands",
+    "Expert luxury marketing blog",
+    "Success stories in luxury brand marketing",
+  ],
+};
 
 const InsightsPage = () => {
   return (

@@ -8,21 +8,21 @@ import Link from "next/link";
 const Socials = () => {
   return (
     <div className="hidden lg:flex gap-2">
-      <div className="border border-[#AB7952] rounded-full p-2">
-        <Link href="https://www.instagram.com/gsdigitalanchor/">
+      <Link href="https://www.instagram.com/gsdigitalanchor/">
+        <div className="border border-[#AB7952] rounded-full p-2">
           <Image src={instagramIcon} alt="Twitter" className="w-4 h-4" />
-        </Link>
-      </div>
-      <div className="border border-slate-50 rounded-full p-2">
-        <Link href="https://www.linkedin.com/company/gs-digital-anchor/">
+        </div>
+      </Link>
+      <Link href="https://www.linkedin.com/company/gs-digital-anchor/">
+        <div className="border border-slate-50 rounded-full p-2">
           <Image src={linkedinIcon} alt="Twitter" className="w-4 h-4" />
-        </Link>
-      </div>
-      <div className="border border-[#AB7952] rounded-full p-2">
-        <Link href="https://x.com">
+        </div>
+      </Link>
+      <Link href="https://x.com">
+        <div className="border border-[#AB7952] rounded-full p-2">
           <Image src={twitterIcon} alt="Twitter" className="w-4 h-4" />
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>
   );
 };

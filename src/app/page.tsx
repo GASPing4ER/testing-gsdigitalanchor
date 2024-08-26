@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { cormorant } from "../lib/fonts";
 import Image from "next/image";
+import { Metadata } from "next";
+
+import { cormorant } from "../lib/fonts";
 
 import supple from "@/public/images/grid/supple.jpg";
 import supple_2 from "@/public/images/grid/supple-2.jpeg";
@@ -8,8 +10,24 @@ import vitus from "@/public/images/grid/vitus.jpg";
 import vitus_2 from "@/public/images/grid/vitus-2.jpg";
 import glowinstudio from "@/public/images/grid/glowinstudio.jpg";
 import glowinstudio_2 from "@/public/images/grid/glowinstudio-2.jpg";
+
 import Testimonials from "../components/testimonials";
 import PricingPackage from "../components/pricing-package";
+
+export const metadata: Metadata = {
+  title: "G.S. Digital Anchor | Leading Marketing Agency for Online Growth",
+  description:
+    "Welcome to G.S. Digital Anchor, the premier marketing agency dedicated to helping businesses elevate their online presence. Explore our services to see how we can drive your growth.",
+  keywords: [
+    "Luxury digital marketing agency",
+    "Exclusive online growth strategies",
+    "High-end marketing services",
+    "Luxury brand digital marketing",
+    "Website development for luxury brands",
+    "Prestigious marketing agency",
+    "Digital marketing for affluent clients",
+  ],
+};
 
 export default function Home() {
   return (
