@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <main>
-      <div className="bg-slate-900 p-6 pt-24 sm:p-24 w-full" id="first-section">
+      <div className="bg-slate-900 p-6 pt-24 sm:p-24 w-full">
         <div className="relative w-full h-screen flex flex-col items-center text-center max-w-[600px] mx-auto">
           <h1
             className={`${cormorant.className} text-slate-50 text-7xl pt-10 pb-16 md:pb-24`}
