@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
-import { montserrat } from "@/src/lib/fonts";
 import "./globals.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
+
+import type { Metadata } from "next";
 import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
+
+import { montserrat } from "@/src/lib/fonts";
+
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export const metadata: Metadata = {
   title: "G.S. Digital Anchor - Marketing Agency",
