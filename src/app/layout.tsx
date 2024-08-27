@@ -43,8 +43,8 @@ export default function RootLayout({
           type="text/javascript"
           src="https://cdn-cookieyes.com/client_data/d78cd0495a725399a0eb266e/script.js"
         />
+        <GoogleAnalytics />
       </head>
-      <GoogleAnalytics />
       <body className={montserrat.className}>
         <Header />
         {children}
