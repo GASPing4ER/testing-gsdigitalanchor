@@ -23,7 +23,7 @@ export const values = [
 
 export const servicesData = [
   {
-    title: "Discovery & Strategy",
+    title: "Strategy & Consultation",
     description:
       "For brands that are just starting out and need to build a strong foundation.",
     services: [

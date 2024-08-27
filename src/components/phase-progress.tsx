@@ -30,7 +30,7 @@ const PhaseProgress = ({
             selectedOption >= 0 ? "text-slate-900" : "text-slate-500/50"
           }`}
         >
-          DISCOVERY & STRATEGY
+          STRATEGY & CONSULTATION
         </h3>
       </div>
       <div
