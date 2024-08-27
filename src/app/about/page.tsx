@@ -45,7 +45,8 @@ const AboutPage = () => {
       </div>
       <div
         className="w-full min-h-screen flex flex-col gap-8 p-6 sm:p-24 bg-slate-900"
-        id="first-section"
+        role="region"
+        aria-labelledby="our-values-section"
       >
         <h3 className="text-[#AB7952] text-xs tracking-widest">OUR VALUES</h3>
         <p className="text-slate-50 text-sm sm:text-base max-w-[700px]">
@@ -55,7 +56,11 @@ const AboutPage = () => {
         </p>
         <OurValues />
       </div>
-      <div className="w-full flex flex-col gap-6 p-6 sm:p-24 bg-slate-50">
+      <div
+        className="w-full flex flex-col gap-6 p-6 sm:p-24 bg-slate-50"
+        role="region"
+        aria-labelledby="our-mission-section"
+      >
         <h3 className="text-[#AB7952] text-xs tracking-widest">OUR MISSION</h3>
         <h2
           className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-900`}
@@ -72,6 +77,12 @@ const AboutPage = () => {
         >
           LEARN MORE
         </Link>
+      </div>
+      <div
+        className="w-full flex flex-col gap-6 p-6 sm:p-24 bg-slate-50"
+        role="region"
+        aria-labelledby="our-vision-section"
+      >
         <h3 className="text-[#AB7952] text-xs tracking-widest">OUR VISION</h3>
         <h2
           className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-900`}

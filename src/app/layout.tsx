@@ -12,6 +12,21 @@ export const metadata: Metadata = {
   keywords: [
     "marketing, digital marketing, luxury marketing, marketing agency",
   ],
+  openGraph: {
+    type: "website",
+    url: "https://gsdigitalanchor.com/",
+    title: "G.S. Digital Anchor - Marketing Agency",
+    description:
+      "G.S. Digital Anchor is a marketing agency that helps businesses grow their online presence.",
+    images: [
+      {
+        url: "https://firebasestorage.googleapis.com/v0/b/g-s-digital-anchor.appspot.com/o/openGraph.png?alt=media&token=037aa5b0-224b-48c7-82ee-5a4294b6a60e",
+        width: 800,
+        height: 600,
+        alt: "G.S. Digital Anchor - About Us",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
