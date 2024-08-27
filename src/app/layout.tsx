@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Script from "next/script";
+import GoogleAnalytics from "../components/google-analytics";
 
 export const metadata: Metadata = {
   title: "G.S. Digital Anchor - Marketing Agency",
@@ -43,6 +44,7 @@ export default function RootLayout({
           src="https://cdn-cookieyes.com/client_data/d78cd0495a725399a0eb266e/script.js"
         />
       </head>
+      <GoogleAnalytics />
       <body className={montserrat.className}>
         <Header />
         {children}
