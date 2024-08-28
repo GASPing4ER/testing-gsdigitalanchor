@@ -56,12 +56,12 @@ export default function Home() {
         className="w-full min-h-screen bg-slate-900 p-6 sm:p-24 flex flex-col gap-8 justify-center anchor-cursor"
         id="first-section"
       >
-        <h3 className="text-xs tracking-widest text-[#AB7952]">SERVICES</h3>
-        <h2
+        <h2 className="text-xs tracking-widest text-[#AB7952]">SERVICES</h2>
+        <h3
           className={`${cormorant.className} font-semibold text-slate-50 text-3xl sm:text-5xl`}
         >
           Our Expertise
-        </h2>
+        </h3>
         <p className="text-slate-50 max-w-[600px] text-sm sm:text-base">
           Our full-service expertise spans digital strategy, content creation,
           web development, and more—designed exclusively for luxury.

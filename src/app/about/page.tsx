@@ -49,7 +49,7 @@ const AboutPage = () => {
         role="region"
         aria-labelledby="our-values-section"
       >
-        <h3 className="text-[#AB7952] text-xs tracking-widest">OUR VALUES</h3>
+        <h2 className="text-[#AB7952] text-xs tracking-widest">OUR VALUES</h2>
         <p className="text-slate-50 text-sm sm:text-base max-w-[700px]">
           This is the <span className="italic">fabric of our culture</span> and
           the framework for all decisions made within these walls. Heads up,
@@ -62,7 +62,7 @@ const AboutPage = () => {
         role="region"
         aria-labelledby="our-mission-section"
       >
-        <h3 className="text-[#AB7952] text-xs tracking-widest">OUR MISSION</h3>
+        <h2 className="text-[#AB7952] text-xs tracking-widest">OUR MISSION</h2>
         <h2
           className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-900`}
         >
@@ -85,7 +85,7 @@ const AboutPage = () => {
         role="region"
         aria-labelledby="our-vision-section"
       >
-        <h3 className="text-[#AB7952] text-xs tracking-widest">OUR VISION</h3>
+        <h2 className="text-[#AB7952] text-xs tracking-widest">OUR VISION</h2>
         <h2
           className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-900`}
         >

@@ -19,14 +19,14 @@ const ServicesContainer = () => {
         className="w-full min-h-screen px-6 py-24 sm:p-24 flex flex-col justify-center gap-8 bg-slate-900"
         id="first-section"
       >
-        <h3 className="text-[#AB7952] uppercase text-xs tracking-widest">
+        <h1 className="text-[#AB7952] uppercase text-xs tracking-widest">
           Discover the Next Step in Elevating Your Luxury Brand
-        </h3>
-        <h1
+        </h1>
+        <h2
           className={`${cormorant.className} text-4xl sm:text-6xl font-semibold text-slate-50`}
         >
           Find Your Perfect Starting Point
-        </h1>
+        </h2>
         <p className="text-slate-50 max-w-[900px] italic">
           Whether you’re just starting out or looking to refine your digital
           presence, our tailored approach ensures you’re in the right hands.
