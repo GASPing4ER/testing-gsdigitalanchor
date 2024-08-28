@@ -2,6 +2,7 @@
 
 import { cormorant } from "@/src/lib/fonts";
 import { sendGAEvent } from "@next/third-parties/google";
+import { useRouter } from "next/router";
 
 import { useState, ChangeEvent } from "react";
 
@@ -18,6 +19,8 @@ const ContactForm = () => {
   const [message, setMessage] = useState<string>("");
   const [buttonDisabled, setButtonDisabled] = useState<boolean>(false);
   const [submitting, setSubmitting] = useState<boolean>(false);
+
+  const router = useRouter();
 
   // Handler to update state on input change
   const handleInputChange = (
@@ -83,6 +86,7 @@ const ContactForm = () => {
       message: "",
     });
     setSubmitting(false);
+    router.push("/thank-you");
   };
   return (
     <form
