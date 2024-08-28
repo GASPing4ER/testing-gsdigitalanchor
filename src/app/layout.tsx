@@ -2,7 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 import { montserrat } from "@/src/lib/fonts";
 
@@ -49,6 +49,7 @@ export default function RootLayout({
         <GoogleAnalytics
           gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string}
         />
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID as string} />
       </head>
       <body className={montserrat.className}>
         <Header />
