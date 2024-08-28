@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { cormorant } from "../lib/fonts";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { sendGAEvent } from "@next/third-parties/google";
 
 type ServicesFormProps = {
   selectedOption: number;
@@ -78,6 +81,13 @@ const ServicesForm = ({ selectedOption, handleChange }: ServicesFormProps) => {
         href="#phase-section"
         className="text-slate-50 hover:text-[#AB7952] w-fit py-2 px-4 border border-slate-50 hover:border-[#AB7952] rounded-full flex gap-4"
         aria-label="Get started with G.S. Digital Anchor"
+        onClick={() =>
+          sendGAEvent("phase chosen", "buttonClicked", {
+            action: "click",
+            category: "services",
+            label: { selectedOption },
+          })
+        }
       >
         GET STARTED
         <ArrowRightIcon className="w-6 h-6" />
