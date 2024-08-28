@@ -82,10 +82,8 @@ const ServicesForm = ({ selectedOption, handleChange }: ServicesFormProps) => {
         className="text-slate-50 hover:text-[#AB7952] w-fit py-2 px-4 border border-slate-50 hover:border-[#AB7952] rounded-full flex gap-4"
         aria-label="Get started with G.S. Digital Anchor"
         onClick={() =>
-          sendGAEvent("phase chosen", "buttonClicked", {
-            action: "click",
-            category: "services",
-            label: { selectedOption },
+          sendGAEvent("event", "phase_chosen", {
+            value: selectedOption,
           })
         }
       >
