@@ -5,6 +5,7 @@ import { FormEvent, useState } from "react";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { cormorant } from "../lib/fonts";
 import Link from "next/link";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -61,6 +62,11 @@ const Footer = () => {
             type="submit"
             className="cursor-pointer text-sm border-b border-slate-50 sm:border-none"
             aria-label="Subscribe"
+            onClick={() =>
+              sendGAEvent("event", "newsletter_subscribed", {
+                email: email,
+              })
+            }
           >
             SUBSCRIBE
           </button>

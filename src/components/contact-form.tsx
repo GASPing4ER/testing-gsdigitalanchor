@@ -1,6 +1,7 @@
 "use client";
 
 import { cormorant } from "@/src/lib/fonts";
+import { sendGAEvent } from "@next/third-parties/google";
 
 import { useState, ChangeEvent } from "react";
 
@@ -153,6 +154,11 @@ const ContactForm = () => {
         className={`${cormorant.className} bg-[#AB7952] text-slate-50 px-8 py-2 disabled:opacity-80`}
         disabled={buttonDisabled}
         aria-label="Submit Form"
+        onClick={() =>
+          sendGAEvent("event", "inquiry_subscribed", {
+            email: formData.email,
+          })
+        }
       >
         {submitting ? "SUBMITTING" : "SUBMIT FORM"}
       </button>

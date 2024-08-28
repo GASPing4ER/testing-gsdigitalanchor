@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { cormorant } from "../lib/fonts";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function PricingPackage() {
   const [email, setEmail] = useState("");
@@ -74,6 +75,12 @@ export default function PricingPackage() {
         <button
           className="bg-slate-900 border border-slate-900 py-2 px-4 text-slate-50 cursor-pointer text-sm w-[175px] md:w-auto"
           aria-label="Subscribe"
+          onClick={() =>
+            sendGAEvent("event", "pricing_subscribed", {
+              name: name,
+              email: email,
+            })
+          }
         >
           SUBSCRIBE
         </button>

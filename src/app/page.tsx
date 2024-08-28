@@ -44,12 +44,13 @@ export default function Home() {
             We craft bespoke digital strategies, branding, and marketing to
             enhance your brand’s legacy and prestige.
           </p>
-          <button
+          <Link
+            href="/services"
             className="text-xs text-slate-50 px-6 py-3 border border-slate-50 rounded-2xl w-fit"
             aria-label="Our Expertise"
           >
             OUR EXPERTISE
-          </button>
+          </Link>
         </div>
       </div>
       <div
