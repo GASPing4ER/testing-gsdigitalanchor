@@ -2,7 +2,7 @@
 
 import { cormorant } from "@/src/lib/fonts";
 import { sendGAEvent } from "@next/third-parties/google";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 import { useState, ChangeEvent } from "react";
 
