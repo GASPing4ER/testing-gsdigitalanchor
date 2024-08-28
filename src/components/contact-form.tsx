@@ -81,6 +81,7 @@ const ContactForm = () => {
       budget: "",
       message: "",
     });
+    setSubmitting(false);
   };
   return (
     <form
