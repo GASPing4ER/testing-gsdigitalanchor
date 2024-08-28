@@ -4,7 +4,9 @@ import { cormorant } from "../lib/fonts";
 const Logo = () => {
   return (
     <div className={`${cormorant.className} text-lg`}>
-      <Link href="/">G.S. DIGITAL ANCHOR</Link>
+      <Link href="/" aria-label="G.S. Digital Anchor">
+        G.S. DIGITAL ANCHOR
+      </Link>
     </div>
   );
 };

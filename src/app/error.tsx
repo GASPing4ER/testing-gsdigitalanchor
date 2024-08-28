@@ -26,12 +26,14 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
         <button
           onClick={reset}
           className="px-6 py-3 bg-slate-50 text-slate-900 rounded-md transition"
+          aria-label="Try Again"
         >
           Try Again
         </button>
         <Link
           href="/"
           className="px-6 py-3 bg-slate-900 text-slate-50 border border-slate-50 rounded-md transition"
+          aria-label="Go Back Home"
         >
           Go Back Home
         </Link>

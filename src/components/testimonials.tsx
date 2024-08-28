@@ -75,6 +75,7 @@ export default function Testimonials() {
       <button
         className="py-2 px-4 rounded-2xl text-sm"
         onClick={() => handlePrev()}
+        aria-label="Previous"
       >
         <ArrowLeftIcon className="w-6 h-6" />
       </button>
@@ -82,6 +83,7 @@ export default function Testimonials() {
       <button
         className="py-2 px-4 rounded-2xl text-sm"
         onClick={() => handleNext()}
+        aria-label="Next"
       >
         <ArrowRightIcon className="w-6 h-6" />
       </button>

@@ -152,6 +152,7 @@ const ContactForm = () => {
         type="submit"
         className={`${cormorant.className} bg-[#AB7952] text-slate-50 px-8 py-2 disabled:opacity-80`}
         disabled={buttonDisabled}
+        aria-label="Submit Form"
       >
         {submitting ? "SUBMITTING" : "SUBMIT FORM"}
       </button>

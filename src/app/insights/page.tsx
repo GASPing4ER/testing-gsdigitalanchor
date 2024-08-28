@@ -31,6 +31,7 @@ const InsightsPage = () => {
       <Link
         href="/insights/role-of-branding-and-identity"
         className="h-[300px] w-[350px] border flex flex-col gap-2"
+        aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
       >
         <Image
           src={luxuryLiving}

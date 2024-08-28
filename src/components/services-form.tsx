@@ -77,6 +77,7 @@ const ServicesForm = ({ selectedOption, handleChange }: ServicesFormProps) => {
       <Link
         href="#phase-section"
         className="text-slate-50 hover:text-[#AB7952] w-fit py-2 px-4 border border-slate-50 hover:border-[#AB7952] rounded-full flex gap-4"
+        aria-label="Get started with G.S. Digital Anchor"
       >
         GET STARTED
         <ArrowRightIcon className="w-6 h-6" />

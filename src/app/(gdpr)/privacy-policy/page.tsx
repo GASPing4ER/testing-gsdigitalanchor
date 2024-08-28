@@ -117,6 +117,7 @@ const PrivacyPolicyPage = () => {
               <Link
                 className="font-semibold"
                 href="mailto:privacy@gsdigitalanchor.com"
+                aria-label="Email us"
               >
                 privacy@gsdigitalanchor.com
               </Link>
@@ -142,6 +143,7 @@ const PrivacyPolicyPage = () => {
               <Link
                 className="font-semibold"
                 href="mailto:privacy@gsdigitalanchor.com"
+                aria-label="Email us"
               >
                 privacy@gsdigitalanchor.com
               </Link>

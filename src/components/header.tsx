@@ -19,6 +19,7 @@ const Header = () => {
         <Link
           href="/contact"
           className="text-xs px-6 py-2 border border-slate-50 rounded-2xl hover:bg-slate-50 hover:text-slate-900"
+          aria-label="Contact Us"
         >
           CONTACT
         </Link>

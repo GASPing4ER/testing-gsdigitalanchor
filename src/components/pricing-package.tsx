@@ -71,7 +71,10 @@ export default function PricingPackage() {
           required
           className="bg-transparent border border-slate-900 p-2 m-1 placeholder:text-slate-900 text-sm w-[175px]"
         />
-        <button className="bg-slate-900 border border-slate-900 py-2 px-4 text-slate-50 cursor-pointer text-sm w-[175px] md:w-auto">
+        <button
+          className="bg-slate-900 border border-slate-900 py-2 px-4 text-slate-50 cursor-pointer text-sm w-[175px] md:w-auto"
+          aria-label="Subscribe"
+        >
           SUBSCRIBE
         </button>
       </form>

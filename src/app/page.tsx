@@ -44,7 +44,10 @@ export default function Home() {
             We craft bespoke digital strategies, branding, and marketing to
             enhance your brand’s legacy and prestige.
           </p>
-          <button className="text-xs text-slate-50 px-6 py-3 border border-slate-50 rounded-2xl w-fit">
+          <button
+            className="text-xs text-slate-50 px-6 py-3 border border-slate-50 rounded-2xl w-fit"
+            aria-label="Our Expertise"
+          >
             OUR EXPERTISE
           </button>
         </div>
@@ -76,7 +79,11 @@ export default function Home() {
                   brand’s heritage and goals, ensuring every move enhances your
                   legacy.
                 </p>
-                <Link href="/contact" className="text-xs">
+                <Link
+                  href="/contact"
+                  className="text-xs"
+                  aria-label="Contact Us"
+                >
                   CONTACT US
                 </Link>
               </div>
@@ -92,7 +99,11 @@ export default function Home() {
                   capture the essence of your luxury brand, making a lasting
                   impression across all digital platforms.
                 </p>
-                <Link href="/contact" className="text-xs">
+                <Link
+                  href="/contact"
+                  className="text-xs"
+                  aria-label="Contact Us"
+                >
                   CONTACT US
                 </Link>
               </div>
@@ -110,7 +121,11 @@ export default function Home() {
                   elegance, offering seamless user experiences that turn
                   visitors into loyal customers.
                 </p>
-                <Link href="/contact" className="text-xs">
+                <Link
+                  href="/contact"
+                  className="text-xs"
+                  aria-label="Contact Us"
+                >
                   CONTACT US
                 </Link>
               </div>
@@ -126,7 +141,11 @@ export default function Home() {
                   reaching the right audience with the right message, and
                   driving measurable results.
                 </p>
-                <Link href="/contact" className="text-xs">
+                <Link
+                  href="/contact"
+                  className="text-xs"
+                  aria-label="Contact Us"
+                >
                   CONTACT US
                 </Link>
               </div>
@@ -157,6 +176,7 @@ export default function Home() {
           <Link
             href="/portfolio"
             className="text-xs border-b border-slate-900 w-fit"
+            aria-label="View More"
           >
             VIEW MORE
           </Link>

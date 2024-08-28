@@ -60,6 +60,7 @@ const Footer = () => {
           <button
             type="submit"
             className="cursor-pointer text-sm border-b border-slate-50 sm:border-none"
+            aria-label="Subscribe"
           >
             SUBSCRIBE
           </button>
@@ -69,15 +70,21 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <h2 className={`${cormorant.className} font-bold text-lg`}>INFO</h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <Link href="privacy-policy">
-              <li>Privacy Policy</li>
-            </Link>
-            <Link href="terms-of-service">
-              <li>Terms of Service</li>
-            </Link>
-            <Link href="cookie-policy">
-              <li>Cookie Policy</li>
-            </Link>
+            <li>
+              <Link href="privacy-policy" aria-label="Privacy Policy">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="terms-of-service" aria-label="Terms of Service">
+                Terms of Service
+              </Link>
+            </li>
+            <li>
+              <Link href="cookie-policy" aria-label="Cookie Policy">
+                Cookie Policy
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col gap-3">
@@ -85,29 +92,47 @@ const Footer = () => {
             COMPANY
           </h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <Link href="/about">
-              <li>About Us</li>
-            </Link>
-            <Link href="/services">
-              <li>Our Expertise</li>
-            </Link>
-            <Link href="/case-studies">
-              <li>Case Studies</li>
-            </Link>
+            <li>
+              <Link href="/about" aria-label="About Us">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link href="/services" aria-label="Our Expertise">
+                Our Expertise
+              </Link>
+            </li>
+            <li>
+              <Link href="/case-studies" aria-label="Case Studies">
+                Case Studies
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col gap-3">
           <h2 className={`${cormorant.className} font-bold text-lg`}>SOCIAL</h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <Link href="https://www.instagram.com/gsdigitalanchor/">
-              <li>Instagram</li>
-            </Link>
-            <Link href="https://www.linkedin.com/company/gs-digital-anchor/">
-              <li>LinkedIn</li>
-            </Link>
-            <Link href="https://x.com">
-              <li>X / Twitter</li>
-            </Link>
+            <li>
+              <Link
+                href="https://www.instagram.com/gsdigitalanchor/"
+                aria-label="Instagram"
+              >
+                Instagram
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.linkedin.com/company/gs-digital-anchor/"
+                aria-label="LinkedIn"
+              >
+                LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link href="https://x.com" aria-label="X / Twitter">
+                X / Twitter
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col gap-3">
@@ -115,12 +140,19 @@ const Footer = () => {
             CONTACT
           </h2>
           <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <Link href="mailto:info@gsdigitalanchor.com">
-              <li>info@gsdigitalanchor.com</li>
-            </Link>
-            <Link href="callto:+38668173209">
-              <li>+386 68 173 209</li>
-            </Link>
+            <li>
+              <Link
+                href="mailto:info@gsdigitalanchor.com"
+                aria-label="Email us"
+              >
+                info@gsdigitalanchor.com
+              </Link>
+            </li>
+            <li>
+              <Link href="callto:+38668173209" aria-label="Call us">
+                +386 68 173 209
+              </Link>
+            </li>
             <li>Ljubljana, Slovenia</li>
           </ul>
         </div>

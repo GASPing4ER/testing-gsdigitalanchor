@@ -14,6 +14,7 @@ export default function NotFound() {
       <Link
         href="/"
         className="px-6 py-3 bg-slate-50 text-slate-900 rounded-md hover:bg-slate-50/50 transition"
+        aria-label="Go Back Home"
       >
         Go Back Home
       </Link>

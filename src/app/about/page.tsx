@@ -38,6 +38,7 @@ const AboutPage = () => {
           <Link
             href="/contact"
             className="text-xs text-slate-50 px-6 py-3 border border-slate-50 rounded-2xl w-fit"
+            aria-label="Get in touch with G.S. Digital Anchor"
           >
             GET IN TOUCH
           </Link>
@@ -74,6 +75,7 @@ const AboutPage = () => {
         <Link
           href="/services"
           className="text-xs text-slate-900 px-6 py-3 border border-slate-900 rounded-2xl w-fit"
+          aria-label="Learn more about our luxury marketing services"
         >
           LEARN MORE
         </Link>
@@ -96,6 +98,7 @@ const AboutPage = () => {
         <Link
           href="/contact"
           className="text-xs text-slate-900 px-6 py-3 border border-slate-900 rounded-2xl w-fit"
+          aria-label="Contact G.S. Digital Anchor for luxury marketing services"
         >
           CONTACT US
         </Link>

@@ -128,6 +128,7 @@ const TermsOfServicePage = () => {
                 <Link
                   className="font-semibold"
                   href="mailto:info@gsdigitalanchor.com"
+                  aria-label="Email us"
                 >
                   info@gsdigitalanchor.com
                 </Link>

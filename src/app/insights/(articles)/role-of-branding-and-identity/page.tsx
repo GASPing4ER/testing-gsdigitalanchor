@@ -207,6 +207,7 @@ const InsightPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-luxury-gold hover:text-luxury-dark transition duration-300"
+            aria-label="Share on Twitter"
           >
             Twitter
           </a>
@@ -217,6 +218,7 @@ const InsightPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-luxury-gold hover:text-luxury-dark transition duration-300"
+            aria-label="Share on Facebook"
           >
             Facebook
           </a>
@@ -229,6 +231,7 @@ const InsightPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-luxury-gold hover:text-luxury-dark transition duration-300"
+            aria-label="Share on LinkedIn"
           >
             LinkedIn
           </a>
