@@ -41,7 +41,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-slate-900 text-slate-50 flex flex-col justify-center items-center gap-12 p-10 sm:px-0 sm:py-12">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-12">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <h2 className="text-center font-semibold">
           SIGN UP FOR OUR NEWSLETTER:
         </h2>
@@ -72,95 +72,101 @@ const Footer = () => {
           </button>
         </div>
       </form>
-      <div className="flex flex-col sm:flex-row text-center sm:text-left gap-10 sm:gap-20">
-        <div className="flex flex-col gap-3">
-          <h2 className={`${cormorant.className} font-bold text-lg`}>INFO</h2>
-          <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>
-              <Link href="privacy-policy" aria-label="Privacy Policy">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="terms-of-service" aria-label="Terms of Service">
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link href="cookie-policy" aria-label="Cookie Policy">
-                Cookie Policy
-              </Link>
-            </li>
-          </ul>
+      <div className="flex flex-col sm:flex-row sm:text-left gap-10 sm:gap-20">
+        <div className="flex gap-10 sm:gap-20">
+          <div className="flex flex-col gap-3">
+            <h2 className={`${cormorant.className} font-bold text-lg`}>INFO</h2>
+            <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
+              <li>
+                <Link href="privacy-policy" aria-label="Privacy Policy">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="terms-of-service" aria-label="Terms of Service">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="cookie-policy" aria-label="Cookie Policy">
+                  Cookie Policy
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-3">
+            <h2 className={`${cormorant.className} font-bold text-lg`}>
+              COMPANY
+            </h2>
+            <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
+              <li>
+                <Link href="/about" aria-label="About Us">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" aria-label="Our Expertise">
+                  Our Expertise
+                </Link>
+              </li>
+              <li>
+                <Link href="/case-studies" aria-label="Case Studies">
+                  Case Studies
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col gap-3">
-          <h2 className={`${cormorant.className} font-bold text-lg`}>
-            COMPANY
-          </h2>
-          <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>
-              <Link href="/about" aria-label="About Us">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" aria-label="Our Expertise">
-                Our Expertise
-              </Link>
-            </li>
-            <li>
-              <Link href="/case-studies" aria-label="Case Studies">
-                Case Studies
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="flex flex-col gap-3">
-          <h2 className={`${cormorant.className} font-bold text-lg`}>SOCIAL</h2>
-          <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>
-              <Link
-                href="https://www.instagram.com/gsdigitalanchor/"
-                aria-label="Instagram"
-              >
-                Instagram
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.linkedin.com/company/gs-digital-anchor/"
-                aria-label="LinkedIn"
-              >
-                LinkedIn
-              </Link>
-            </li>
-            <li>
-              <Link href="https://x.com" aria-label="X / Twitter">
-                X / Twitter
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="flex flex-col gap-3">
-          <h2 className={`${cormorant.className} font-bold text-lg`}>
-            CONTACT
-          </h2>
-          <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
-            <li>
-              <Link
-                href="mailto:info@gsdigitalanchor.com"
-                aria-label="Email us"
-              >
-                info@gsdigitalanchor.com
-              </Link>
-            </li>
-            <li>
-              <Link href="callto:+38668173209" aria-label="Call us">
-                +386 68 173 209
-              </Link>
-            </li>
-            <li>Ljubljana, Slovenia</li>
-          </ul>
+        <div className="flex gap-10 sm:gap-20">
+          <div className="flex flex-col gap-3">
+            <h2 className={`${cormorant.className} font-bold text-lg`}>
+              SOCIAL
+            </h2>
+            <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
+              <li>
+                <Link
+                  href="https://www.instagram.com/gsdigitalanchor/"
+                  aria-label="Instagram"
+                >
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.linkedin.com/company/gs-digital-anchor/"
+                  aria-label="LinkedIn"
+                >
+                  LinkedIn
+                </Link>
+              </li>
+              <li>
+                <Link href="https://x.com" aria-label="X / Twitter">
+                  X / Twitter
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-3">
+            <h2 className={`${cormorant.className} font-bold text-lg`}>
+              CONTACT
+            </h2>
+            <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
+              <li>
+                <Link
+                  href="mailto:info@gsdigitalanchor.com"
+                  aria-label="Email us"
+                >
+                  info@gsdigitalanchor.com
+                </Link>
+              </li>
+              <li>
+                <Link href="callto:+38668173209" aria-label="Call us">
+                  +386 68 173 209
+                </Link>
+              </li>
+              <li>Ljubljana, Slovenia</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="text-slate-300 text-sm text-center">
