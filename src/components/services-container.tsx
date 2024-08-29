@@ -42,10 +42,10 @@ const ServicesContainer = () => {
   return (
     <>
       <div
-        className="w-full min-h-screen flex flex-col justify-center gap-6 p-6 lg:p-24 bg-slate-50 text-slate-900"
+        className="w-full min-h-screen flex flex-col justify-center gap-6 p-6 pt-24 lg:p-24 bg-slate-50 text-slate-900"
         id="phase-section"
       >
-        <div className="mt-[40px] mx-auto w-[976px] flex justify-between">
+        <div className="mt-[40px] mx-auto w-full lg:w-[976px] flex flex-col gap-2 md:flex-row justify-between">
           <div className="flex flex-col gap-2">
             <span className="text-[#AB7952]">PHASE 0{selectedPhase + 1}</span>
             <h2 className={`${cormorant.className} text-2xl uppercase`}>
@@ -59,8 +59,8 @@ const ServicesContainer = () => {
             handleNext={handleNext}
           />
         </div>
-        <div className="mt-[20px] my-0 mx-auto h-[616px] w-[976px] bg-white rounded-[8px] rounded-tr-[9px] flex shadow-[0_3px_5px_rgba(0,0,0,0.07)] animate-intro">
-          <div className="w-[340px]">
+        <div className="mt-[20px] my-0 mx-auto lg:h-[616px] w-full lg:w-[976px] bg-white rounded-[8px] rounded-tr-[9px] flex flex-col lg:flex-row shadow-[0_3px_5px_rgba(0,0,0,0.07)] animate-intro">
+          <div className="w-full lg:w-[340px]">
             <h1 className={`${cormorant.className} py-4 px-5 text-3xl`}>
               Services:
             </h1>
@@ -85,19 +85,19 @@ const ServicesContainer = () => {
               ))}
             </ul>
           </div>
-          <section className="flex-1 bg-slate-50 relative rounded-tr-xl rounded-br-lg">
+          <section className="flex-1 bg-slate-50 relative rounded-tr-xl rounded-br-lg pb-4 lg:pb-0">
             <Image
               src={luxuryLivingImg}
               alt="Luxury living"
               className="object-cover w-full h-[125px] rounded-tr-lg"
             />
-            <div className="relative z-[1] mb-6 flex gap-4 pt-4">
-              <div className="pl-10">
+            <div className="relative z-[1] mb-6 flex gap-4 py-4">
+              <div className="pl-4 lg:pl-10">
                 <div className="w-14 h-16 bg-[#AB7952] rounded-md flex items-center justify-center text-2xl font-semibold mb-3">
                   {selectedService + 1}
                 </div>
               </div>
-              <div className="pr-10">
+              <div className="pr-4 lg:pr-10">
                 <h2 className="text-2xl text-slate-900 font-medium">
                   {servicesData[selectedPhase].services[selectedService].title}
                 </h2>
@@ -109,7 +109,7 @@ const ServicesContainer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col px-10 gap-2 mb-4">
+            <div className="flex flex-col px-4 lg:px-10 gap-2 mb-4">
               <h3 className="font-medium text-xl uppercase">What we offer</h3>
               <div className="flex gap-2">
                 {servicesData[selectedPhase].services[
@@ -130,7 +130,7 @@ const ServicesContainer = () => {
                 }
               </p>
             </div>
-            <div className="flex flex-col px-10 gap-2">
+            <div className="flex flex-col px-4 lg:px-10 gap-2">
               <h3 className="font-medium text-xl uppercase">Reviews</h3>
               <div className="flex flex-col gap-2">
                 {servicesData[selectedPhase].services[
