@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import ServicesContainer from "@/src/components/services-container";
+import PricingPackage from "@/src/components/pricing-package";
 
 export const metadata: Metadata = {
   title:
@@ -23,6 +24,7 @@ const ServicesPage = () => {
   return (
     <main className="min-h-screen w-full">
       <ServicesContainer />
+      <PricingPackage />
     </main>
   );
 };
