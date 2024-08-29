@@ -5,15 +5,15 @@ import Script from "next/script";
 const ThankYouPage = () => {
   return (
     <>
-      <head>
-        <Script id="conversion-tracking" strategy="lazyOnload">
-          {`
-          window.gtag("event", "conversion_event_submit_lead_form", {
-            send_to: "AW-CONVERSION_ID/CONVERSION_LABEL",
-          });
+      <Script id="gtag-event-script" strategy="afterInteractive">
+        {`
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion_event_submit_lead_form', {
+              // <event_parameters>
+            });
+          }
         `}
-        </Script>
-      </head>
+      </Script>
       <div className="min-h-screen w-full p-24 flex flex-col gap-10 items-center justify-center bg-slate-50 text-slate-900 text-center">
         <h1 className={`${cormorant.className} text-5xl sm:text-7xl`}>
           Thank You!
