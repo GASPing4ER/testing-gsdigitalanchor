@@ -45,12 +45,12 @@ const AboutPage = () => {
         </div>
       </div>
       <div
-        className="w-full min-h-screen flex flex-col gap-8 p-6 sm:p-24 bg-slate-900"
+        className="w-full flex flex-col gap-8 p-6 sm:p-24 bg-slate-900 text-center"
         role="region"
         aria-labelledby="our-values-section"
       >
         <h2 className="text-[#AB7952] text-xs tracking-widest">OUR VALUES</h2>
-        <p className="text-slate-50 text-sm sm:text-base max-w-[700px]">
+        <p className="text-slate-50 text-sm sm:text-base max-w-[700px] mx-auto">
           This is the <span className="italic">fabric of our culture</span> and
           the framework for all decisions made within these walls. Heads up,
           they tend to be contagious.
@@ -58,7 +58,7 @@ const AboutPage = () => {
         <OurValues />
       </div>
       <div
-        className="w-full flex flex-col gap-6 p-6 sm:p-24 bg-slate-50"
+        className="w-full flex flex-col gap-6 p-6 sm:p-24 sm:pb-0 bg-slate-50"
         role="region"
         aria-labelledby="our-mission-section"
       >
