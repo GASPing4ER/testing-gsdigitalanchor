@@ -9,20 +9,20 @@ const testimonialsData = [
   {
     headline: "'Completely adaptable to any wishes you may have!'",
     quote:
-      "I have been very pleased with Gašper's services, especially in terms of quick and consistent improvements.",
+      "I have been very pleased with G.S. Digital Anchor's services, especially in terms of quick and consistent improvements.",
     author: "Gal Resnik, Founder of Impero",
   },
   {
     headline: "'I couldn't be happier with the results!'",
     quote:
-      "I had the pleasure of working with Gašper, a talented web developer, and I couldn't be happier with the results. He created a stunning and luxurious website for my business that exceeded all my expectations.",
+      "I had the pleasure of working with G.S. Digital Anchor, and I couldn't be happier with the results. They created a stunning and luxurious website for my business that exceeded all my expectations.",
     author: "Lucija Šimec, Founder of LaMaisonDigitale",
   },
   {
     headline:
       "Bringing Your Vision to Life with Creativity, Simplicity, and Uniqueness",
     quote:
-      "Gašper is an active listener and understands what the client would like to create. He has a good eye for visual perspective and is a very creative person. Simplicity and uniqueness have always been something I wanted to achieve on my webpage, and Digital Anchor did just that.",
+      "Simplicity and uniqueness have always been something I wanted to achieve on my website, and G.S. Digital Anchor did just that.",
     author: "Nastasya Prihoda, Founder of NP Mental Model",
   },
 ];

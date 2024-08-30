@@ -44,13 +44,22 @@ export default function Home() {
             We craft bespoke digital strategies, branding, and marketing to
             enhance your brand’s legacy and prestige.
           </p>
-          <Link
-            href="/services"
-            className="text-xs text-slate-50 px-6 py-3 border border-slate-50 rounded-2xl w-fit"
-            aria-label="Our Expertise"
-          >
-            OUR EXPERTISE
-          </Link>
+          <div className="flex gap-4">
+            <Link
+              href="/services"
+              className="text-xs text-slate-50 px-6 py-3 border bg-[#AB7952] border-[#AB7952] rounded-2xl w-fit"
+              aria-label="Explore Our Services"
+            >
+              EXPLORE OUR SERVICES
+            </Link>
+            <Link
+              href="/contact"
+              className="text-xs text-slate-50 px-6 py-3 border bg-transparent border-slate-50 rounded-2xl w-fit"
+              aria-label="Book a Meeting"
+            >
+              JOIN OUR CLIENTELE
+            </Link>
+          </div>
         </div>
       </div>
       <div
@@ -69,88 +78,107 @@ export default function Home() {
         </p>
         <div className="flex flex-col lg:flex-row w-full text-slate-50">
           <div className="flex flex-col sm:flex-row">
-            <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-[#AB7952]">01</span>
-              <div className="flex flex-col gap-4">
-                <h2 className={`${cormorant.className} font-semibold text-4xl`}>
-                  Strategy
-                </h2>
-                <p className="text-xs md:text-sm">
-                  We craft tailored digital strategies that align with your
-                  brand’s heritage and goals, ensuring every move enhances your
-                  legacy.
-                </p>
-                <Link
-                  href="/contact"
-                  className="text-xs"
-                  aria-label="Contact Us"
-                >
-                  CONTACT US
-                </Link>
+            <Link
+              href="/services"
+              className="flex-1 anchor-cursor"
+              aria-label="Strategy"
+            >
+              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+                <span className="text-[#AB7952]">01</span>
+                <div className="flex flex-col gap-4">
+                  <h2
+                    className={`${cormorant.className} font-semibold text-4xl`}
+                  >
+                    Strategy
+                  </h2>
+                  <p className="text-xs md:text-sm">
+                    We craft tailored digital strategies that align with your
+                    brand’s heritage and goals, ensuring every move enhances
+                    your legacy.
+                  </p>
+                  <p
+                    className="text-xs hover:text-[#AB7952]"
+                    aria-label="LEARN MORE"
+                  >
+                    LEARN MORE
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-[#AB7952]">02</span>
-              <div className="flex flex-col gap-4">
-                <h2 className={`${cormorant.className} font-semibold text-4xl`}>
-                  Branding
-                </h2>
-                <p className="text-xs md:text-sm">
-                  We create timeless visual identities and messaging that
-                  capture the essence of your luxury brand, making a lasting
-                  impression across all digital platforms.
-                </p>
-                <Link
-                  href="/contact"
-                  className="text-xs"
-                  aria-label="Contact Us"
-                >
-                  CONTACT US
-                </Link>
+            </Link>
+            <Link
+              href="/services"
+              className="flex-1 anchor-cursor"
+              aria-label="Branding"
+            >
+              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+                <span className="text-[#AB7952]">02</span>
+                <div className="flex flex-col gap-4">
+                  <h2
+                    className={`${cormorant.className} font-semibold text-4xl`}
+                  >
+                    Branding
+                  </h2>
+                  <p className="text-xs md:text-sm">
+                    We create visual identities and messaging that capture the
+                    essence of your brand, making a lasting impression across
+                    all platforms.
+                  </p>
+                  <p className="text-xs" aria-label="LEARN MORE">
+                    LEARN MORE
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className="flex flex-col sm:flex-row">
-            <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-[#AB7952]">03</span>
-              <div className="flex flex-col gap-4">
-                <h2 className={`${cormorant.className} font-semibold text-4xl`}>
-                  Website
-                </h2>
-                <p className="text-xs md:text-sm">
-                  We design and develop websites that embody your brand’s
-                  elegance, offering seamless user experiences that turn
-                  visitors into loyal customers.
-                </p>
-                <Link
-                  href="/contact"
-                  className="text-xs"
-                  aria-label="Contact Us"
-                >
-                  CONTACT US
-                </Link>
+            <Link
+              href="/services"
+              className="flex-1 anchor-cursor"
+              aria-label="Website"
+            >
+              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+                <span className="text-[#AB7952]">03</span>
+                <div className="flex flex-col gap-4">
+                  <h2
+                    className={`${cormorant.className} font-semibold text-4xl`}
+                  >
+                    Website
+                  </h2>
+                  <p className="text-xs md:text-sm">
+                    We design and develop websites that embody your brand’s
+                    elegance, offering seamless user experiences that turn
+                    visitors into loyal customers.
+                  </p>
+                  <p className="text-xs" aria-label="LEARN MORE">
+                    LEARN MORE
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex-1 h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
-              <span className="text-[#AB7952]">04</span>
-              <div className="flex flex-col gap-4">
-                <h2 className={`${cormorant.className} font-semibold text-4xl`}>
-                  Marketing
-                </h2>
-                <p className="text-xs md:text-sm">
-                  Our targeted marketing strategies amplify your brand’s voice,
-                  reaching the right audience with the right message, and
-                  driving measurable results.
-                </p>
-                <Link
-                  href="/contact"
-                  className="text-xs"
-                  aria-label="Contact Us"
-                >
-                  CONTACT US
-                </Link>
+            </Link>
+            <Link
+              href="/services"
+              className="flex-1 anchor-cursor"
+              aria-label="Marketing"
+            >
+              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+                <span className="text-[#AB7952]">04</span>
+                <div className="flex flex-col gap-4">
+                  <h2
+                    className={`${cormorant.className} font-semibold text-4xl`}
+                  >
+                    Marketing
+                  </h2>
+                  <p className="text-xs md:text-sm">
+                    Our targeted marketing strategies amplify your brand’s
+                    voice, reaching the right audience with the right message,
+                    and driving measurable results.
+                  </p>
+                  <p className="text-xs" aria-label="LEARN MORE">
+                    LEARN MORE
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

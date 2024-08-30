@@ -18,7 +18,7 @@ const Header = () => {
         <Socials />
         <Link
           href="/contact"
-          className="text-xs px-6 py-2 border border-slate-50 rounded-2xl hover:bg-slate-50 hover:text-slate-900"
+          className="text-xs px-6 py-2 border text-slate-900 border-slate-50 bg-slate-50 rounded-2xl hover:bg-transparent hover:text-slate-50 font-medium"
           aria-label="Contact Us"
         >
           CONTACT

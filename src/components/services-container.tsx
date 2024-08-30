@@ -8,6 +8,7 @@ import { servicesData } from "@/src/lib/data";
 import Image from "next/image";
 
 import luxuryLivingImg from "@/public/luxury-living.jpg";
+import Link from "next/link";
 
 const ServicesContainer = () => {
   const [selectedPhase, setSelectedPhase] = useState(0);
@@ -69,8 +70,8 @@ const ServicesContainer = () => {
                 <li
                   key={index}
                   className={`cursor-pointer ${
-                    selectedService === index ? "bg-slate-100" : "bg-white"
-                  } h-[76px] hover:bg-slate-100 border-b border-[#ebeff1]`}
+                    selectedService === index ? "bg-slate-50" : "bg-white"
+                  } h-[76px] hover:bg-slate-50 border-b border-[#ebeff1]`}
                   onClick={() => handleServiceSelect(index)}
                 >
                   <div className="h-full w-full py-4 px-5 flex">
@@ -145,6 +146,12 @@ const ServicesContainer = () => {
                 ))}
               </div>
             </div>
+            <Link
+              href="/contact"
+              className="absolute bottom-4 right-4 text-sm border-b border-slate-900"
+            >
+              Request a Free Consultation
+            </Link>
           </section>
         </div>
       </div>
