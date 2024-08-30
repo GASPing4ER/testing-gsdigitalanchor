@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen w-full">
-      <div className="relative w-full h-screen flex items-center p-6 sm:p-24 bg-hero-pattern bg-cover bg-center">
+      <div className="relative w-full h-screen flex items-center p-6 sm:p-24 bg-hero-pattern bg-cover bg-center bg-fixed">
         <div className="absolute top-0 left-0 w-full h-screen bg-black/50" />
         <div className="z-10 flex flex-col gap-6">
           <h1
