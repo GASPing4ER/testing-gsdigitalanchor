@@ -86,7 +86,7 @@ const ServicesContainer = () => {
               ))}
             </ul>
           </div>
-          <section className="flex-1 bg-slate-50 relative rounded-tr-xl rounded-br-lg pb-4 lg:pb-0">
+          <section className="flex-1 bg-slate-50 flex flex-col relative rounded-tr-xl rounded-br-lg pb-4 lg:pb-0">
             <Image
               src={luxuryLivingImg}
               alt="Luxury living"
@@ -99,10 +99,10 @@ const ServicesContainer = () => {
                 </div>
               </div>
               <div className="pr-4 lg:pr-10">
-                <h2 className="text-2xl text-slate-900 font-medium">
+                <h2 className="text-xl sm:text-2xl text-slate-900 font-medium">
                   {servicesData[selectedPhase].services[selectedService].title}
                 </h2>
-                <p className="text-sm italic">
+                <p className="text-xs sm:text-sm italic">
                   {
                     servicesData[selectedPhase].services[selectedService]
                       .description
@@ -124,7 +124,7 @@ const ServicesContainer = () => {
                   </span>
                 ))}
               </div>
-              <p className="text-sm italic">
+              <p className="text-xs sm:text-sm italic">
                 {
                   servicesData[selectedPhase].services[selectedService].details
                     .offer
@@ -148,7 +148,7 @@ const ServicesContainer = () => {
             </div>
             <Link
               href="/contact"
-              className="absolute bottom-4 right-4 text-sm border-b border-slate-900"
+              className="mx-4 lg:mx-10 w-fit self-end mt-10 text-sm border-b border-slate-900"
             >
               Request a Free Consultation
             </Link>
