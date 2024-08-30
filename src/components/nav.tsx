@@ -1,12 +1,13 @@
 "use client";
 
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState } from "react";
 import twitterIcon from "@/public/icons/socials/twitter.svg";
 import instagramIcon from "@/public/icons/socials/instagram.svg";
 import linkedinIcon from "@/public/icons/socials/linkedin.svg";
 import Image from "next/image";
+import Logo from "./logo";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +24,11 @@ const Navigation = () => {
           isOpen ? "flex" : "hidden"
         } flex-col items-center justify-center gap-6 text-xs tracking-widest font-normal text-slate-50 bg-slate-900 z-50`}
       >
+        <div onClick={() => setIsOpen(false)}>
+          <Logo />
+        </div>
         <ul className={`flex flex-col items-center justify-center gap-6`}>
-          <Bars3Icon
+          <XMarkIcon
             onClick={() => setIsOpen(false)}
             className="absolute top-5 left-5 w-6 h-6 text-white"
           />
