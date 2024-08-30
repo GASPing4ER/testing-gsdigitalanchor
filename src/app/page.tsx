@@ -44,17 +44,17 @@ export default function Home() {
             We craft bespoke digital strategies, branding, and marketing to
             enhance your brand’s legacy and prestige.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/services"
-              className="text-xs text-slate-50 px-6 py-3 border bg-[#AB7952] border-[#AB7952] rounded-2xl w-fit"
+              className="text-xs text-slate-50 py-3 border bg-[#AB7952] border-[#AB7952] rounded-2xl w-[225px] text-center"
               aria-label="Explore Our Services"
             >
               EXPLORE OUR SERVICES
             </Link>
             <Link
               href="/contact"
-              className="text-xs text-slate-50 px-6 py-3 border bg-transparent border-slate-50 rounded-2xl w-fit"
+              className="text-xs text-slate-50 py-3 border bg-transparent border-slate-50 rounded-2xl w-[225px] text-center"
               aria-label="Book a Meeting"
             >
               JOIN OUR CLIENTELE
