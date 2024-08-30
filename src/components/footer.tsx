@@ -45,7 +45,7 @@ const Footer = () => {
         <h2 className="text-center font-semibold">
           SIGN UP FOR OUR NEWSLETTER:
         </h2>
-        <div className="sm:border-b sm:border-slate-50 w-fit flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+        <div className="sm:border-b sm:border-slate-50 w-fit flex flex-col sm:flex-row gap-4 items-start sm:items-center ml-[10px] sm:ml-0">
           <div className="flex gap-2 items-center">
             <EnvelopeIcon className="w-5 h-5 text-slate-50" />
             <input
