@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { cormorant } from "@/src/lib/fonts";
 
 import luxuryLiving from "@/public/luxury-living.jpg";
+import ultimateGuide from "@/public/images/articles/ultimate-guide/featured-image.png";
 
 export const metadata: Metadata = {
   title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
@@ -32,6 +33,25 @@ const InsightsPage = () => {
         INSIGHTS
       </h1>
       <div className="flex gap-10">
+        <Link
+          href="/insights/the-ultimate-guide-to-digital-marketing-strategies"
+          className="h-[300px] w-[350px] border flex flex-col gap-2"
+          aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
+        >
+          <Image
+            src={ultimateGuide}
+            alt="Luxury Living"
+            className="w-full h-1/2 object-cover"
+          />
+          <div className="pl-2 flex flex-col gap-2">
+            <h2 className={`${cormorant.className} font-medium text-lg`}>
+              The Ultimate Guide to Digital Marketing Strategies for Luxury
+              Brands
+            </h2>
+            <p className="text-[#AB7952]">August 30, 2024</p>
+            <p className="text-xs italic">By Gašper Šimec</p>
+          </div>
+        </Link>
         <Link
           href="/insights/role-of-branding-and-identity"
           className="h-[300px] w-[350px] border flex flex-col gap-2"
