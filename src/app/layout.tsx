@@ -47,6 +47,7 @@ export default function RootLayout({
           type="text/javascript"
           src="https://cdn-cookieyes.com/client_data/d78cd0495a725399a0eb266e/script.js"
         />
+        <link rel="icon" href="/favicon.png" />
         <GoogleAnalytics
           gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string}
         />
