@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { cormorant } from "../lib/fonts";
 import Link from "next/link";
@@ -9,69 +8,89 @@ import { sendGAEvent } from "@next/third-parties/google";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setErrorMessage(null); // Clear previous errors
 
     if (!email) {
-      console.log("Fill out the form!");
+      setErrorMessage("Please enter your email address.");
       return;
     }
+
     try {
       const response = await fetch("/api/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          email,
-        }),
+        body: JSON.stringify({ email }),
       });
+
       const data = await response.json();
       if (response.status >= 400) {
+        setErrorMessage(
+          "Failed to subscribe to the newsletter. Please try again later."
+        );
         console.error("Error subscribing to the newsletter:", data);
         return;
       }
+
       console.log("Successfully subscribed:", data);
+      setIsSubscribed(true);
+      setEmail(""); // Reset email input
     } catch (error) {
+      setErrorMessage("An error occurred. Please try again.");
       console.error("Error subscribing to the newsletter:", error);
     }
-    setEmail("");
   };
 
   return (
-    <footer className="w-full bg-slate-900 text-slate-50 flex flex-col justify-center items-center gap-12 p-10 sm:px-0 sm:py-12">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <h2 className="text-center font-semibold">
-          SIGN UP FOR OUR NEWSLETTER:
-        </h2>
-        <div className="sm:border-b sm:border-slate-50 w-fit flex flex-col sm:flex-row gap-4 items-start sm:items-center ml-[10px] sm:ml-0">
-          <div className="flex gap-2 items-center">
-            <EnvelopeIcon className="w-5 h-5 text-slate-50" />
-            <input
-              name="email"
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="bg-transparent sm:p-2 placeholder:text-slate-50 text-sm min-w-64"
-            />
+    <footer className="w-full bg-slate-900 text-slate-50 flex flex-col justify-center items-center gap-12 p-10 sm:px-0 sm:py-12 border-t border-slate-50">
+      {!isSubscribed && (
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <h2 className="text-center font-semibold">
+            SIGN UP FOR OUR NEWSLETTER:
+          </h2>
+          <div className="sm:border-b sm:border-slate-50 w-fit flex flex-col sm:flex-row gap-4 items-start sm:items-center ml-[10px] sm:ml-0">
+            <div className="flex gap-2 items-center">
+              <EnvelopeIcon className="w-5 h-5 text-slate-50" />
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="bg-transparent sm:p-2 placeholder:text-slate-50 text-sm min-w-64"
+              />
+            </div>
+            <button
+              type="submit"
+              className="cursor-pointer text-sm border-b border-slate-50 sm:border-none"
+              aria-label="Subscribe"
+              onClick={() =>
+                sendGAEvent("event", "newsletter_subscribed", {
+                  email: email,
+                })
+              }
+            >
+              SUBSCRIBE
+            </button>
           </div>
-          <button
-            type="submit"
-            className="cursor-pointer text-sm border-b border-slate-50 sm:border-none"
-            aria-label="Subscribe"
-            onClick={() =>
-              sendGAEvent("event", "newsletter_subscribed", {
-                email: email,
-              })
-            }
-          >
-            SUBSCRIBE
-          </button>
-        </div>
-      </form>
+          {errorMessage && (
+            <p className="text-red-500 text-sm mt-2">{errorMessage}</p>
+          )}
+        </form>
+      )}
+      {isSubscribed && (
+        <p className="text-center text-slate-50">
+          Thank you for subscribing to our newsletter!
+        </p>
+      )}
+
       <div className="flex flex-col sm:flex-row sm:text-left gap-10 sm:gap-20">
         <div className="flex gap-10 sm:gap-20">
           <div className="flex flex-col gap-3">
