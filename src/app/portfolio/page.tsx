@@ -5,6 +5,48 @@ import embose_logo from "@/public/images/embose-logo.png";
 import lautus_mockup from "@/public/images/lautus-mockup.png";
 
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Lautus Branding Identity Case Study | Elegant Gifts & Stationery",
+  description:
+    "Explore the branding identity case study for Lautus, a company specializing in high-end business gifts and stationery. Discover the design choices that reflect luxury, sophistication, and professionalism.",
+  keywords: [
+    "Lautus",
+    "branding identity",
+    "business gifts",
+    "luxury stationery",
+    "logo design",
+    "color palette",
+    "typography",
+    "corporate branding",
+  ],
+  openGraph: {
+    title: "Lautus Branding Identity Case Study | Elegant Gifts & Stationery",
+    description:
+      "See how we crafted a luxurious and professional brand identity for Lautus, specializing in high-end business gifts and stationery.",
+    images: [
+      {
+        url: "/images/lautus-mockup.png",
+        width: 1200,
+        height: 630,
+        alt: "Lautus branding identity overview",
+      },
+    ],
+    url: "https://gsdigitalanchor.com/portfolio/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lautus Branding Identity Case Study",
+    description:
+      "Discover the luxurious and professional brand identity crafted for Lautus, a provider of high-end business gifts and stationery.",
+    images: ["/images/lautus-mockup.png"],
+  },
+  alternates: {
+    canonical: "https://gsdigitalanchor.com/portfolio/",
+  },
+};
 
 const PortfolioPage = () => {
   return (
