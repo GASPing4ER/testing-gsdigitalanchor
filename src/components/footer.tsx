@@ -144,6 +144,14 @@ const Footer = () => {
             <ul className="text-slate-300 text-xs md:text-sm flex flex-col gap-1">
               <li>
                 <Link
+                  href="https://www.tiktok.com/@gsdigitalanchor"
+                  aria-label="Tiktok"
+                >
+                  Tiktok
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="https://www.instagram.com/gsdigitalanchor/"
                   aria-label="Instagram"
                 >
@@ -156,11 +164,6 @@ const Footer = () => {
                   aria-label="LinkedIn"
                 >
                   LinkedIn
-                </Link>
-              </li>
-              <li>
-                <Link href="https://x.com" aria-label="X / Twitter">
-                  X / Twitter
                 </Link>
               </li>
             </ul>

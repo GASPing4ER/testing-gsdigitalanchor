@@ -6,6 +6,7 @@ import { useState } from "react";
 import twitterIcon from "@/public/icons/socials/twitter.svg";
 import instagramIcon from "@/public/icons/socials/instagram.svg";
 import linkedinIcon from "@/public/icons/socials/linkedin.svg";
+import tiktokIcon from "@/public/icons/socials/tiktok.svg";
 import Image from "next/image";
 import Logo from "./logo";
 
@@ -69,7 +70,15 @@ const Navigation = () => {
             </Link>
           </li>
         </ul>
-        <div className="flex gap-2">
+        <div className="flex md:hidden gap-2">
+          <Link
+            href="https://www.tiktok.com/@gsdigitalanchor"
+            aria-label="Tiktok"
+          >
+            <div className="border border-slate-50 rounded-full p-2">
+              <Image src={tiktokIcon} alt="Instagram" className="w-4 h-4" />
+            </div>
+          </Link>
           <Link
             href="https://www.instagram.com/gsdigitalanchor/"
             onClick={() => setIsOpen(false)}
