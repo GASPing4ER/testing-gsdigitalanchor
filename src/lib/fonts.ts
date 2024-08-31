@@ -1,4 +1,14 @@
-import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import { ABeeZee, Cormorant_Garamond, Montserrat } from "next/font/google";
+import localFont from "next/font/local";
+
+export const citadel = localFont({
+  src: "../../public/fonts/citadel/CitadelScriptStd.otf",
+});
+
+export const aBeeZee = ABeeZee({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const cormorant = Cormorant_Garamond({
   subsets: ["latin"],

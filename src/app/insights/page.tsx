@@ -4,7 +4,6 @@ import { Metadata } from "next";
 
 import { cormorant } from "@/src/lib/fonts";
 
-import luxuryLiving from "@/public/luxury-living.jpg";
 import ultimateGuide from "@/public/images/articles/ultimate-guide/featured-image.png";
 
 export const metadata: Metadata = {
