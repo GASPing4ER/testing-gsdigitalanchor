@@ -60,7 +60,7 @@ const ServicesContainer = () => {
             handleNext={handleNext}
           />
         </div>
-        <div className="mt-[20px] my-0 mx-auto lg:h-[616px] w-full lg:w-[976px] bg-white rounded-[8px] rounded-tr-[9px] flex flex-col lg:flex-row shadow-[0_3px_5px_rgba(0,0,0,0.07)] animate-intro">
+        <div className="mt-[20px] my-0 mx-auto lg:min-h-[616px] w-full lg:w-[976px] bg-white rounded-[8px] rounded-tr-[9px] flex flex-col lg:flex-row shadow-[0_3px_5px_rgba(0,0,0,0.07)] animate-intro">
           <div className="w-full lg:w-[340px]">
             <h1 className={`${cormorant.className} py-4 px-5 text-3xl`}>
               Services:
@@ -86,7 +86,7 @@ const ServicesContainer = () => {
               ))}
             </ul>
           </div>
-          <section className="flex-1 bg-slate-50 flex flex-col relative rounded-tr-xl rounded-br-lg pb-4 lg:pb-0">
+          <section className="flex-1 bg-slate-50 flex flex-col relative rounded-tr-xl rounded-br-lg pb-4">
             <Image
               src={luxuryLivingImg}
               alt="Luxury living"
@@ -110,7 +110,7 @@ const ServicesContainer = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col px-4 lg:px-10 gap-2 mb-4">
+            <div className="flex flex-col px-4 lg:px-10 gap-4 mb-4">
               <h3 className="font-medium text-xl uppercase">What we offer</h3>
               <div className="flex gap-2">
                 {servicesData[selectedPhase].services[
@@ -131,7 +131,7 @@ const ServicesContainer = () => {
                 }
               </p>
             </div>
-            <div className="flex flex-col px-4 lg:px-10 gap-2">
+            <div className="flex flex-col px-4 lg:px-10 gap-2 mt-6">
               <h3 className="font-medium text-xl uppercase">Reviews</h3>
               <div className="flex flex-col gap-2">
                 {servicesData[selectedPhase].services[
