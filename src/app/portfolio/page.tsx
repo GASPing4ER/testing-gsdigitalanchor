@@ -1,5 +1,5 @@
-import lautus_mockup from "@/public/images/lautus/lautus-mockup.png";
 import logo from "@/public/icons/lotus.svg";
+import thumbnail_supple from "@/public/images/supple/supple.jpg";
 
 import Image from "next/image";
 import { Metadata } from "next";
@@ -58,12 +58,34 @@ const PortfolioPage = () => {
       >
         Our Expertise
       </h2>
-      <div className="flex w-full">
-        <div className="flex flex-col gap-4 w-full">
-          <Link href="/portfolio/lautus">
+      <div className="flex flex-col lg:flex-row w-full gap-10">
+        <div className="flex flex-col gap-4">
+          <Link href="#" className="relative w-full">
+            <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[5]" />
+            <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
+              <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
+                <p>2024</p>
+                <p>WEB DESIGN & DEVELOPMENT</p>
+              </div>
+              <Image
+                src={thumbnail_supple}
+                alt="Supple Thumbnail"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Link>
+          <Link href="#">
+            <h2 className={`${cormorant.className} text-4xl font-medium`}>
+              Supple Wear
+            </h2>
+          </Link>
+          <hr />
+        </div>
+        <div className="flex flex-col gap-4">
+          <Link href="/portfolio/lautus" className="w-full">
             <div className="relative bg-[#202B22] w-full lg:w-[500px] h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6">
-                <p>2024</p>
+                <p>2023</p>
                 <p>BRANDING IDENTITY</p>
               </div>
               <Image src={logo} alt="Lautus logo" />

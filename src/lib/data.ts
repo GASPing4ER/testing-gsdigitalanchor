@@ -23,24 +23,10 @@ export const values = [
 
 export const servicesData = [
   {
-    title: "Strategy & Consultation",
+    title: "Strategy - FREE Consultation",
     description:
       "Build a strong foundation for your brand with our expert strategy and consultation services, available for free when you book a consultation with us.",
     services: [
-      {
-        title: "Digital Strategy & Consulting",
-        description:
-          "Crafting a tailored digital blueprint to guide your brand’s entry into the market.",
-        details: {
-          keywords: ["Digital Blueprint", "Strategic Guidance"],
-          offer:
-            "A customized digital strategy that aligns your brand’s goals with actionable steps for market entry and growth. This blueprint serves as your roadmap for achieving a cohesive and effective digital presence.",
-          reviews: [
-            "Working with the G.S. Digital Anchor on our digital strategy was a game-changer. They provided a clear and actionable roadmap.",
-            "G.S. Digital Anchor took the time to understand our brand's unique needs and crafted a digital strategy that truly reflects our vision.",
-          ],
-        },
-      },
       {
         title: "Market Research & Analysis",
         description:
@@ -90,9 +76,9 @@ export const servicesData = [
     ],
   },
   {
-    title: "Branding & Development",
+    title: "Foundation - ESSENTIALS BEFORE MOVING FORWARD",
     description:
-      "Services for brands that need to build or refine their digital identity and assets.",
+      "These essential services must be solidly in place before advancing to digital marketing, ensuring your brand is fully prepared for success.",
     services: [
       {
         title: "Branding & Identity",
@@ -105,20 +91,6 @@ export const servicesData = [
           reviews: [
             "G.S. Digital Anchor created a brand identity for us that truly reflects the luxury and exclusivity of our products. We're thrilled with the results.",
             "The brand identity they developed is not only cohesive but also captures the essence of our brand perfectly. We’ve received countless compliments on the new design.",
-          ],
-        },
-      },
-      {
-        title: "Web Design & Development",
-        description:
-          "Creating elegant, user-friendly websites that embody your brand’s essence.",
-        details: {
-          keywords: ["Web Design", "User Experience", "Elegance"],
-          offer:
-            "We design and develop websites that are both elegant and user-friendly, ensuring that your digital presence aligns with your brand’s essence. Our focus on aesthetics and functionality guarantees a seamless experience for your visitors.",
-          reviews: [
-            "The website designed by G.S. Digital Anchor is both beautiful and functional. It perfectly captures the essence of our brand.",
-            "Their attention to detail in web design has resulted in a site that is not only user-friendly but also a true reflection of our brand's luxury image.",
           ],
         },
       },
@@ -137,23 +109,23 @@ export const servicesData = [
         },
       },
       {
-        title: "Visual Identity & Design Systems",
+        title: "Web Design & Development",
         description:
-          "Establishing a consistent visual language across all platforms and touchpoints.",
+          "Creating elegant, user-friendly websites that embody your brand’s essence.",
         details: {
-          keywords: ["Visual Identity", "Design Systems", "Consistency"],
+          keywords: ["Web Design", "User Experience", "Elegance"],
           offer:
-            "We develop comprehensive visual identity systems that ensure consistency across all brand touchpoints. From typography to color palettes, our design systems create a unified brand experience that resonates across all platforms.",
+            "We design and develop websites that are both elegant and user-friendly, ensuring that your digital presence aligns with your brand’s essence. Our focus on aesthetics and functionality guarantees a seamless experience for your visitors.",
           reviews: [
-            "Thanks to G.S. Digital Anchor, our visual identity is now consistent across all our platforms. Their design systems have made our brand instantly recognizable.",
-            "The design system they created has provided us with a clear and consistent visual language, making our branding efforts much more effective.",
+            "The website designed by G.S. Digital Anchor is both beautiful and functional. It perfectly captures the essence of our brand.",
+            "Their attention to detail in web design has resulted in a site that is not only user-friendly but also a true reflection of our brand's luxury image.",
           ],
         },
       },
     ],
   },
   {
-    title: "Digital Marketing",
+    title: "Digital Marketing - Final Destination",
     description:
       "Services for brands looking to increase their reach & engage a broader audience.",
     services: [
@@ -176,6 +148,20 @@ export const servicesData = [
         },
       },
       {
+        title: "Social Media Management",
+        description:
+          "Building and nurturing a community of brand advocates through curated social content.",
+        details: {
+          keywords: ["Social Media", "Community Building", "Curated Content"],
+          offer:
+            "We create and manage social media strategies that build and nurture a loyal community around your brand. Through carefully curated content, we engage your audience and foster a strong connection between your brand and its followers.",
+          reviews: [
+            "G.S. Digital Anchor has transformed our social media presence. They've helped us build a vibrant community of brand advocates.",
+            "Their approach to social media management has not only increased our followers but also significantly improved engagement and brand loyalty.",
+          ],
+        },
+      },
+      {
         title: "Paid Media & Advertising",
         description:
           "Strategic ad placements on premium platforms to reach high-net-worth audiences.",
@@ -194,159 +180,113 @@ export const servicesData = [
           ],
         },
       },
-      {
-        title: "Social Media Management",
-        description:
-          "Building and nurturing a community of brand advocates through curated social content.",
-        details: {
-          keywords: ["Social Media", "Community Building", "Curated Content"],
-          offer:
-            "We create and manage social media strategies that build and nurture a loyal community around your brand. Through carefully curated content, we engage your audience and foster a strong connection between your brand and its followers.",
-          reviews: [
-            "G.S. Digital Anchor has transformed our social media presence. They've helped us build a vibrant community of brand advocates.",
-            "Their approach to social media management has not only increased our followers but also significantly improved engagement and brand loyalty.",
-          ],
-        },
-      },
-      {
-        title: "Influencer Partnerships",
-        description:
-          "Collaborating with luxury influencers to amplify your brand's presence.",
-        details: {
-          keywords: ["Influencer Marketing", "Luxury", "Brand Amplification"],
-          offer:
-            "We identify and collaborate with top luxury influencers to amplify your brand’s presence in the market. These partnerships help to enhance your brand’s credibility and reach a wider, more engaged audience.",
-          reviews: [
-            "The influencer partnerships arranged by G.S. Digital Anchor have greatly increased our brand's visibility and credibility.",
-            "Their expertise in luxury influencer marketing has helped us connect with a broader audience and significantly boost our brand’s presence.",
-          ],
-        },
-      },
     ],
   },
-  {
-    title: "Refinement & Optimization",
-    description:
-      "Services for established brands aiming to stay ahead of the competition.",
-    services: [
-      {
-        title: "Conversion Rate Optimization (CRO)",
-        description:
-          "Enhancing your website and campaigns to increase conversions and maximize ROI.",
-        details: {
-          keywords: ["CRO", "Conversions", "ROI"],
-          offer:
-            "We analyze and optimize your website and digital campaigns to increase conversion rates and maximize ROI. By refining user experience and testing different strategies, we ensure that your brand’s digital efforts are as effective as possible.",
-          reviews: [
-            "The CRO strategies implemented by G.S. Digital Anchor have significantly improved our conversion rates. We're seeing better results than ever before.",
-            "Their focus on optimizing our campaigns and website has maximized our ROI, delivering tangible results and boosting our bottom line.",
-          ],
-        },
-      },
-      {
-        title: "Analytics & Reporting",
-        description:
-          "Leveraging data to gain insights into consumer behavior and refine your strategies.",
-        details: {
-          keywords: ["Analytics", "Data Insights", "Reporting"],
-          offer:
-            "We provide detailed analytics and reporting services that give you a deep understanding of consumer behavior. These insights allow us to refine your strategies and make data-driven decisions that enhance your brand’s performance.",
-          reviews: [
-            "G.S. Digital Anchor’s analytics and reporting have provided us with invaluable insights into our customer behavior. We're now able to make more informed decisions.",
-            "Their detailed reports have helped us understand what’s working and where we need to adjust our strategies, leading to better overall performance.",
-          ],
-        },
-      },
-      {
-        title: "A/B Testing & Experimentation",
-        description:
-          "Testing different approaches to discover what resonates most with your audience.",
-        details: {
-          keywords: ["A/B Testing", "Experimentation", "Audience Resonance"],
-          offer:
-            "We conduct A/B testing and experimentation to determine which strategies and content resonate most with your audience. This data-driven approach ensures that your brand is always optimized for maximum impact and engagement.",
-          reviews: [
-            "The A/B testing conducted by G.S. Digital Anchor has been incredibly insightful. We now know exactly what works best for our audience.",
-            "Their experimentation and testing approach have helped us refine our strategies, leading to higher engagement and better results overall.",
-          ],
-        },
-      },
-      {
-        title: "Rebranding & Digital Transformation",
-        description:
-          "Refreshing your brand's image and strategies to stay relevant in an evolving market.",
-        details: {
-          keywords: [
-            "Rebranding",
-            "Digital Transformation",
-            "Market Relevance",
-          ],
-          offer:
-            "We help you refresh and transform your brand’s image and digital strategies to stay relevant in a rapidly evolving market. Our approach ensures that your brand remains competitive and continues to resonate with your target audience.",
-          reviews: [
-            "The rebranding and digital transformation services provided by G.S. Digital Anchor have revitalized our brand. We're now more relevant and competitive than ever.",
-            "Their expertise in digital transformation has ensured that our brand remains up-to-date and appealing in a fast-changing market.",
-          ],
-        },
-      },
-    ],
-  },
-  {
-    title: "Elevation & Maintenance",
-    description:
-      "Services for brands that have completed the foundational work and are now focused on growth.",
-    services: [
-      {
-        title: "Digital Marketing",
-        description:
-          "A comprehensive approach to increasing your brand's reach and engaging a broader audience.",
-        details: {
-          keywords: [
-            "Digital Marketing",
-            "Audience Engagement",
-            "Brand Visibility",
-          ],
-          offer:
-            "We provide a full suite of digital marketing services, including email marketing, social media management, influencer partnerships, and paid media. Our integrated approach ensures that your brand reaches its target audience and drives sustained engagement and growth.",
-          reviews: [
-            "The digital marketing strategies implemented by G.S. Digital Anchor have significantly expanded our reach and improved customer engagement.",
-            "Their comprehensive approach to digital marketing has been instrumental in driving brand visibility and achieving our growth goals.",
-          ],
-        },
-      },
-      {
-        title: "Website Optimization",
-        description:
-          "Regularly updating and optimizing your website to ensure peak performance and user satisfaction.",
-        details: {
-          keywords: [
-            "Website Optimization",
-            "SEO",
-            "User Experience",
-            "Performance",
-          ],
-          offer:
-            "We provide ongoing website optimization services to keep your site performing at its best. Our focus on SEO, user experience, and technical performance ensures that your website continues to attract and convert visitors effectively.",
-          reviews: [
-            "Thanks to G.S. Digital Anchor, our website is always optimized for performance and user experience. Their regular updates have been crucial to our online success.",
-            "Their ongoing optimization efforts have significantly improved our site’s search rankings and user satisfaction.",
-          ],
-        },
-      },
-      {
-        title: "Refinement & Optimization",
-        description:
-          "Continuously refining your brand's strategies to stay ahead of the competition.",
-        details: {
-          keywords: ["Strategy Refinement", "Optimization", "Competitive Edge"],
-          offer:
-            "We offer continuous refinement and optimization services to ensure that your brand’s strategies evolve with the market. This ongoing process helps you stay ahead of the competition and maintain your brand’s relevance and effectiveness.",
-          reviews: [
-            "The refinement and optimization services from G.S. Digital Anchor have kept our brand competitive and relevant in a rapidly changing market.",
-            "Their proactive approach to strategy refinement has ensured that we consistently outperform our competitors.",
-          ],
-        },
-      },
-    ],
-  },
+  // {
+  //   title: "Refinement & Optimization",
+  //   description:
+  //     "Services for established brands aiming to stay ahead of the competition.",
+  //   services: [
+  //     {
+  //       title: "Conversion Rate Optimization (CRO)",
+  //       description:
+  //         "Enhancing your website and campaigns to increase conversions and maximize ROI.",
+  //       details: {
+  //         keywords: ["CRO", "Conversions", "ROI"],
+  //         offer:
+  //           "We analyze and optimize your website and digital campaigns to increase conversion rates and maximize ROI. By refining user experience and testing different strategies, we ensure that your brand’s digital efforts are as effective as possible.",
+  //         reviews: [
+  //           "The CRO strategies implemented by G.S. Digital Anchor have significantly improved our conversion rates. We're seeing better results than ever before.",
+  //           "Their focus on optimizing our campaigns and website has maximized our ROI, delivering tangible results and boosting our bottom line.",
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       title: "Analytics & Reporting",
+  //       description:
+  //         "Leveraging data to gain insights into consumer behavior and refine your strategies.",
+  //       details: {
+  //         keywords: ["Analytics", "Data Insights", "Reporting"],
+  //         offer:
+  //           "We provide detailed analytics and reporting services that give you a deep understanding of consumer behavior. These insights allow us to refine your strategies and make data-driven decisions that enhance your brand’s performance.",
+  //         reviews: [
+  //           "G.S. Digital Anchor’s analytics and reporting have provided us with invaluable insights into our customer behavior. We're now able to make more informed decisions.",
+  //           "Their detailed reports have helped us understand what’s working and where we need to adjust our strategies, leading to better overall performance.",
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       title: "A/B Testing & Experimentation",
+  //       description:
+  //         "Testing different approaches to discover what resonates most with your audience.",
+  //       details: {
+  //         keywords: ["A/B Testing", "Experimentation", "Audience Resonance"],
+  //         offer:
+  //           "We conduct A/B testing and experimentation to determine which strategies and content resonate most with your audience. This data-driven approach ensures that your brand is always optimized for maximum impact and engagement.",
+  //         reviews: [
+  //           "The A/B testing conducted by G.S. Digital Anchor has been incredibly insightful. We now know exactly what works best for our audience.",
+  //           "Their experimentation and testing approach have helped us refine our strategies, leading to higher engagement and better results overall.",
+  //         ],
+  //       },
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Elevation & Maintenance",
+  //   description:
+  //     "Services for brands that have completed the foundational work and are now focused on growth.",
+  //   services: [
+  //     {
+  //       title: "Digital Marketing",
+  //       description:
+  //         "A comprehensive approach to increasing your brand's reach and engaging a broader audience.",
+  //       details: {
+  //         keywords: [
+  //           "Digital Marketing",
+  //           "Audience Engagement",
+  //           "Brand Visibility",
+  //         ],
+  //         offer:
+  //           "We provide a full suite of digital marketing services, including email marketing, social media management, influencer partnerships, and paid media. Our integrated approach ensures that your brand reaches its target audience and drives sustained engagement and growth.",
+  //         reviews: [
+  //           "The digital marketing strategies implemented by G.S. Digital Anchor have significantly expanded our reach and improved customer engagement.",
+  //           "Their comprehensive approach to digital marketing has been instrumental in driving brand visibility and achieving our growth goals.",
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       title: "Website Updates",
+  //       description:
+  //         "Regularly updating and optimizing your website to ensure peak performance and user satisfaction.",
+  //       details: {
+  //         keywords: [
+  //           "Website Optimization",
+  //           "SEO",
+  //           "User Experience",
+  //           "Performance",
+  //         ],
+  //         offer:
+  //           "We provide ongoing website optimization services to keep your site performing at its best. Our focus on SEO, user experience, and technical performance ensures that your website continues to attract and convert visitors effectively.",
+  //         reviews: [
+  //           "Thanks to G.S. Digital Anchor, our website is always optimized for performance and user experience. Their regular updates have been crucial to our online success.",
+  //           "Their ongoing optimization efforts have significantly improved our site’s search rankings and user satisfaction.",
+  //         ],
+  //       },
+  //     },
+  //     {
+  //       title: "Refinement & Optimization",
+  //       description:
+  //         "Continuously refining your brand's strategies to stay ahead of the competition.",
+  //       details: {
+  //         keywords: ["Strategy Refinement", "Optimization", "Competitive Edge"],
+  //         offer:
+  //           "We offer continuous refinement and optimization services to ensure that your brand’s strategies evolve with the market. This ongoing process helps you stay ahead of the competition and maintain your brand’s relevance and effectiveness.",
+  //         reviews: [
+  //           "The refinement and optimization services from G.S. Digital Anchor have kept our brand competitive and relevant in a rapidly changing market.",
+  //           "Their proactive approach to strategy refinement has ensured that we consistently outperform our competitors.",
+  //         ],
+  //       },
+  //     },
+  //   ],
+  // },
 ];

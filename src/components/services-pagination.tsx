@@ -20,7 +20,7 @@ const ServicesPagination = ({
       >
         <ArrowLeftIcon className="w-6 h-6" />
       </button>
-      <span className="text-lg">{selectedPhase + 1}/5</span>
+      <span className="text-lg">{selectedPhase + 1}/3</span>
       <button
         className="py-2 px-4 rounded-2xl text-sm"
         onClick={() => handleNext()}

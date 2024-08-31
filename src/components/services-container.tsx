@@ -16,7 +16,7 @@ const ServicesContainer = () => {
 
   function handleNext() {
     setSelectedPhase((prevCount) => {
-      if (prevCount === 5 - 1) {
+      if (prevCount === 3 - 1) {
         return 0;
       } else {
         return prevCount + 1;
@@ -28,7 +28,7 @@ const ServicesContainer = () => {
   function handlePrev() {
     setSelectedPhase((prevCount) => {
       if (prevCount === 0) {
-        return 5 - 1;
+        return 3 - 1;
       } else {
         return prevCount - 1;
       }
