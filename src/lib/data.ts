@@ -153,26 +153,25 @@ export const servicesData = [
     ],
   },
   {
-    title: "Marketing & Expansion",
+    title: "Digital Marketing",
     description:
       "Services for brands looking to increase their reach & engage a broader audience.",
     services: [
       {
-        title: "Digital Marketing",
+        title: "Email Marketing",
         description:
-          "Implementing targeted digital campaigns to boost brand visibility and engagement.",
+          "Crafting and executing targeted email campaigns to enhance brand awareness, customer engagement, and conversions.",
         details: {
           keywords: [
-            "Digital Campaigns",
-            "Visibility",
-            "Engagement",
-            "Email Marketing",
+            "Email Campaigns",
+            "Customer Engagement",
+            "Conversion Optimization",
           ],
           offer:
-            "We execute targeted digital marketing campaigns that enhance your brand’s visibility and engagement across multiple channels, including email marketing. Our strategic approach ensures that your brand reaches and resonates with the right audience, driving growth and awareness.",
+            "We specialize in designing and implementing targeted email marketing campaigns that boost your brand’s visibility, foster customer engagement, and drive conversions. Our approach focuses on delivering personalized content that resonates with your audience.",
           reviews: [
-            "G.S. Digital Anchor’s digital marketing campaigns have significantly increased our online visibility and engagement. Their email marketing efforts have been particularly effective.",
-            "Their strategic approach to digital marketing has helped us reach a broader audience and build stronger connections with our customers.",
+            "G.S. Digital Anchor’s email marketing strategies have drastically improved our customer engagement and conversion rates.",
+            "Their email campaigns have been instrumental in growing our customer base and enhancing our brand presence. We’ve seen a noticeable increase in open rates and customer interaction.",
           ],
         },
       },
