@@ -1,8 +1,13 @@
 import { aBeeZee, citadel, cormorant } from "@/src/lib/fonts";
 
 import logo from "@/public/icons/lotus.svg";
-import embose_logo from "@/public/images/embose-logo.png";
-import lautus_mockup from "@/public/images/lautus-mockup.png";
+import embose_logo from "@/public/images/lautus/embose-logo.png";
+import lautus_mockup from "@/public/images/lautus/lautus-mockup.png";
+import free_grid_box_1 from "@/public/images/lautus/free_grid_box_1.png";
+import free_grid_box_2 from "@/public/images/lautus/free_grid_box_2.png";
+import free_grid_box_3 from "@/public/images/lautus/free_grid_box_3.png";
+import label_tag_mockup_1 from "@/public/images/lautus/label_tag_mockup_1.png";
+import label_tag_mockup_2 from "@/public/images/lautus/label_tag_mockup_2.png";
 
 import Image from "next/image";
 import { Metadata } from "next";
@@ -27,7 +32,7 @@ export const metadata: Metadata = {
       "See how we crafted a luxurious and professional brand identity for Lautus, specializing in high-end business gifts and stationery.",
     images: [
       {
-        url: "/images/lautus-mockup.png",
+        url: "/images/lautus/lautus-mockup.png",
         width: 1200,
         height: 630,
         alt: "Lautus branding identity overview",
@@ -41,7 +46,7 @@ export const metadata: Metadata = {
     title: "Lautus Branding Identity Case Study",
     description:
       "Discover the luxurious and professional brand identity crafted for Lautus, a provider of high-end business gifts and stationery.",
-    images: ["/images/lautus-mockup.png"],
+    images: ["/images/lautus/lautus-mockup.png"],
   },
   alternates: {
     canonical: "https://gsdigitalanchor.com/portfolio/",
@@ -358,12 +363,43 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      <section className="w-full pb-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
-        <Image
-          src={lautus_mockup}
-          alt="Lautus mockup"
-          className="md:w-[700px]"
-        />
+      <section className="w-full pb-24 px-6 md:px-20 lg:px-40 flex flex-col gap-6 bg-slate-50 text-slate-900">
+        <div className="flex flex-col md:flex-row gap-6">
+          <Image
+            src={lautus_mockup}
+            alt="Lautus mockup"
+            className="w-full md:w-1/2"
+          />
+          <Image
+            src={free_grid_box_1}
+            alt="Free grid box mockup"
+            className="w-full md:w-1/2"
+          />
+        </div>
+        <div className="flex flex-col md:flex-row gap-6">
+          <Image
+            src={free_grid_box_2}
+            alt="Free grid box mockup 2"
+            className="w-full md:w-1/2"
+          />
+          <Image
+            src={free_grid_box_3}
+            alt="Free grid box mockup 3"
+            className="w-full md:w-1/2"
+          />
+        </div>
+        <div className="flex flex-col md:flex-row gap-6">
+          <Image
+            src={label_tag_mockup_1}
+            alt="Label tag mockup"
+            className="w-full md:w-1/2"
+          />
+          <Image
+            src={label_tag_mockup_2}
+            alt="Label tag mockup 2"
+            className="w-full md:w-1/2"
+          />
+        </div>
       </section>
     </main>
   );
