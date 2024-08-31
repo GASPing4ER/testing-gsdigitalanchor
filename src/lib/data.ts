@@ -25,7 +25,7 @@ export const servicesData = [
   {
     title: "Strategy & Consultation",
     description:
-      "Services for brands that are just starting out and need to build a strong foundation.",
+      "Build a strong foundation for your brand with our expert strategy and consultation services, available for free when you book a consultation with us.",
     services: [
       {
         title: "Digital Strategy & Consulting",
@@ -297,58 +297,53 @@ export const servicesData = [
       "Services for brands that have completed the foundational work and are now focused on growth.",
     services: [
       {
-        title: "Social Media & Community Management",
+        title: "Digital Marketing",
         description:
-          "Engaging and growing your online community with consistent, high-touch interactions and content updates.",
+          "A comprehensive approach to increasing your brand's reach and engaging a broader audience.",
         details: {
-          keywords: ["Social Media", "Community Engagement", "Content Updates"],
+          keywords: [
+            "Digital Marketing",
+            "Audience Engagement",
+            "Brand Visibility",
+          ],
           offer:
-            "We provide ongoing social media and community management services to keep your audience engaged and your brand top of mind. Through consistent, high-touch interactions and regular content updates, we ensure that your online community continues to grow and thrive.",
+            "We provide a full suite of digital marketing services, including email marketing, social media management, influencer partnerships, and paid media. Our integrated approach ensures that your brand reaches its target audience and drives sustained engagement and growth.",
           reviews: [
-            "G.S. Digital Anchor’s ongoing social media management has kept our community engaged and growing. We're seeing higher levels of interaction and brand loyalty.",
-            "Their approach to community management has not only maintained but also enhanced our online presence, keeping our brand relevant and engaging.",
+            "The digital marketing strategies implemented by G.S. Digital Anchor have significantly expanded our reach and improved customer engagement.",
+            "Their comprehensive approach to digital marketing has been instrumental in driving brand visibility and achieving our growth goals.",
           ],
         },
       },
       {
-        title: "Website Optimization & Maintenance",
+        title: "Website Optimization",
         description:
-          "Regularly updating your website and content to ensure it remains optimized for SEO and UX.",
+          "Regularly updating and optimizing your website to ensure peak performance and user satisfaction.",
         details: {
-          keywords: ["Website Maintenance", "SEO", "UX", "Content Updates"],
+          keywords: [
+            "Website Optimization",
+            "SEO",
+            "User Experience",
+            "Performance",
+          ],
           offer:
-            "We provide regular website optimization and maintenance services to ensure that your site remains up-to-date, optimized for SEO, and provides an excellent user experience. This ongoing attention keeps your website performing at its best.",
+            "We provide ongoing website optimization services to keep your site performing at its best. Our focus on SEO, user experience, and technical performance ensures that your website continues to attract and convert visitors effectively.",
           reviews: [
-            "Thanks to G.S. Digital Anchor, our website is always up-to-date and performing at its best. Their regular maintenance has been crucial to our online success.",
-            "Their ongoing optimization efforts have significantly improved our site’s SEO and user experience, leading to better engagement and higher search rankings.",
+            "Thanks to G.S. Digital Anchor, our website is always optimized for performance and user experience. Their regular updates have been crucial to our online success.",
+            "Their ongoing optimization efforts have significantly improved our site’s search rankings and user satisfaction.",
           ],
         },
       },
       {
-        title: "Paid Media Management",
+        title: "Refinement & Optimization",
         description:
-          "Continuously optimizing ad spend and targeting to maximize ROI.",
+          "Continuously refining your brand's strategies to stay ahead of the competition.",
         details: {
-          keywords: ["Paid Media", "Ad Spend", "Targeting", "ROI"],
+          keywords: ["Strategy Refinement", "Optimization", "Competitive Edge"],
           offer:
-            "We manage and optimize your paid media campaigns on an ongoing basis, ensuring that your ad spend is used efficiently and effectively. By continuously refining targeting and strategy, we maximize your ROI and help you achieve sustained growth.",
+            "We offer continuous refinement and optimization services to ensure that your brand’s strategies evolve with the market. This ongoing process helps you stay ahead of the competition and maintain your brand’s relevance and effectiveness.",
           reviews: [
-            "The paid media management services from G.S. Digital Anchor have helped us optimize our ad spend and achieve a higher ROI.",
-            "Their continuous optimization of our ad campaigns has led to better targeting, higher conversions, and significant growth in our business.",
-          ],
-        },
-      },
-      {
-        title: "Conversion Rate Optimization (CRO) Updates",
-        description:
-          "Ongoing testing and tweaks to enhance user experience and conversion rates.",
-        details: {
-          keywords: ["CRO Updates", "User Experience", "Conversion Rates"],
-          offer:
-            "We provide ongoing CRO updates to ensure that your website and campaigns are always optimized for the best possible user experience and conversion rates. Our continuous testing and refinement help you maintain and improve performance over time.",
-          reviews: [
-            "The ongoing CRO updates from G.S. Digital Anchor have consistently improved our conversion rates. We're seeing steady growth thanks to their efforts.",
-            "Their dedication to continuously refining our user experience has made a noticeable impact on our bottom line, with higher conversions month over month.",
+            "The refinement and optimization services from G.S. Digital Anchor have kept our brand competitive and relevant in a rapidly changing market.",
+            "Their proactive approach to strategy refinement has ensured that we consistently outperform our competitors.",
           ],
         },
       },
