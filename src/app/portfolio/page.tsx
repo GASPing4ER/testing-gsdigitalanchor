@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 const PortfolioPage = () => {
   return (
     <main className="min-h-screen w-full">
-      <section className="w-full px-6 pt-40 pb-24 sm:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
+      <section className="w-full px-6 pt-40 pb-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
         <div className="flex flex-col gap-8">
           <p className="text-sm">BRANDING IDENTITY</p>
           <div className="flex flex-col gap-4">
@@ -78,14 +78,14 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      <section className="w-full px-6 py-24 sm:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
+      <section className="w-full px-6 py-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
         <div className="flex flex-col gap-8">
           <p className="text-sm">OVERVIEW</p>
           <div className="flex flex-col gap-4">
             <h2 className={`${cormorant.className} text-4xl sm:text-7xl`}>
               Of our work
             </h2>
-            <div className="flex gap-10">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-10">
               <p className="text-sm sm:text-base font-medium max-w-[500px]">
                 When Lautus approached us for their branding identity, they
                 needed a look and feel that mirrored the luxurious nature of
@@ -104,34 +104,34 @@ const PortfolioPage = () => {
       </section>
 
       <section
-        className={`${aBeeZee.className} bg-[#DEDADB] w-full py-24 flex flex-col items-center justify-center text-slate-900 gap-12`}
+        className={`${aBeeZee.className} bg-[#DEDADB] w-full py-12 sm:py-24 flex flex-col items-center justify-center text-slate-900 gap-12`}
       >
         <p className="text-sm uppercase">Color Palette</p>
-        <div className="flex gap-10">
+        <div className="flex gap-4 sm:gap-10">
           <span className="flex flex-col gap-4 items-center text-xs uppercase">
-            <div className="w-24 h-24 bg-[#f8f7f2] rounded-full" />
+            <div className="w-10 h-10 md:w-24 md:h-24 bg-[#f8f7f2] rounded-full" />
             #F8F7F2
           </span>
           <span className="flex flex-col gap-4 items-center text-xs uppercase">
-            <div className="w-24 h-24 bg-[#91805b] rounded-full" />
+            <div className="w-10 h-10 md:w-24 md:h-24 bg-[#91805b] rounded-full" />
             #91805b
           </span>
           <span className="flex flex-col gap-4 items-center text-xs uppercase">
-            <div className="w-24 h-24 bg-[#4b4e49] rounded-full" />
+            <div className="w-10 h-10 md:w-24 md:h-24 bg-[#4b4e49] rounded-full" />
             #4b4e49
           </span>
           <span className="flex flex-col gap-4 items-center text-xs uppercase">
-            <div className="w-24 h-24 bg-[#424e3e] rounded-full" />
+            <div className="w-10 h-10 md:w-24 md:h-24 bg-[#424e3e] rounded-full" />
             #424e3e
           </span>
           <span className="flex flex-col gap-4 items-center text-xs uppercase">
-            <div className="w-24 h-24 bg-[#202b22] rounded-full" />
+            <div className="w-10 h-10 md:w-24 md:h-24 bg-[#202b22] rounded-full" />
             #202b22
           </span>
         </div>
       </section>
 
-      <section className="w-full px-6 py-24 sm:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
+      <section className="w-full px-6 py-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
         <div className="flex flex-col gap-8">
           <p className="text-sm">EXPLANATION</p>
           <div className="flex flex-col gap-4">
@@ -215,9 +215,9 @@ const PortfolioPage = () => {
       </section>
 
       <section
-        className={`${aBeeZee.className} bg-slate-50 w-full flex items-center justify-center text-[#202b22] gap-2`}
+        className={`${aBeeZee.className} bg-slate-50 w-full flex flex-col md:flex-row items-center justify-center text-[#202b22] gap-2`}
       >
-        <div className="flex-1 flex flex-col gap-4 px-24 py-12 bg-[#91805b]">
+        <div className="w-full h-[350px] flex-1 flex flex-col gap-4 px-6 sm:px-24 py-12 bg-[#91805b]">
           <p className="text-sm">HEADER FONT</p>
           <h2 className={`${citadel.className} text-5xl`}>Citadel script</h2>
           <div>
@@ -230,7 +230,7 @@ const PortfolioPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-4 px-24 py-12 bg-[#91805b]">
+        <div className="w-full h-[350px] flex-1 flex flex-col gap-4 px-6 sm:px-24 py-12 bg-[#91805b]">
           <p className="text-sm">BODY FONT</p>
           <h2 className={`text-5xl`}>ABeeZee</h2>
           <div>
@@ -245,7 +245,7 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      <section className="w-full px-6 py-24 sm:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
+      <section className="w-full px-6 py-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
         <div className="flex flex-col gap-8">
           <p className="text-sm">EXPLANATION</p>
           <div className="flex flex-col gap-4">
@@ -289,14 +289,20 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      <section className="w-full px-6 sm:px-40 flex justify-center bg-slate-50 text-slate-900">
-        <div className="w-[400px] bg-[#202b22] flex justify-center items-center">
+      <section className="w-full md:px-20 lg:px-40 flex flex-col sm:flex-row justify-center bg-slate-50 text-slate-900">
+        <div className="w-full h-[300px] sm:w-[400px] sm:h-auto  bg-[#202b22] flex justify-center items-center">
           <Image src={logo} alt="Embose logo" className="w-[120px]" />
         </div>
-        <Image src={embose_logo} alt="Embose logo" className="w-[400px]" />
+        <div>
+          <Image
+            src={embose_logo}
+            alt="Embose logo"
+            className="h-[300px] object-cover sm:h-auto sm:w-[400px]"
+          />
+        </div>
       </section>
 
-      <section className="w-full px-6 py-24 sm:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
+      <section className="w-full px-6 py-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
         <div className="flex flex-col gap-8">
           <p className="text-sm">EXPLANATION</p>
           <div className="flex flex-col gap-4">
@@ -304,8 +310,8 @@ const PortfolioPage = () => {
               Of logo design
             </h2>
             <div className="flex flex-col gap-10">
-              <div className="flex gap-10">
-                <div className="w-[400px] h-[300px] border p-6 flex flex-col gap-2">
+              <div className="flex flex-col md:flex-row gap-10">
+                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Purity and Beauty:</h3>
                   <p>
                     The lotus is often associated with purity and beauty, both
@@ -315,7 +321,7 @@ const PortfolioPage = () => {
                     from muddy waters.
                   </p>
                 </div>
-                <div className="w-[400px] h-[300px] border p-6 flex flex-col gap-2">
+                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Growth and Resilience:</h3>
                   <p>
                     The lotus is also a symbol of growth and resilience,
@@ -326,8 +332,8 @@ const PortfolioPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-10">
-                <div className="w-[400px] h-[300px] border p-6 flex flex-col gap-2">
+              <div className="flex flex-col md:flex-row gap-10">
+                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Elegance and Simplicity:</h3>
                   <p>
                     The design of the lotus is simple yet sophisticated,
@@ -336,7 +342,7 @@ const PortfolioPage = () => {
                     digital to print, while maintaining its visual impact.
                   </p>
                 </div>
-                <div className="w-[400px] h-[300px] border p-6 flex flex-col gap-2">
+                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Connection to Nature:</h3>
                   <p>
                     The use of a natural element like the lotus ties in with the
@@ -352,8 +358,12 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      <section className="w-full px-6 pb-24 sm:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
-        <Image src={lautus_mockup} alt="Lautus mockup" className="w-[700px]" />
+      <section className="w-full pb-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">
+        <Image
+          src={lautus_mockup}
+          alt="Lautus mockup"
+          className="md:w-[700px]"
+        />
       </section>
     </main>
   );
