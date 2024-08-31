@@ -311,7 +311,7 @@ const PortfolioPage = () => {
             </h2>
             <div className="flex flex-col gap-10">
               <div className="flex flex-col md:flex-row gap-10">
-                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
+                <div className="w-full md:w-[400px] lg:w-1/2 h-auto md:h-[300px] lg:h-auto border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Purity and Beauty:</h3>
                   <p>
                     The lotus is often associated with purity and beauty, both
@@ -321,7 +321,7 @@ const PortfolioPage = () => {
                     from muddy waters.
                   </p>
                 </div>
-                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
+                <div className="w-full md:w-[400px] lg:w-1/2 h-auto md:h-[300px] lg:h-auto border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Growth and Resilience:</h3>
                   <p>
                     The lotus is also a symbol of growth and resilience,
@@ -333,7 +333,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="flex flex-col md:flex-row gap-10">
-                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
+                <div className="w-full md:w-[400px] lg:w-1/2 h-auto md:h-[300px] lg:h-auto border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Elegance and Simplicity:</h3>
                   <p>
                     The design of the lotus is simple yet sophisticated,
@@ -342,7 +342,7 @@ const PortfolioPage = () => {
                     digital to print, while maintaining its visual impact.
                   </p>
                 </div>
-                <div className="w-full md:w-[400px] h-auto md:h-[300px] border p-6 flex flex-col gap-2">
+                <div className="w-full md:w-[400px] lg:w-1/2 h-auto md:h-[300px] lg:h-auto border p-6 flex flex-col gap-2">
                   <h3 className="uppercase">Connection to Nature:</h3>
                   <p>
                     The use of a natural element like the lotus ties in with the
