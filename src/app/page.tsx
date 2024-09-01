@@ -83,7 +83,7 @@ export default function Home() {
               className="flex-1 anchor-cursor"
               aria-label="Strategy"
             >
-              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+              <div className="w-full h-[300px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
                 <span className="text-[#AB7952]">01</span>
                 <div className="flex flex-col gap-4">
                   <h2
@@ -110,7 +110,7 @@ export default function Home() {
               className="flex-1 anchor-cursor"
               aria-label="Branding"
             >
-              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+              <div className="w-full h-[300px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
                 <span className="text-[#AB7952]">02</span>
                 <div className="flex flex-col gap-4">
                   <h2
@@ -136,7 +136,7 @@ export default function Home() {
               className="flex-1 anchor-cursor"
               aria-label="Website"
             >
-              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+              <div className="w-full h-[300px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
                 <span className="text-[#AB7952]">03</span>
                 <div className="flex flex-col gap-4">
                   <h2
@@ -160,7 +160,7 @@ export default function Home() {
               className="flex-1 anchor-cursor"
               aria-label="Marketing"
             >
-              <div className="w-full h-[300px] lg:h-[400px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
+              <div className="w-full h-[300px] border border-slate-50/10 p-6 flex flex-col justify-between hover:scale-95 transition-transform">
                 <span className="text-[#AB7952]">04</span>
                 <div className="flex flex-col gap-4">
                   <h2
