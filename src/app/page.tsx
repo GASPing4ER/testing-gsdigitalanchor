@@ -15,9 +15,9 @@ import Testimonials from "../components/testimonials";
 import PricingPackage from "../components/pricing-package";
 
 export const metadata: Metadata = {
-  title: "G.S. Digital Anchor | Leading Marketing Agency for Online Growth",
+  title: "G.S. Digital Anchor | Leading Digital Agency for Online Growth",
   description:
-    "Welcome to G.S. Digital Anchor, the premier marketing agency dedicated to helping businesses elevate their online presence. Explore our services to see how we can drive your growth.",
+    "Welcome to G.S. Digital Anchor, the premier digital agency dedicated to helping businesses elevate their online presence. Explore our services to see how we can drive your growth.",
   keywords: [
     "Luxury digital marketing agency",
     "Exclusive online growth strategies",
@@ -38,7 +38,7 @@ export default function Home() {
           <h1
             className={`${cormorant.className} font-semibold text-slate-50 text-4xl sm:text-5xl md:text-6xl max-w-[400px] sm:max-w-[600px]`}
           >
-            Where Tradition Meets Digital Innovation
+            Digital Agency for Online Growth
           </h1>
           <p className="text-slate-50 text-lg max-w-[600px]">
             We craft bespoke digital strategies, branding, and marketing to

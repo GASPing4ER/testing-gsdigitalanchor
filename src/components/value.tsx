@@ -7,7 +7,7 @@ type ValueProps = {
 
 const Value = ({ title, description }: ValueProps) => {
   return (
-    <div className="text-center flex flex-col gap-2">
+    <div className="text-center lg:text-left flex flex-col gap-2 flex-1">
       <h2
         className={`${cormorant.className} text-4xl sm:text-5xl font-semibold text-slate-50`}
       >

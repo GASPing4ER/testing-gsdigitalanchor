@@ -29,7 +29,7 @@ const AboutPage = () => {
           <h1
             className={`${cormorant.className} font-semibold text-slate-50 text-4xl sm:text-5xl md:text-6xl max-w-[400px] sm:max-w-[600px]`}
           >
-            Heritage in Digital Excellence
+            Who We Are
           </h1>
           <p className="text-slate-50 text-lg max-w-[600px]">
             An authentic website oriented agency for vibrant brands with a
@@ -45,12 +45,12 @@ const AboutPage = () => {
         </div>
       </div>
       <div
-        className="w-full flex flex-col gap-8 p-6 sm:p-24 bg-slate-900 text-center"
+        className="w-full flex flex-col gap-8 p-6 sm:p-24 bg-slate-900 text-center lg:text-left"
         role="region"
         aria-labelledby="our-values-section"
       >
         <h2 className="text-[#AB7952] text-xs tracking-widest">OUR VALUES</h2>
-        <p className="text-slate-50 text-sm sm:text-base max-w-[700px] mx-auto">
+        <p className="text-slate-50 text-sm sm:text-base max-w-[700px] mx-auto lg:mx-0">
           This is the <span className="italic">fabric of our culture</span> and
           the framework for all decisions made within these walls. Heads up,
           they tend to be contagious.

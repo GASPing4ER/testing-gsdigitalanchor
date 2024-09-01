@@ -8,16 +8,12 @@ export const values = [
     description: "Embrace creativity and set trends",
   },
   {
-    title: "Integrity",
-    description: "Build trust through honesty and transparency",
-  },
-  {
     title: "Elegance",
     description: "Reflect sophistication in every detail",
   },
   {
-    title: "Commitment",
-    description: "Dedicate ourselves fully to client success",
+    title: "Integrity",
+    description: "Build trust through transparency.",
   },
 ];
 
