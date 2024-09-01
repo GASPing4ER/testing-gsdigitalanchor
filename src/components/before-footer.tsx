@@ -8,6 +8,7 @@ const BeforeFooter = () => {
   return (
     <div className="bg-slate-900 text-slate-50 p-4 sm:p-10 flex justify-center text-center gap-10">
       <div className="flex flex-col gap-5">
+        <h2 className="text-xs tracking-widest text-[#AB7952]">WORKING WITH</h2>
         <div className="flex flex-col lg:flex-row items-center gap-5">
           <div className="flex gap-5">
             <Image
