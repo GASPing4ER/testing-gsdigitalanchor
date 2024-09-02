@@ -1,10 +1,11 @@
 import logo from "@/public/icons/lotus.svg";
+import logo_400_gradi from "@/public/images/400gradi/logo-black.svg";
 import supple_iphone_mockup_3 from "@/public/images/supple/supple_iphone_mockup_3.png";
 import gradi_iphone_mockup_3 from "@/public/images/400gradi/gradi_iphone_mockup_3.png";
 
 import Image from "next/image";
 import { Metadata } from "next";
-import { aBeeZee, citadel, cormorant } from "@/src/lib/fonts";
+import { aBeeZee, cinzel, citadel, cormorant, garamond } from "@/src/lib/fonts";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -101,15 +102,45 @@ const PortfolioPage = () => {
       <div className="flex flex-col lg:flex-row w-full gap-10">
         <div className="flex flex-col gap-4">
           <Link href="/portfolio/400gradikranj" className="relative w-full">
+            <div className="absolute top-0 left-0 w-full h-full hover:bg-black/20 z-[5]" />
+            <div className="relative bg-[#EAE3D7] w-full lg:w-[500px] h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
+              <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
+                <p>2023</p>
+                <p>BRANDING IDENTITY</p>
+              </div>
+              <Image
+                src={logo_400_gradi}
+                alt="400 Gradi Kranj logo"
+                className="w-20"
+              />
+              <div className="flex flex-col gap-2 items-center text-center text-black">
+                <h2 className={`${cinzel.className} text-3xl`}>
+                  400 GRADI KRANJ
+                </h2>
+                <h3 className={`${garamond.className} text-lg sm:text-xl`}>
+                  AUTHENTIC ITALIAN CUISINE
+                </h3>
+              </div>
+            </div>
+          </Link>
+          <Link href="/portfolio/400gradikranj">
+            <h2 className={`${cormorant.className} text-4xl font-medium`}>
+              400 Gradi Kranj
+            </h2>
+          </Link>
+          <hr />
+        </div>
+        <div className="flex flex-col gap-4">
+          <Link href="/portfolio/400gradikranj" className="relative w-full">
             <div className="absolute top-0 left-0 w-full h-full bg-black/20 hover:bg-black/40 z-[5]" />
             <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
-                <p>2024</p>
+                <p>2023</p>
                 <p>WEB DESIGN & DEVELOPMENT</p>
               </div>
               <Image
                 src={gradi_iphone_mockup_3}
-                alt="Supple Thumbnail"
+                alt="400 Gradi Kranj Thumbnail"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -121,30 +152,6 @@ const PortfolioPage = () => {
           </Link>
           <hr />
         </div>
-        {/* <div className="flex flex-col gap-4">
-          <Link href="/portfolio/lautus" className="relative w-full">
-            <div className="absolute top-0 left-0 w-full h-full hover:bg-black/20 z-[5]" />
-            <div className="relative bg-[#202B22] w-full lg:w-[500px] h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
-              <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
-                <p>2023</p>
-                <p>BRANDING IDENTITY</p>
-              </div>
-              <Image src={logo} alt="Lautus logo" />
-              <div className="flex flex-col items-center text-center">
-                <h2 className={`${citadel.className} text-7xl`}>Lautus</h2>
-                <h3 className={`${aBeeZee.className} text-lg sm:text-xl`}>
-                  ELEGANT GIFTS & STATIONERY
-                </h3>
-              </div>
-            </div>
-          </Link>
-          <Link href="/portfolio/lautus">
-            <h2 className={`${cormorant.className} text-4xl font-medium`}>
-              Lautus
-            </h2>
-          </Link>
-          <hr />
-        </div> */}
       </div>
     </main>
   );

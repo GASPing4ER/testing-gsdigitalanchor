@@ -1,4 +1,4 @@
-import { cormorant, philosopher } from "@/src/lib/fonts";
+import { cinzel, cormorant, garamond } from "@/src/lib/fonts";
 
 import logo from "@/public/images/400gradi/logo-black.svg";
 import gradi_iphone_mockup from "@/public/images/400gradi/gradi_iphone_mockup.png";
@@ -69,13 +69,14 @@ const GradiKranjPage = () => {
         </div>
       </section>
 
-      <section className="bg-[#d2bba2]/10 w-full py-24 flex flex-col gap-4 items-center justify-center text-[#91805B] border">
+      <section className="bg-[#d2bba2]/10 w-full py-24 flex flex-col gap-12 items-center justify-center text-black border">
         <Image src={logo} alt="400 Gradi Kranj logo" className="w-20" />
-        <h2
-          className={`${cormorant.className} text-black text-2xl font-medium`}
-        >
-          AUTHENTIC ITALIAN CUISINE
-        </h2>
+        <div className="flex flex-col items-center">
+          <h2 className={`${cinzel.className} text-3xl`}>400 GRADI KRANJ</h2>
+          <h3 className={`${garamond.className} text-xl`}>
+            AUTHENTIC ITALIAN CUISINE
+          </h3>
+        </div>
       </section>
 
       <section className="w-full px-6 py-24 md:px-20 lg:px-40 flex flex-col gap-8 bg-slate-50 text-slate-900">

@@ -1,4 +1,10 @@
-import { ABeeZee, Cormorant_Garamond, Montserrat } from "next/font/google";
+import {
+  ABeeZee,
+  Cormorant_Garamond,
+  Montserrat,
+  EB_Garamond,
+  Cinzel,
+} from "next/font/google";
 import localFont from "next/font/local";
 
 export const citadel = localFont({
@@ -38,6 +44,16 @@ export const philosopher = localFont({
 export const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+});
+
+export const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const garamond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const montserrat = Montserrat({
