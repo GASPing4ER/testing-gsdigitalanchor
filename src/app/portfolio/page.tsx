@@ -1,5 +1,5 @@
 import logo from "@/public/icons/lotus.svg";
-import thumbnail_supple from "@/public/images/supple/supple.jpg";
+import supple_iphone_mockup_3 from "@/public/images/supple/supple_iphone_mockup_3.png";
 
 import Image from "next/image";
 import { Metadata } from "next";
@@ -7,40 +7,31 @@ import { aBeeZee, citadel, cormorant } from "@/src/lib/fonts";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Lautus Branding Identity Case Study | Elegant Gifts & Stationery",
+  title: "Portfolio | G.S. Digital Anchor",
   description:
-    "Explore the branding identity case study for Lautus, a company specializing in high-end business gifts and stationery. Discover the design choices that reflect luxury, sophistication, and professionalism.",
+    "Explore our portfolio of web design, development, and branding case studies. Discover the innovative solutions we’ve crafted for various clients, showcasing our expertise in creating compelling digital experiences.",
   keywords: [
-    "Lautus",
-    "branding identity",
-    "business gifts",
-    "luxury stationery",
-    "logo design",
-    "color palette",
-    "typography",
-    "corporate branding",
+    "portfolio",
+    "web design",
+    "web development",
+    "branding",
+    "case studies",
+    "UI/UX design",
+    "e-commerce",
+    "digital experiences",
   ],
   openGraph: {
-    title: "Lautus Branding Identity Case Study | Elegant Gifts & Stationery",
+    title: "Portfolio | G.S. Digital Anchor",
     description:
-      "See how we crafted a luxurious and professional brand identity for Lautus, specializing in high-end business gifts and stationery.",
-    images: [
-      {
-        url: "/images/lautus/lautus-mockup.png",
-        width: 1200,
-        height: 630,
-        alt: "Lautus branding identity overview",
-      },
-    ],
+      "Browse through our portfolio of case studies, highlighting our work in web design, development, and branding. See how we've helped clients build strong digital presences.",
     url: "https://gsdigitalanchor.com/portfolio/",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lautus Branding Identity Case Study",
+    title: "Portfolio | G.S. Digital Anchor",
     description:
-      "Discover the luxurious and professional brand identity crafted for Lautus, a provider of high-end business gifts and stationery.",
-    images: ["/images/lautus/lautus-mockup.png"],
+      "Explore our portfolio showcasing case studies in web design, development, and branding, reflecting our commitment to creating exceptional digital experiences.",
   },
   alternates: {
     canonical: "https://gsdigitalanchor.com/portfolio/",
@@ -60,21 +51,21 @@ const PortfolioPage = () => {
       </h2>
       <div className="flex flex-col lg:flex-row w-full gap-10">
         <div className="flex flex-col gap-4">
-          <Link href="#" className="relative w-full">
-            <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[5]" />
+          <Link href="/portfolio/supple-wear" className="relative w-full">
+            <div className="absolute top-0 left-0 w-full h-full bg-black/20 hover:bg-black/40 z-[5]" />
             <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2024</p>
                 <p>WEB DESIGN & DEVELOPMENT</p>
               </div>
               <Image
-                src={thumbnail_supple}
+                src={supple_iphone_mockup_3}
                 alt="Supple Thumbnail"
                 className="h-full w-full object-cover"
               />
             </div>
           </Link>
-          <Link href="#">
+          <Link href="/portfolio/supple-wear">
             <h2 className={`${cormorant.className} text-4xl font-medium`}>
               Supple Wear
             </h2>
@@ -82,9 +73,10 @@ const PortfolioPage = () => {
           <hr />
         </div>
         <div className="flex flex-col gap-4">
-          <Link href="/portfolio/lautus" className="w-full">
+          <Link href="/portfolio/lautus" className="relative w-full">
+            <div className="absolute top-0 left-0 w-full h-full hover:bg-black/20 z-[5]" />
             <div className="relative bg-[#202B22] w-full lg:w-[500px] h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
-              <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6">
+              <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2023</p>
                 <p>BRANDING IDENTITY</p>
               </div>
