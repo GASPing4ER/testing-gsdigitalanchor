@@ -109,7 +109,7 @@ const SuppleWearPage = () => {
       >
         <p className="text-sm uppercase">WIREFRAMING & PROTOTYPING</p>
         <div className="flex flex-col lg:flex-row gap-4 sm:gap-10 text-center">
-          <div className="flex gap-4">
+          <div className="flex-1 flex gap-4">
             <span className="flex-1 flex flex-col gap-4 items-center text-xs uppercase">
               <h3 className={`${philosopher.className} text-xl`}>MINIMALISM</h3>
               <p>A clean and uncluttered design to reflect elegance.</p>
@@ -124,7 +124,7 @@ const SuppleWearPage = () => {
               </p>
             </span>
           </div>
-          <div className="flex gap-4">
+          <div className="flex-1 flex gap-4">
             <span className="flex-1 flex flex-col gap-4 items-center text-xs uppercase">
               <h3 className={`${philosopher.className} text-xl`}>TYPOGRAPHY</h3>
               <p>
