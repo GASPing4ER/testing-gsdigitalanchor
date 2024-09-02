@@ -1,10 +1,13 @@
-import { aBeeZee, cinzel, cormorant, garamond } from "@/src/lib/fonts";
+import { cinzel, cormorant, garamond } from "@/src/lib/fonts";
 
 import logo from "@/public/images/400gradi/logo-black.svg";
-import embose_logo from "@/public/images/lautus/embose-logo.png";
 import benefit_1 from "@/public/images/400gradi/benefit-1.svg";
 import benefit_2 from "@/public/images/400gradi/benefit-2.svg";
 import benefit_3 from "@/public/images/400gradi/benefit-3.svg";
+
+import bon_400 from "@/public/images/400gradi/bon_400.png";
+import tshirt_400 from "@/public/images/400gradi/tshirt_400.png";
+import wine_menu_400 from "@/public/images/400gradi/wine_menu_400.png";
 
 import Image from "next/image";
 import { Metadata } from "next";
@@ -322,44 +325,27 @@ const LautusPage = () => {
         </div>
       </section>
 
-      {/* <section className="w-full pb-24 px-6 md:px-20 lg:px-40 flex flex-col gap-6 bg-slate-50 text-slate-900">
+      <section className="w-full pb-24 px-6 md:px-20 lg:px-40 flex flex-col gap-6 bg-slate-50 text-slate-900">
         <div className="flex flex-col md:flex-row gap-6">
           <Image
-            src={lautus_mockup}
+            src={wine_menu_400}
             alt="Lautus mockup"
             className="w-full md:w-1/2"
           />
           <Image
-            src={free_grid_box_1}
+            src={bon_400}
             alt="Free grid box mockup"
             className="w-full md:w-1/2"
           />
         </div>
         <div className="flex flex-col md:flex-row gap-6">
           <Image
-            src={free_grid_box_2}
+            src={tshirt_400}
             alt="Free grid box mockup 2"
             className="w-full md:w-1/2"
           />
-          <Image
-            src={free_grid_box_3}
-            alt="Free grid box mockup 3"
-            className="w-full md:w-1/2"
-          />
         </div>
-        <div className="flex flex-col md:flex-row gap-6">
-          <Image
-            src={label_tag_mockup_1}
-            alt="Label tag mockup"
-            className="w-full md:w-1/2"
-          />
-          <Image
-            src={label_tag_mockup_2}
-            alt="Label tag mockup 2"
-            className="w-full md:w-1/2"
-          />
-        </div>
-      </section> */}
+      </section>
     </main>
   );
 };

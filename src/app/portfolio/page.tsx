@@ -2,6 +2,7 @@ import logo from "@/public/icons/lotus.svg";
 import logo_400_gradi from "@/public/images/400gradi/logo-black.svg";
 import supple_iphone_mockup_3 from "@/public/images/supple/supple_iphone_mockup_3.png";
 import gradi_iphone_mockup_3 from "@/public/images/400gradi/gradi_iphone_mockup_3.png";
+import lamaisondigitale_cover from "@/public/images/lamaisondigitale/imac_LMD.png";
 
 import Image from "next/image";
 import { Metadata } from "next";
@@ -151,6 +152,30 @@ const PortfolioPage = () => {
           <Link href="/portfolio/400gradikranj">
             <h2 className={`${cormorant.className} text-4xl font-medium`}>
               400 Gradi Kranj
+            </h2>
+          </Link>
+          <hr />
+        </div>
+      </div>
+      <div className="flex flex-col lg:flex-row w-full gap-10">
+        <div className="flex flex-col gap-4">
+          <Link href="/portfolio/lamaisondigitale" className="relative w-full">
+            <div className="absolute top-0 left-0 w-full h-full bg-black/20 hover:bg-black/40 z-[5]" />
+            <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
+              <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
+                <p>2022</p>
+                <p>WEB DESIGN & DEVELOPMENT</p>
+              </div>
+              <Image
+                src={lamaisondigitale_cover}
+                alt="La Maison Digitale Thumbnail"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Link>
+          <Link href="/portfolio/lamaisondigitale">
+            <h2 className={`${cormorant.className} text-4xl font-medium`}>
+              La Maison Digitale
             </h2>
           </Link>
           <hr />
