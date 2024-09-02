@@ -49,7 +49,7 @@ const PortfolioPage = () => {
       <h2
         className={`${cormorant.className} font-semibold text-slate-900 text-3xl sm:text-5xl`}
       >
-        Our Expertise
+        Our Projects
       </h2>
       <div className="flex flex-col lg:flex-row w-full gap-10">
         <div className="flex flex-col gap-4">
@@ -101,7 +101,10 @@ const PortfolioPage = () => {
       </div>
       <div className="flex flex-col lg:flex-row w-full gap-10">
         <div className="flex flex-col gap-4">
-          <Link href="/portfolio/400gradikranj" className="relative w-full">
+          <Link
+            href="/portfolio/400gradikranj-branding"
+            className="relative w-full"
+          >
             <div className="absolute top-0 left-0 w-full h-full hover:bg-black/20 z-[5]" />
             <div className="relative bg-[#EAE3D7] w-full lg:w-[500px] h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
@@ -123,7 +126,7 @@ const PortfolioPage = () => {
               </div>
             </div>
           </Link>
-          <Link href="/portfolio/400gradikranj">
+          <Link href="/portfolio/400gradikranj-branding">
             <h2 className={`${cormorant.className} text-4xl font-medium`}>
               400 Gradi Kranj
             </h2>
