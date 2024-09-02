@@ -1,4 +1,4 @@
-import { cormorant, philosopher } from "@/src/lib/fonts";
+import { cormorant } from "@/src/lib/fonts";
 
 import logo from "@/public/images/lamaisondigitale/logo.png";
 import lamaisondigitale_imac from "@/public/images/lamaisondigitale/imac_LMD.png";
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
       "See how we created an innovative and strategically focused digital experience for La Maison Digitale, a boutique marketing agency.",
     images: [
       {
-        url: "/images/lamaisondigitale/lamaisondigitale_mockup.png",
+        url: "/images/lamaisondigitale/imac_LMD.png",
         width: 1200,
         height: 630,
         alt: "La Maison Digitale website mockup",
       },
     ],
-    url: "https://gsdigitalanchor.com/portfolio/la-maison-digitale",
+    url: "https://gsdigitalanchor.com/portfolio/lamaisondigitale",
     type: "website",
   },
   twitter: {
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     title: "La Maison Digitale Web Design & Development Case Study",
     description:
       "Discover the innovative and strategically focused web design and development crafted for La Maison Digitale, a boutique marketing agency.",
-    images: ["/images/lamaisondigitale/lamaisondigitale_mockup.png"],
+    images: ["/images/lamaisondigitale/imac_LMD.png"],
   },
   alternates: {
-    canonical: "https://gsdigitalanchor.com/portfolio/la-maison-digitale",
+    canonical: "https://gsdigitalanchor.com/portfolio/lamaisondigitale",
   },
 };
 
@@ -71,7 +71,7 @@ const LaMaisonDigitalePage = () => {
       </section>
 
       <section className="bg-[#292726] w-full py-24 flex flex-col items-center justify-center text-white border gap-12">
-        <Image src={logo} alt="Lautus logo" className="w-32" />
+        <Image src={logo} alt="La Maison Digitale logo" className="w-32" />
         <div className="flex flex-col gap-2 items-center">
           <h2
             className={`${cormorant.className} uppercase text-5xl text-center`}
@@ -204,19 +204,19 @@ const LaMaisonDigitalePage = () => {
         <div className="flex flex-col md:flex-row gap-6">
           <Image
             src={lamaisondigitale_imac}
-            alt="Lautus mockup"
+            alt="La Maison Digitale Imac mockup"
             className="w-full md:w-1/2"
           />
           <Image
             src={lamaisondigitale_iphone_tablet}
-            alt="Free grid box mockup"
+            alt="La Maison Digitale iPhone and Tablet mockup"
             className="w-full md:w-1/2"
           />
         </div>
         <div className="flex flex-col md:flex-row gap-6">
           <Image
             src={lamaisondigitale_mac}
-            alt="Free grid box mockup 2"
+            alt="La Maison Digitale Macbook mockup"
             className="w-full md:w-1/2"
           />
         </div>
