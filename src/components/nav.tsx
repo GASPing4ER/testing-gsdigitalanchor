@@ -17,7 +17,7 @@ const Navigation = () => {
       <div>
         <Bars3Icon
           onClick={() => setIsOpen(true)}
-          className="lg:hidden w-6 h-6 text-white"
+          className="lg:hidden w-6 h-6 text-white cursor-pointer"
         />
       </div>
       <div
@@ -31,7 +31,7 @@ const Navigation = () => {
         <ul className={`flex flex-col items-center justify-center gap-6`}>
           <XMarkIcon
             onClick={() => setIsOpen(false)}
-            className="absolute top-5 left-5 w-6 h-6 text-white"
+            className="absolute top-5 left-5 w-6 h-6 text-white cursor-pointer"
           />
           <li>
             <Link
