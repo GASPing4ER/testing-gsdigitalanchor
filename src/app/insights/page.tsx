@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { cormorant } from "@/src/lib/fonts";
 
 import ultimateGuide from "@/public/images/articles/ultimate-guide/featured-image.png";
+import marketingMistakes from "@/public/images/articles/marketing-mistakes/featured-image.png";
 
 export const metadata: Metadata = {
   title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
@@ -32,6 +33,25 @@ const InsightsPage = () => {
         INSIGHTS
       </h1>
       <div className="flex gap-10">
+        <Link
+          href="/insights/marketing-mistakes"
+          className="h-[300px] w-[350px] border flex flex-col gap-2"
+          aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
+        >
+          <Image
+            src={marketingMistakes}
+            alt="Luxury Living"
+            className="w-full h-1/2 object-cover"
+          />
+          <div className="pl-2 flex flex-col gap-2">
+            <h2 className={`${cormorant.className} font-medium text-lg`}>
+              10 Common Digital Marketing Mistakes Small Businesses Make (and
+              How to Avoid Them)
+            </h2>
+            <p className="text-[#AB7952]">September 2, 2024</p>
+            <p className="text-xs italic">By Gašper Šimec</p>
+          </div>
+        </Link>
         <Link
           href="/insights/the-ultimate-guide-to-digital-marketing-strategies"
           className="h-[300px] w-[350px] border flex flex-col gap-2"
