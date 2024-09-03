@@ -98,7 +98,7 @@ const Navigation = () => {
             </div>
           </Link>
           <Link
-            href="https://x.com"
+            href="https://x.com/gsdigitalanchor"
             onClick={() => setIsOpen(false)}
             aria-label="X / Twitter"
           >

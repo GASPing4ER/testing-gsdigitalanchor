@@ -52,7 +52,7 @@ const Socials = () => {
         </div>
       </Link>
       <Link
-        href="https://x.com"
+        href="https://x.com/gsdigitalanchor"
         aria-label="Twitter / X"
         onClick={() =>
           sendGAEvent("event", "social_redirect", {
