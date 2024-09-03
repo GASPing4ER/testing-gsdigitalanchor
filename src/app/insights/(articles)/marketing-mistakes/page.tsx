@@ -136,14 +136,14 @@ const InsightPage = () => {
         <p className="text-base sm:text-lg font-sans leading-relaxed">
           Understanding your audience is key to crafting effective marketing
           messages. Avoid generic content by conducting market research to learn
-          about your customers' needs, preferences, and behaviors.
+          about your customers&apos; needs, preferences, and behaviors.
         </p>
 
         <h3 className="text-xl font-medium">4. Inconsistent Branding</h3>
         <p className="text-base sm:text-lg font-sans leading-relaxed">
           Consistent branding helps build trust and recognition. Ensure that
-          your brand's visual elements, tone, and messaging are cohesive across
-          all marketing channels.
+          your brand&apos;s visual elements, tone, and messaging are cohesive
+          across all marketing channels.
         </p>
 
         <h3 className="text-xl font-medium">5. Overlooking Mobile Users</h3>
@@ -175,8 +175,9 @@ const InsightPage = () => {
         <h3 className="text-xl font-medium">8. Ignoring Analytics</h3>
         <p className="text-base sm:text-lg font-sans leading-relaxed">
           Analytics provide valuable insights into the effectiveness of your
-          marketing efforts. Regularly review your data to understand what's
-          working and make informed decisions to optimize your strategy.
+          marketing efforts. Regularly review your data to understand
+          what&apos;s working and make informed decisions to optimize your
+          strategy.
         </p>
 
         <h3 className="text-xl font-medium">
