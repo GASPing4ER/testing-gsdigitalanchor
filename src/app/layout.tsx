@@ -47,11 +47,6 @@ export default function RootLayout({
           type="text/javascript"
           src="https://cdn-cookieyes.com/client_data/d78cd0495a725399a0eb266e/script.js"
         />
-        <script
-          async
-          type="text/javascript"
-          src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WP2dUt"
-        ></script>
         <link rel="icon" href="/favicon.png" />
         <GoogleAnalytics
           gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string}
