@@ -39,53 +39,53 @@ const ContactForm = () => {
     setSubmitting(true);
     await addInquiryToFirebase(formData);
 
-    try {
-      const response = await fetch("/api/inquiry", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-        }),
-      });
-      const data = await response.json();
-      if (data.status >= 400) {
-        setStatus(data.status);
-        setMessage(
-          "Error joining the newsletter. You can directly contact me at gasper@gsdigitalanchor.com."
-        );
-        setTimeout(() => {
-          setMessage("");
-          setButtonDisabled(false);
-        }, 2000);
-        return;
-      }
+    // try {
+    //   const response = await fetch("/api/inquiry", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({
+    //       ...formData,
+    //     }),
+    //   });
+    //   const data = await response.json();
+    //   if (data.status >= 400) {
+    //     setStatus(data.status);
+    //     setMessage(
+    //       "Error joining the newsletter. You can directly contact me at gasper@gsdigitalanchor.com."
+    //     );
+    //     setTimeout(() => {
+    //       setMessage("");
+    //       setButtonDisabled(false);
+    //     }, 2000);
+    //     return;
+    //   }
 
-      setStatus(201);
-      setMessage("Thank you for subscribing my newsletter 👻.");
-      setTimeout(() => {
-        setMessage("");
-        setButtonDisabled(false);
-      }, 4000);
-    } catch (error) {
-      setStatus(500);
-      setMessage(
-        "Error joining the newsletter. You can directly contact me at gasper@gsdigitalanchor.com."
-      );
-      setTimeout(() => {
-        setMessage("");
-        setButtonDisabled(false);
-      }, 2000);
-    }
-    setFormData({
-      name: "",
-      email: "",
-      brand: "",
-      services: "",
-      budget: "",
-      message: "",
-    });
+    //   setStatus(201);
+    //   setMessage("Thank you for subscribing my newsletter 👻.");
+    //   setTimeout(() => {
+    //     setMessage("");
+    //     setButtonDisabled(false);
+    //   }, 4000);
+    // } catch (error) {
+    //   setStatus(500);
+    //   setMessage(
+    //     "Error joining the newsletter. You can directly contact me at gasper@gsdigitalanchor.com."
+    //   );
+    //   setTimeout(() => {
+    //     setMessage("");
+    //     setButtonDisabled(false);
+    //   }, 2000);
+    // }
+    // setFormData({
+    //   name: "",
+    //   email: "",
+    //   brand: "",
+    //   services: "",
+    //   budget: "",
+    //   message: "",
+    // });
     setSubmitting(false);
     router.push("/thank-you");
   };

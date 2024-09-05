@@ -3,12 +3,15 @@
 import { FormEvent, useState } from "react";
 import { cormorant } from "../lib/fonts";
 import { sendGAEvent } from "@next/third-parties/google";
+import { addPricingGuideToFirebase } from "../lib/actions";
+import { useRouter } from "next/navigation";
 
 export default function PricingPackage() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const router = useRouter();
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -19,33 +22,37 @@ export default function PricingPackage() {
       return;
     }
 
-    try {
-      const response = await fetch("/api/pricing-guide", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          first_name: name,
-        }),
-      });
+    await addPricingGuideToFirebase({ name, email });
 
-      const data = await response.json();
-      if (response.status >= 400) {
-        setErrorMessage("Failed to subscribe. Please try again later.");
-        console.error("Error subscribing:", data);
-        return;
-      }
+    // try {
+    //   const response = await fetch("/api/pricing-guide", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({
+    //       email,
+    //       first_name: name,
+    //     }),
+    //   });
 
-      console.log("Successfully subscribed:", data);
-      setIsSubmitted(true);
-      setEmail("");
-      setName("");
-    } catch (error) {
-      setErrorMessage("An error occurred. Please try again.");
-      console.error("Error subscribing:", error);
-    }
+    //   const data = await response.json();
+    //   if (response.status >= 400) {
+    //     setErrorMessage("Failed to subscribe. Please try again later.");
+    //     console.error("Error subscribing:", data);
+    //     return;
+    //   }
+
+    //   console.log("Successfully subscribed:", data);
+    //   setIsSubmitted(true);
+    //   setEmail("");
+    //   setName("");
+    // } catch (error) {
+    //   setErrorMessage("An error occurred. Please try again.");
+    //   console.error("Error subscribing:", error);
+    // }
+
+    router.push("/gsdigitalanchor_pricing_guide.pdf");
   };
 
   return (

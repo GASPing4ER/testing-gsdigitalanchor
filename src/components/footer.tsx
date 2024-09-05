@@ -5,6 +5,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { cormorant } from "../lib/fonts";
 import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
+import { addNewsletterToFirebase } from "../lib/actions";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -20,31 +21,33 @@ const Footer = () => {
       return;
     }
 
-    try {
-      const response = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+    await addNewsletterToFirebase({ email });
 
-      const data = await response.json();
-      if (response.status >= 400) {
-        setErrorMessage(
-          "Failed to subscribe to the newsletter. Please try again later."
-        );
-        console.error("Error subscribing to the newsletter:", data);
-        return;
-      }
+    // try {
+    //   const response = await fetch("/api/newsletter", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ email }),
+    //   });
 
-      console.log("Successfully subscribed:", data);
-      setIsSubscribed(true);
-      setEmail(""); // Reset email input
-    } catch (error) {
-      setErrorMessage("An error occurred. Please try again.");
-      console.error("Error subscribing to the newsletter:", error);
-    }
+    //   const data = await response.json();
+    //   if (response.status >= 400) {
+    //     setErrorMessage(
+    //       "Failed to subscribe to the newsletter. Please try again later."
+    //     );
+    //     console.error("Error subscribing to the newsletter:", data);
+    //     return;
+    //   }
+
+    //   console.log("Successfully subscribed:", data);
+    //   setIsSubscribed(true);
+    //   setEmail(""); // Reset email input
+    // } catch (error) {
+    //   setErrorMessage("An error occurred. Please try again.");
+    //   console.error("Error subscribing to the newsletter:", error);
+    // }
   };
 
   return (

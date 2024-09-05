@@ -6,3 +6,12 @@ export type TInquiryContact = {
   budget: string;
   message: string;
 };
+
+export type TPricingGuide = {
+  name: string;
+  email: string;
+};
+
+export type TNewsletter = {
+  email: string;
+};
