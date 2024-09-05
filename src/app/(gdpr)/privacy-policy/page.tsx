@@ -1,5 +1,12 @@
 import { cormorant } from "@/src/lib/fonts";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | G.S. Digital Anchor",
+  description:
+    "Learn how G.S. Digital Anchor protects your personal information.",
+};
 
 const PrivacyPolicyPage = () => {
   return (

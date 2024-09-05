@@ -1,6 +1,12 @@
 import { cormorant } from "@/src/lib/fonts";
+import { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Thank You | G.S. Digital Anchor",
+  description: "Thank you for contacting G.S. Digital Anchor.",
+};
 
 const ThankYouPage = () => {
   return (

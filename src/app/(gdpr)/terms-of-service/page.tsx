@@ -1,5 +1,12 @@
 import { cormorant } from "@/src/lib/fonts";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | G.S. Digital Anchor",
+  description:
+    "Read the Terms of Service for G.S. Digital Anchor's luxury digital marketing and website development services.",
+};
 
 const TermsOfServicePage = () => {
   return (
