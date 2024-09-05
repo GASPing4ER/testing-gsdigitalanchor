@@ -6,6 +6,7 @@ import { cormorant } from "@/src/lib/fonts";
 
 import ultimateGuide from "@/public/images/articles/ultimate-guide/featured-image.png";
 import marketingMistakes from "@/public/images/articles/marketing-mistakes/featured-image.png";
+import contentMarketing from "@/public/images/articles/content-marketing/featured-image.png";
 
 export const metadata: Metadata = {
   title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
@@ -26,16 +27,34 @@ export const metadata: Metadata = {
 const InsightsPage = () => {
   return (
     <div
-      className="px-6 py-24 h-screen sm:p-24 bg-luxury-light text-luxury-dark flex flex-col justify-center sm:justify-start flex-wrap gap-10"
+      className="px-6 py-24 min-h-screen sm:p-24 bg-luxury-light text-luxury-dark flex flex-col justify-center sm:justify-start gap-10"
       id="first-section"
     >
       <h1 className={`${cormorant.className} text-5xl text-center`}>
         INSIGHTS
       </h1>
-      <div className="flex gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto">
+        <Link
+          href="/insights/content-marketing-strategy-2024"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
+        >
+          <Image
+            src={contentMarketing}
+            alt="Luxury Living"
+            className="w-full h-1/2 object-cover"
+          />
+          <div className="pl-2 flex flex-col gap-2">
+            <h2 className={`${cormorant.className} font-medium text-lg`}>
+              How to Create a Successful Content Marketing Strategy for 2024
+            </h2>
+            <p className="text-[#AB7952]">September 5, 2024</p>
+            <p className="text-xs italic">By Gašper Šimec</p>
+          </div>
+        </Link>
         <Link
           href="/insights/marketing-mistakes"
-          className="h-[300px] w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
           aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
         >
           <Image
@@ -54,7 +73,7 @@ const InsightsPage = () => {
         </Link>
         <Link
           href="/insights/the-ultimate-guide-to-digital-marketing-strategies"
-          className="h-[300px] w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
           aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
         >
           <Image
