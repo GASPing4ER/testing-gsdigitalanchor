@@ -1,5 +1,5 @@
 import { push, ref, set } from "firebase/database";
-import { database } from "@/db";
+import { database, supabase } from "@/db";
 import { TInquiryContact, TNewsletter, TPricingGuide } from "./types";
 
 export const addInquiryToFirebase = async (inquiry: TInquiryContact) => {
@@ -17,6 +17,23 @@ export const addInquiryToFirebase = async (inquiry: TInquiryContact) => {
     });
 
     console.log("Inquiry stored to Firebase successfully!");
+  } catch (error) {
+    console.error("Firebase Error!", error);
+  }
+};
+
+export const addInquiryToSupabase = async (inquiry: TInquiryContact) => {
+  try {
+    const { data, error } = await supabase.from("contacts").insert([
+      {
+        name: inquiry.name,
+        email: inquiry.email,
+        brand: inquiry.brand,
+        services: inquiry.services,
+        budget: inquiry.budget,
+        message: inquiry.message,
+      },
+    ]);
   } catch (error) {
     console.error("Firebase Error!", error);
   }

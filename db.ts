@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+import { createClient } from "@supabase/supabase-js";
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -19,4 +20,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-export { database };
+const supabase = createClient(
+  process.env.SUPABASE_URL as string,
+  process.env.SUPABASE_ANON_KEY as string
+);
+
+export { database, supabase };

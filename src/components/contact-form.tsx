@@ -5,7 +5,7 @@ import { sendGAEvent } from "@next/third-parties/google";
 import { useRouter } from "next/navigation";
 
 import { useState, ChangeEvent } from "react";
-import { addInquiryToFirebase } from "../lib/actions";
+import { addInquiryToSupabase } from "../lib/actions";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +37,7 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    await addInquiryToFirebase(formData);
+    await addInquiryToSupabase(formData);
 
     try {
       const response = await fetch("/api/inquiry", {
