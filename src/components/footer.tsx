@@ -23,31 +23,31 @@ const Footer = () => {
 
     await addNewsletterToFirebase({ email });
 
-    // try {
-    //   const response = await fetch("/api/newsletter", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({ email }),
-    //   });
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
 
-    //   const data = await response.json();
-    //   if (response.status >= 400) {
-    //     setErrorMessage(
-    //       "Failed to subscribe to the newsletter. Please try again later."
-    //     );
-    //     console.error("Error subscribing to the newsletter:", data);
-    //     return;
-    //   }
+      const data = await response.json();
+      if (response.status >= 400) {
+        setErrorMessage(
+          "Failed to subscribe to the newsletter. Please try again later."
+        );
+        console.error("Error subscribing to the newsletter:", data);
+        return;
+      }
 
-    //   console.log("Successfully subscribed:", data);
-    //   setIsSubscribed(true);
-    //   setEmail(""); // Reset email input
-    // } catch (error) {
-    //   setErrorMessage("An error occurred. Please try again.");
-    //   console.error("Error subscribing to the newsletter:", error);
-    // }
+      console.log("Successfully subscribed:", data);
+      setIsSubscribed(true);
+      setEmail(""); // Reset email input
+    } catch (error) {
+      setErrorMessage("An error occurred. Please try again.");
+      console.error("Error subscribing to the newsletter:", error);
+    }
   };
 
   return (

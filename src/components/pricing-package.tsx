@@ -24,33 +24,33 @@ export default function PricingPackage() {
 
     await addPricingGuideToFirebase({ name, email });
 
-    // try {
-    //   const response = await fetch("/api/pricing-guide", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       email,
-    //       first_name: name,
-    //     }),
-    //   });
+    try {
+      const response = await fetch("/api/pricing-guide", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          first_name: name,
+        }),
+      });
 
-    //   const data = await response.json();
-    //   if (response.status >= 400) {
-    //     setErrorMessage("Failed to subscribe. Please try again later.");
-    //     console.error("Error subscribing:", data);
-    //     return;
-    //   }
+      const data = await response.json();
+      if (response.status >= 400) {
+        setErrorMessage("Failed to subscribe. Please try again later.");
+        console.error("Error subscribing:", data);
+        return;
+      }
 
-    //   console.log("Successfully subscribed:", data);
-    //   setIsSubmitted(true);
-    //   setEmail("");
-    //   setName("");
-    // } catch (error) {
-    //   setErrorMessage("An error occurred. Please try again.");
-    //   console.error("Error subscribing:", error);
-    // }
+      console.log("Successfully subscribed:", data);
+      setIsSubmitted(true);
+      setEmail("");
+      setName("");
+    } catch (error) {
+      setErrorMessage("An error occurred. Please try again.");
+      console.error("Error subscribing:", error);
+    }
 
     router.push("/gsdigitalanchor_pricing_guide.pdf");
   };
