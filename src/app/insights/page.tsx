@@ -7,6 +7,7 @@ import { cormorant } from "@/src/lib/fonts";
 import ultimateGuide from "@/public/images/articles/ultimate-guide/featured-image.png";
 import marketingMistakes from "@/public/images/articles/marketing-mistakes/featured-image.png";
 import contentMarketing from "@/public/images/articles/content-marketing/featured-image.png";
+import seoEcommerce from "@/public/images/articles/seo-ecommerce/featured-image.png";
 
 export const metadata: Metadata = {
   title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
@@ -34,6 +35,24 @@ const InsightsPage = () => {
         INSIGHTS
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto">
+        <Link
+          href="/insights/seo-ecommerce-strategy-2024"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
+        >
+          <Image
+            src={seoEcommerce}
+            alt="Luxury Living"
+            className="w-full h-1/2 object-cover"
+          />
+          <div className="pl-2 flex flex-col gap-2">
+            <h2 className={`${cormorant.className} font-medium text-lg`}>
+              SEO for E-Commerce: How to Drive More Traffic to Your Online Store
+            </h2>
+            <p className="text-[#AB7952]">September 7, 2024</p>
+            <p className="text-xs italic">By Gašper Šimec</p>
+          </div>
+        </Link>
         <Link
           href="/insights/content-marketing-strategy-2024"
           className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
