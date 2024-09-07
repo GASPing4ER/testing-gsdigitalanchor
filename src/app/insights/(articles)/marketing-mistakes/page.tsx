@@ -3,6 +3,7 @@ import Image from "next/image";
 import featuredImage from "@/public/images/articles/marketing-mistakes/featured-image.png";
 import { cormorant } from "@/src/lib/fonts";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -136,13 +137,13 @@ const InsightPage = () => {
         <p className="text-base sm:text-lg font-sans leading-relaxed">
           Understanding your audience is key to crafting effective marketing
           messages. Avoid generic content by conducting market research to learn
-          about your customers' needs, preferences, and behaviors.
+          about your customers’ needs, preferences, and behaviors.
         </p>
 
         <h3 className="text-xl font-medium">4. Inconsistent Branding</h3>
         <p className="text-base sm:text-lg font-sans leading-relaxed">
           Consistent branding helps build trust and recognition. Ensure that
-          your brand's visual elements, tone, and messaging are cohesive across
+          your brand’s visual elements, tone, and messaging are cohesive across
           all marketing channels.
         </p>
 
@@ -175,7 +176,7 @@ const InsightPage = () => {
         <h3 className="text-xl font-medium">8. Ignoring Analytics</h3>
         <p className="text-base sm:text-lg font-sans leading-relaxed">
           Analytics provide valuable insights into the effectiveness of your
-          marketing efforts. Regularly review your data to understand what's
+          marketing efforts. Regularly review your data to understand what’s
           working and make informed decisions to optimize your strategy.
         </p>
 
@@ -241,7 +242,7 @@ const InsightPage = () => {
         <h3 className="text-xl font-medium">6. Focus on Quality Content</h3>
         <p className="text-base sm:text-lg font-sans leading-relaxed">
           Prioritize creating valuable, high-quality content that addresses your
-          audience's pain points and positions your brand as a trusted resource.
+          audience’s pain points and positions your brand as a trusted resource.
         </p>
 
         <h3 className="text-xl font-medium">7. Engage on Social Media</h3>
@@ -277,7 +278,7 @@ const InsightPage = () => {
         </p>
       </section>
 
-      <footer className="mt-12 pt-6 border-t border-gray-300">
+      <footer className="mt-12 py-6 border-t border-gray-300">
         <p className="text-lg font-sans text-gray-600">Share this article:</p>
         <div className="flex space-x-4 mt-4">
           {/* Social Media Share Links */}
@@ -318,6 +319,12 @@ const InsightPage = () => {
           </a>
         </div>
       </footer>
+      <Link
+        href="/contact"
+        className="bg-slate-900 text-slate-50 px-4 py-3 rounded-xl text-sm"
+      >
+        Lets work together!
+      </Link>
     </article>
   );
 };

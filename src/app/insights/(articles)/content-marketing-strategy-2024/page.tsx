@@ -3,6 +3,7 @@ import Image from "next/image";
 import featuredImage from "@/public/images/articles/content-marketing/featured-image.png";
 import { cormorant } from "@/src/lib/fonts";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "How to Create a Successful Content Marketing Strategy for 2024",
@@ -252,7 +253,7 @@ const InsightPage = () => {
         </p>
       </section>
 
-      <footer className="mt-12 pt-6 border-t border-gray-300">
+      <footer className="mt-12 py-6 border-t border-gray-300">
         <p className="text-lg font-sans text-gray-600">Share this article:</p>
         <div className="flex space-x-4 mt-4">
           {/* Social Media Share Links */}
@@ -293,6 +294,12 @@ const InsightPage = () => {
           </a>
         </div>
       </footer>
+      <Link
+        href="/contact"
+        className="bg-slate-900 text-slate-50 px-4 py-3 rounded-xl text-sm"
+      >
+        Lets work together!
+      </Link>
     </article>
   );
 };
