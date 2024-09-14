@@ -10,6 +10,7 @@ import contentMarketing from "@/public/images/articles/content-marketing/feature
 import seoEcommerce from "@/public/images/articles/seo-ecommerce/featured-image.png";
 import luxuryBranding from "@/public/images/articles/luxury-branding/featured-image.png";
 import socialMediaTrends from "@/public/images/articles/social-media-marketing/featured-image.png";
+import digitalMarketingCampaign from "@/public/images/articles/digital-marketing/featured-image.png";
 
 export const metadata: Metadata = {
   title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
@@ -37,6 +38,24 @@ const InsightsPage = () => {
         INSIGHTS
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto">
+        <Link
+          href="/insights/measuring-digital-marketing-roi"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          aria-label="Read The Social Media Marketing Trends to Watch in 2024"
+        >
+          <Image
+            src={digitalMarketingCampaign}
+            alt="Measuring Digital Marketing ROI"
+            className="w-full h-1/2 object-cover"
+          />
+          <div className="pl-2 flex flex-col gap-2">
+            <h2 className={`${cormorant.className} font-medium text-lg`}>
+              How to Measure the ROI of Your Digital Marketing Campaigns
+            </h2>
+            <p className="text-[#AB7952]">September 14, 2024</p>
+            <p className="text-xs italic">By Gašper Šimec</p>
+          </div>
+        </Link>
         <Link
           href="/insights/social-media-marketing-trends-2024"
           className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
