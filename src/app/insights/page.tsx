@@ -11,6 +11,7 @@ import seoEcommerce from "@/public/images/articles/seo-ecommerce/featured-image.
 import luxuryBranding from "@/public/images/articles/luxury-branding/featured-image.png";
 import socialMediaTrends from "@/public/images/articles/social-media-marketing/featured-image.png";
 import digitalMarketingCampaign from "@/public/images/articles/digital-marketing/featured-image.png";
+import websiteConversion from "@/public/images/articles/conversion/featured-image.png";
 
 export const metadata: Metadata = {
   title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
@@ -39,8 +40,26 @@ const InsightsPage = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto">
         <Link
+          href="/insights/website-conversion-optimization"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
+          aria-label="Read The Social Media Marketing Trends to Watch in 2024"
+        >
+          <Image
+            src={websiteConversion}
+            alt="Why Your Website Isn’t Converting and How to Fix It"
+            className="w-full h-1/2 object-cover"
+          />
+          <div className="pl-2 flex flex-col gap-2">
+            <h2 className={`${cormorant.className} font-medium text-lg`}>
+              Why Your Website Isn’t Converting and How to Fix It
+            </h2>
+            <p className="text-[#AB7952]">September 19, 2024</p>
+            <p className="text-xs italic">By Gašper Šimec</p>
+          </div>
+        </Link>
+        <Link
           href="/insights/measuring-digital-marketing-roi"
-          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
           aria-label="Read The Social Media Marketing Trends to Watch in 2024"
         >
           <Image
@@ -58,7 +77,7 @@ const InsightsPage = () => {
         </Link>
         <Link
           href="/insights/social-media-marketing-trends-2024"
-          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
           aria-label="Read The Social Media Marketing Trends to Watch in 2024"
         >
           <Image
@@ -76,7 +95,7 @@ const InsightsPage = () => {
         </Link>
         <Link
           href="/insights/luxury-branding-strategy-2024"
-          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
           aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
         >
           <Image
@@ -94,7 +113,7 @@ const InsightsPage = () => {
         </Link>
         <Link
           href="/insights/seo-ecommerce-strategy-2024"
-          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
           aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
         >
           <Image
@@ -112,7 +131,7 @@ const InsightsPage = () => {
         </Link>
         <Link
           href="/insights/content-marketing-strategy-2024"
-          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
           aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
         >
           <Image
@@ -130,7 +149,7 @@ const InsightsPage = () => {
         </Link>
         <Link
           href="/insights/marketing-mistakes"
-          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
           aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
         >
           <Image
@@ -149,7 +168,7 @@ const InsightsPage = () => {
         </Link>
         <Link
           href="/insights/the-ultimate-guide-to-digital-marketing-strategies"
-          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
           aria-label="Read The Role of Branding & Identity in the Success of Luxury Brands"
         >
           <Image
