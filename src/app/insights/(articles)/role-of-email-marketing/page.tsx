@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://gsdigitalanchor.com/insights/role-of-email-marketing-in-digital-strategy",
     images: [
       {
-        url: "/images/articles/digital-marketing/email-marketing-featured-image.png",
+        url: "/images/articles/role-of-email-marketing/featured-image.jpg",
         width: 1200,
         height: 630,
         alt: "The Role of Email Marketing in a Modern Digital Strategy",
@@ -37,9 +37,7 @@ export const metadata: Metadata = {
     title: "The Role of Email Marketing in a Modern Digital Strategy",
     description:
       "Learn how email marketing can enhance your digital strategy, driving customer engagement and improving overall marketing performance.",
-    images: [
-      "/images/articles/digital-marketing/email-marketing-featured-image.png",
-    ],
+    images: ["/images/articles/role-of-email-marketing/featured-image.jpg"],
   },
 };
 
