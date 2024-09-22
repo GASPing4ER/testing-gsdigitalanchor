@@ -12,6 +12,7 @@ import luxuryBranding from "@/public/images/articles/luxury-branding/featured-im
 import socialMediaTrends from "@/public/images/articles/social-media-marketing/featured-image.png";
 import digitalMarketingCampaign from "@/public/images/articles/digital-marketing/featured-image.png";
 import websiteConversion from "@/public/images/articles/conversion/featured-image.png";
+import emailMarketing from "@/public/images/articles/role-of-email-marketing/featured-image.jpg";
 
 export const metadata: Metadata = {
   title: "Insights & Blog | G.S. Digital Anchor - Latest in Digital Marketing",
@@ -39,6 +40,24 @@ const InsightsPage = () => {
         INSIGHTS
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto">
+        <Link
+          href="/insights/role-of-email-marketing"
+          className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
+          aria-label="Read The Social Media Marketing Trends to Watch in 2024"
+        >
+          <Image
+            src={emailMarketing}
+            alt="The Role of Email Marketing in a Modern Digital Strategy"
+            className="w-full h-1/2 object-cover"
+          />
+          <div className="pl-2 flex flex-col gap-2">
+            <h2 className={`${cormorant.className} font-medium text-lg`}>
+              The Role of Email Marketing in a Modern Digital Strategy
+            </h2>
+            <p className="text-[#AB7952]">September 22, 2024</p>
+            <p className="text-xs italic">By Gašper Šimec</p>
+          </div>
+        </Link>
         <Link
           href="/insights/website-conversion-optimization"
           className="h-[300px] w-[350px] md:w-full xl:w-[350px] border flex flex-col gap-2 px-1"
