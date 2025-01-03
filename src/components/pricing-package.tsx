@@ -24,7 +24,7 @@ export default function PricingPackage() {
     }
 
     await addPricingGuideToFirebase({ name, email });
-    fbq("track", "ButtonClick", {
+    fbq("track", "CompleteRegistration", {
       buttonName: "pricingGuide",
     });
     // try {

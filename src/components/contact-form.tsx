@@ -39,7 +39,7 @@ const ContactForm = () => {
     e.preventDefault();
     setSubmitting(true);
     await addInquiryToFirebase(formData);
-    fbq("track", "ButtonClick", {
+    fbq("track", "CompleteRegistration", {
       buttonName: "inquiry",
     });
     // try {
