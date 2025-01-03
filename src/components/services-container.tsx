@@ -9,6 +9,7 @@ import Image from "next/image";
 
 import luxuryLivingImg from "@/public/luxury-living.jpg";
 import Link from "next/link";
+import { fbq } from "../lib/utils";
 
 const ServicesContainer = () => {
   const [selectedPhase, setSelectedPhase] = useState(0);
@@ -23,6 +24,9 @@ const ServicesContainer = () => {
       }
     });
     setSelectedService(0);
+    fbq("track", "ButtonClick", {
+      buttonName: "paginationNext",
+    });
   }
 
   function handlePrev() {
@@ -34,10 +38,16 @@ const ServicesContainer = () => {
       }
     });
     setSelectedService(0);
+    fbq("track", "ButtonClick", {
+      buttonName: "paginationPrev",
+    });
   }
 
   function handleServiceSelect(index: number) {
     setSelectedService(index);
+    fbq("track", "ButtonClick", {
+      buttonName: "selectService",
+    });
   }
 
   return (
