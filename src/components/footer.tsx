@@ -6,6 +6,7 @@ import { cormorant } from "../lib/fonts";
 import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
 import { addNewsletterToFirebase } from "../lib/actions";
+import { fbq } from "../lib/utils";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -22,6 +23,9 @@ const Footer = () => {
     }
 
     await addNewsletterToFirebase({ email });
+    fbq("track", "ButtonClick", {
+      buttonName: "newsletter",
+    });
 
     try {
       const response = await fetch("/api/newsletter", {

@@ -5,6 +5,7 @@ import { cormorant } from "../lib/fonts";
 import { sendGAEvent } from "@next/third-parties/google";
 import { addPricingGuideToFirebase } from "../lib/actions";
 import { useRouter } from "next/navigation";
+import { fbq } from "../lib/utils";
 
 export default function PricingPackage() {
   const [email, setEmail] = useState("");
@@ -23,7 +24,9 @@ export default function PricingPackage() {
     }
 
     await addPricingGuideToFirebase({ name, email });
-
+    fbq("track", "ButtonClick", {
+      buttonName: "pricingGuide",
+    });
     // try {
     //   const response = await fetch("/api/pricing-guide", {
     //     method: "POST",
