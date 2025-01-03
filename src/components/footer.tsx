@@ -25,6 +25,7 @@ const Footer = () => {
     await addNewsletterToFirebase({ email });
     fbq("track", "CompleteRegistration", {
       buttonName: "newsletter",
+      email,
     });
 
     try {

@@ -41,6 +41,7 @@ const ContactForm = () => {
     await addInquiryToFirebase(formData);
     fbq("track", "CompleteRegistration", {
       buttonName: "inquiry",
+      email: formData.email,
     });
     // try {
     //   const response = await fetch("/api/inquiry", {
