@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 
 import { useState, ChangeEvent } from "react";
 import { addInquiryToFirebase } from "../lib/actions";
+import { fbq } from "../lib/utils";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +39,9 @@ const ContactForm = () => {
     e.preventDefault();
     setSubmitting(true);
     await addInquiryToFirebase(formData);
-
+    fbq("track", "ButtonClick", {
+      buttonName: "inquiry",
+    });
     // try {
     //   const response = await fetch("/api/inquiry", {
     //     method: "POST",
