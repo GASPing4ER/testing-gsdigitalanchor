@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
 const PortfolioPage = () => {
   return (
-    <main className="min-h-screen container mx-auto w-full py-32 px-6 lg:px-24 flex flex-col gap-10">
+    <main className="min-h-screen container mx-auto w-full py-32 px-6 xl:px-24 flex flex-col gap-10">
       <h1 className={`text-sm tracking-widest text-[#AB7952] font-medium`}>
         PORTFOLIO
       </h1>
@@ -54,10 +54,10 @@ const PortfolioPage = () => {
         Our Projects
       </h2>
       <div className="flex flex-col lg:flex-row w-full gap-10">
-        <div className="flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
           <Link href="/portfolio/supple-wear" className="relative w-full">
             <div className="absolute top-0 left-0 w-full h-full bg-black/20 hover:bg-black/40 z-[5]" />
-            <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
+            <div className="relative w-full h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2024</p>
                 <p>WEB DESIGN & DEVELOPMENT</p>
@@ -76,10 +76,10 @@ const PortfolioPage = () => {
           </Link>
           <hr />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
           <Link href="/portfolio/lautus" className="relative w-full">
             <div className="absolute top-0 left-0 w-full h-full hover:bg-black/20 z-[5]" />
-            <div className="relative bg-[#202B22] w-full lg:w-[500px] h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
+            <div className="relative bg-[#202B22] w-full  h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2023</p>
                 <p>BRANDING IDENTITY</p>
@@ -102,13 +102,13 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row w-full gap-10">
-        <div className="flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
           <Link
             href="/portfolio/400gradikranj-branding"
             className="relative w-full"
           >
             <div className="absolute top-0 left-0 w-full h-full hover:bg-black/20 z-[5]" />
-            <div className="relative bg-[#EAE3D7] w-full lg:w-[500px] h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
+            <div className="relative bg-[#EAE3D7] w-full h-[550px] py-24 flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2023</p>
                 <p>BRANDING IDENTITY</p>
@@ -135,10 +135,10 @@ const PortfolioPage = () => {
           </Link>
           <hr />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
           <Link href="/portfolio/400gradikranj" className="relative w-full">
             <div className="absolute top-0 left-0 w-full h-full bg-black/20 hover:bg-black/40 z-[5]" />
-            <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
+            <div className="relative w-full h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2023</p>
                 <p>WEB DESIGN & DEVELOPMENT</p>
@@ -159,10 +159,10 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row w-full gap-10">
-        <div className="flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
           <Link href="/portfolio/lamaisondigitale" className="relative w-full">
             <div className="absolute top-0 left-0 w-full h-full bg-black/20 hover:bg-black/40 z-[5]" />
-            <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
+            <div className="relative w-full h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2022</p>
                 <p>WEB DESIGN & DEVELOPMENT</p>
@@ -181,10 +181,10 @@ const PortfolioPage = () => {
           </Link>
           <hr />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex-1 flex flex-col gap-4">
           <Link href="/portfolio/vitus" className="relative w-full">
             <div className="absolute top-0 left-0 w-full h-full bg-black/20 hover:bg-black/40 z-[5]" />
-            <div className="relative w-full lg:w-[500px] h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
+            <div className="relative w-full h-[550px] flex flex-col items-center justify-center text-[#91805B] gap-12">
               <div className="absolute w-full top-0 left-0 flex justify-between text-slate-50 p-6 z-10">
                 <p>2022</p>
                 <p>WEB DESIGN & DEVELOPMENT</p>
