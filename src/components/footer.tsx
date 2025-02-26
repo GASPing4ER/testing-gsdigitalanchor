@@ -200,7 +200,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-slate-300 text-sm text-center">
-        <p>&copy; 2024 G.S. Digital Anchor. All rights reserved.</p>
+        <p>&copy; 2025 G.S. Digital Anchor. All rights reserved.</p>
       </div>
     </footer>
   );
