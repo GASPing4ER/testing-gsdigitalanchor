@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern-mobile": "url('/hero-2.png')",
-        "hero-pattern-desktop": "url('/hero-desktop.png')",
+        "hero-pattern-mobile": "url('/home-test2.jpg')",
+        "hero-pattern-desktop": "url('/home-test2.jpg')",
         "pricing-pattern": "url('/background-test.png')",
-        "about-pattern": "url('/about.png')",
+        "about-pattern": "url('/about-test2.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
