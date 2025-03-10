@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <main>
-      <div className="relative w-full h-screen flex items-center p-6 sm:p-24 bg-about-pattern bg-cover bg-center">
-        <div className="absolute top-0 left-0 w-full h-screen bg-black/60" />
+      <div className="relative w-full h-screen flex items-center p-6 sm:p-24 bg-hero-pattern-desktop bg-cover bg-center">
+        <div className="absolute top-0 left-0 w-full h-screen bg-black/30" />
         <div className="z-10 flex flex-col gap-6">
           <h1
             className={`${cormorant.className} font-semibold text-slate-50 text-4xl sm:text-5xl md:text-6xl max-w-[400px] sm:max-w-[600px]`}

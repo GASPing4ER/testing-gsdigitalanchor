@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="min-h-screen w-full">
       <div className="relative w-full h-screen flex items-center p-6 sm:p-24 bg-hero-pattern-mobile md:bg-hero-pattern-desktop bg-cover bg-center sm:bg-fixed">
-        <div className="absolute top-0 left-0 w-full h-screen bg-black/50" />
+        <div className="absolute top-0 left-0 w-full h-screen bg-black/30" />
         <div className="z-10 flex flex-col gap-6">
           <h1
             className={`${cormorant.className} font-semibold text-slate-50 text-4xl sm:text-5xl md:text-6xl max-w-[400px] sm:max-w-[600px]`}

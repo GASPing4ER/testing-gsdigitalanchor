@@ -80,7 +80,7 @@ const PortfolioPage = () => {
           </div>
           <div className="col-span-1 row-span-2 gap-4 bg-[#EAE3D7]">
             <Link
-              href="/portfolio/400gradikranj-branding"
+              href="/portfolio/400gradikranj"
               className="w-full h-full flex items-center justify-center"
             >
               <Image
