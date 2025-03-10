@@ -22,7 +22,7 @@ import wine_menu_400 from "@/public/images/400gradi/wine_menu_400.png";
 import plakat_400 from "@/public/images/400gradi/plakat_400.png";
 import Heading from "@/src/components/portfolio/heading";
 import Section from "@/src/components/portfolio/section";
-import Paragraph from "@/src/components/portfolio/Paragraph";
+import Paragraph from "@/src/components/portfolio/paragraph";
 
 export const metadata: Metadata = {
   title: "400 Gradi Kranj Case Study | Elegant Restaurant",
