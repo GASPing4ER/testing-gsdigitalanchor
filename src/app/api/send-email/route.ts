@@ -12,9 +12,28 @@ type ContactFormDataProps = {
   message: string;
 };
 
-export async function POST(req: Request) {
+import { NextRequest, NextResponse } from "next/server";
+
+export async function OPTIONS() {
+  return NextResponse.json(
+    {},
+    {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Change "*" to your allowed domain
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      },
+    }
+  );
+}
+
+export async function POST(req: NextRequest) {
   try {
-    const response: ContactFormDataProps = await req.json();
+    const response = await req.json();
+    console.log("Received email request:", response);
+
+    // Your email sending logic here...
     const { data, error } = await resend.emails.send({
       from: "Onboarding GSDA <simecgasper@gmail.com>",
       to: ["gasper@gsdigitalanchor.com"],
@@ -22,12 +41,22 @@ export async function POST(req: Request) {
       react: EmailTemplate({ ...response }),
     });
 
-    if (error) {
-      return Response.json({ error }, { status: 500 });
-    }
-
-    return Response.json(data);
+    return NextResponse.json(
+      { message: "Email sent successfully" },
+      {
+        status: 200,
+        headers: {
+          "Access-Control-Allow-Origin": "*", // Allow your frontend to access the API
+          "Access-Control-Allow-Methods": "POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        },
+      }
+    );
   } catch (error) {
-    return Response.json({ error }, { status: 500 });
+    console.error("Error sending email:", error);
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 }
+    );
   }
 }
