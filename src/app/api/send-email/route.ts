@@ -20,7 +20,7 @@ export async function OPTIONS() {
     {
       status: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*", // Change "*" to your allowed domain
+        "Access-Control-Allow-Origin": "https://www.gsdigitalanchor.com", // Change "*" to your allowed domain
         "Access-Control-Allow-Methods": "POST, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
       {
         status: 200,
         headers: {
-          "Access-Control-Allow-Origin": "*", // Allow your frontend to access the API
+          "Access-Control-Allow-Origin": "https://www.gsdigitalanchor.com", // Allow your frontend to access the API
           "Access-Control-Allow-Methods": "POST, OPTIONS",
           "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
