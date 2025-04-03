@@ -45,15 +45,18 @@ const ContactForm = () => {
       email: formData.email,
     });
 
-    const response = await fetch("https://gsdigitalanchor.com/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        ...formData,
-      }),
-    });
+    const response = await fetch(
+      "https://www.gsdigitalanchor.com/api/send-email",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+        }),
+      }
+    );
 
     console.log(response);
     // try {
