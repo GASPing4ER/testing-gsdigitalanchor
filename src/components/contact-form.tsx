@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { useState, ChangeEvent } from "react";
 import { addInquiryToFirebase } from "../lib/actions";
 import { fbq } from "../lib/utils";
+import { Resend } from "resend";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -43,6 +44,18 @@ const ContactForm = () => {
       buttonName: "inquiry",
       email: formData.email,
     });
+
+    const response = await fetch("https://gsdigitalanchor.com/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ...formData,
+      }),
+    });
+
+    console.log(response);
     // try {
     //   const response = await fetch("/api/inquiry", {
     //     method: "POST",
